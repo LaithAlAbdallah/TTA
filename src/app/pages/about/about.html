@@ -1,0 +1,53 @@
+<div class="about-page">
+  <section class="about-hero">
+    <div class="hero-background">
+      <img src="assets/images/Full LOGO.png" alt="" class="hero-logo-watermark" aria-hidden="true">
+    </div>
+    <div class="hero-content">
+      <img src="assets/images/Full LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
+      <h1 class="hero-title">About TTA</h1>
+      <p class="hero-subtitle">Strategic distribution partners connecting global brands with Middle East markets</p>
+    </div>
+  </section>
+
+  <div class="about-content-wrapper">
+    <aside class="sidebar" [class.open]="sidebarOpen">
+      <button class="sidebar-toggle" (click)="toggleSidebar()" aria-label="Toggle navigation">
+        <span class="toggle-icon">☰</span>
+      </button>
+      <nav class="table-of-contents">
+        <h3 class="toc-title">Contents</h3>
+        <a *ngFor="let section of sections"
+           [href]="'#' + section.id"
+           class="toc-link"
+           (click)="scrollToSection($event, section.id)">{{ section.title }}</a>
+      </nav>
+    </aside>
+
+    <main class="about-main">
+      <article *ngFor="let section of sections" [id]="section.id" class="content-section">
+        <div [innerHTML]="section.fullContent" class="section-content"></div>
+
+        <div class="section-actions" *ngIf="section.id === 'who-we-are'">
+          <div class="team-members">
+            <div class="team-member" *ngFor="let member of teamMembers">
+              <div class="member-image-container">
+                <img [src]="member.image" [alt]="member.name" class="team-image">
+              </div>
+              <div class="member-details">
+                <h3 class="member-name">{{ member.name }}</h3>
+                <p class="member-title">{{ member.title }}</p>
+                <div [innerHTML]="member.fullBio" class="member-bio"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-navigation">
+          <a href="#top" class="nav-button" (click)="scrollToTop($event)">↑ Back to top</a>
+          <a href="#contact" class="nav-button primary" (click)="scrollToContact($event)">Contact Us</a>
+        </div>
+      </article>
+    </main>
+  </div>
+</div>

@@ -1,0 +1,246 @@
+<div class="home-page">
+  <section class="hero">
+    <div class="hero-background">
+      <img src="assets/images/Full LOGO.png" alt="" class="hero-logo-watermark" aria-hidden="true">
+    </div>
+    <div class="hero-content">
+      <img src="assets/images/Full LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
+      <h1 class="hero-title">Strategic Distribution Excellence Across the Middle East</h1>
+      <p class="hero-subtitle">Connecting world-class brands with thriving GCC markets through trusted partnerships and proven expertise</p>
+      <div class="hero-cta">
+        <a href="/about" class="btn btn-primary">Learn About Us</a>
+        <a href="#contact" class="btn btn-secondary" (click)="scrollToContact($event)">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-vision">
+    <div class="section-content full-bleed">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2 class="section-title">{{ sections[0].title }}</h2>
+          <p class="section-excerpt">{{ sections[0].excerpt }}</p>
+          <a [href]="'/about#' + sections[0].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+        <div class="visual-content">
+          <div class="icon-circle">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <path d="M40 10L45 25H60L48 35L53 50L40 42L27 50L32 35L20 25H35L40 10Z" fill="#D4AF37"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-about">
+    <div class="section-content two-column">
+      <div class="content-wrapper">
+        <div class="column">
+          <div class="icon-badge">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="#D4AF37" stroke-width="2"/>
+              <path d="M24 8L24 40M8 24L40 24" stroke="#D4AF37" stroke-width="2"/>
+            </svg>
+          </div>
+          <h2 class="section-title">{{ sections[1].title }}</h2>
+          <p class="section-excerpt">{{ sections[1].excerpt }}</p>
+          <a [href]="'/about#' + sections[1].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+        <div class="column highlight-box">
+          <h3>Why Choose TTA?</h3>
+          <ul class="bullet-list">
+            <li>Deep market expertise</li>
+            <li>Established networks</li>
+            <li>Strategic partnerships</li>
+            <li>Proven track record</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-mission">
+    <div class="section-content diagonal-layout">
+      <div class="content-wrapper">
+        <div class="image-side">
+          <div class="shape-container">
+            <div class="shape-circle"></div>
+          </div>
+        </div>
+        <div class="text-side">
+          <h2 class="section-title">{{ sections[2].title }}</h2>
+          <p class="section-excerpt">{{ sections[2].excerpt }}</p>
+          <a [href]="'/about#' + sections[2].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-pillars">
+    <div class="section-content cards-cluster">
+      <div class="content-wrapper">
+        <h2 class="section-title-center">{{ sections[3].title }}</h2>
+        <p class="section-excerpt-center">{{ sections[3].excerpt }}</p>
+        <div class="mini-cards">
+          <div class="mini-card">
+            <div class="card-icon">01</div>
+            <h3>Integrity</h3>
+            <p>Unwavering ethical standards</p>
+          </div>
+          <div class="mini-card">
+            <div class="card-icon">02</div>
+            <h3>Expertise</h3>
+            <p>Decades of experience</p>
+          </div>
+          <div class="mini-card">
+            <div class="card-icon">03</div>
+            <h3>Innovation</h3>
+            <p>Forward-thinking approach</p>
+          </div>
+          <div class="mini-card">
+            <div class="card-icon">04</div>
+            <h3>Partnership</h3>
+            <p>Long-term commitment</p>
+          </div>
+        </div>
+        <a [href]="'/about#' + sections[3].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-reach">
+    <div class="section-content alternating-layout">
+      <div class="content-wrapper reverse">
+        <div class="text-side">
+          <h2 class="section-title">{{ sections[4].title }}</h2>
+          <p class="section-excerpt">{{ sections[4].excerpt }}</p>
+          <a [href]="'/about#' + sections[4].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+        <div class="image-side">
+          <div class="map-visual">
+            <div class="location-dot"></div>
+            <div class="location-dot"></div>
+            <div class="location-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-business-model">
+    <div class="section-content timeline-layout">
+      <div class="content-wrapper">
+        <div class="timeline-header">
+          <h2 class="section-title">{{ sections[5].title }}</h2>
+          <p class="section-excerpt">{{ sections[5].excerpt }}</p>
+        </div>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>The Principal</h3>
+              <p>World-class brands</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>TTA</h3>
+              <p>Strategic connector</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>The Distributor</h3>
+              <p>Regional experts</p>
+            </div>
+          </div>
+        </div>
+        <a [href]="'/about#' + sections[5].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-partnerships">
+    <div class="section-content full-bleed-alt">
+      <div class="content-wrapper">
+        <div class="visual-content-left">
+          <div class="partnership-icon">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+              <circle cx="35" cy="50" r="15" stroke="#D4AF37" stroke-width="3"/>
+              <circle cx="65" cy="50" r="15" stroke="#D4AF37" stroke-width="3"/>
+              <path d="M50 35L50 65" stroke="#D4AF37" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="text-content">
+          <h2 class="section-title">{{ sections[6].title }}</h2>
+          <p class="section-excerpt">{{ sections[6].excerpt }}</p>
+          <a [href]="'/about#' + sections[6].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-principals">
+    <div class="section-content compact-feature">
+      <div class="content-wrapper">
+        <div class="feature-badge">
+          <span class="badge-text">Our Portfolio</span>
+        </div>
+        <h2 class="section-title">{{ sections[7].title }}</h2>
+        <p class="section-excerpt">{{ sections[7].excerpt }}</p>
+        <div class="feature-highlights">
+          <span class="highlight-tag">Consumer Goods</span>
+          <span class="highlight-tag">Food & Beverage</span>
+          <span class="highlight-tag">Health & Wellness</span>
+        </div>
+        <a [href]="'/about#' + sections[7].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-partners">
+    <div class="section-content split-emphasis">
+      <div class="content-wrapper">
+        <div class="emphasis-side">
+          <div class="stat-box">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Partner Network</div>
+          </div>
+        </div>
+        <div class="text-side">
+          <h2 class="section-title">{{ sections[8].title }}</h2>
+          <p class="section-excerpt">{{ sections[8].excerpt }}</p>
+          <a [href]="'/about#' + sections[8].id" class="read-more">Read more <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-team-preview">
+    <div class="section-content team-showcase">
+      <div class="content-wrapper">
+        <h2 class="section-title-center">{{ sections[9].title }}</h2>
+        <p class="section-excerpt-center">{{ sections[9].excerpt }}</p>
+
+        <div class="team-grid">
+          <div class="team-member-card" *ngFor="let member of teamMembers">
+            <div class="member-image-wrapper">
+              <img [src]="member.image" [alt]="member.name" class="member-image">
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">{{ member.name }}</h3>
+              <p class="member-title">{{ member.title }}</p>
+              <p class="member-bio">{{ member.shortBio }}</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/about#who-we-are" class="read-more centered large">Meet the team <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+</div>
