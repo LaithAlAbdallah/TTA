@@ -100,7 +100,10 @@ import { CommonModule } from '@angular/common';
 
         <div class="value-proposition">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            <path d="M12 2C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
+            <path d="M12 6v6"/>
+            <path d="M9 9h6"/>
           </svg>
           <p class="value-text">At TTA, we don't just distribute products—we create markets.</p>
         </div>
@@ -120,7 +123,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -179,7 +181,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .step-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.25rem;
       font-weight: 700;
       color: #0c2440;
@@ -219,7 +220,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .value-text {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.75rem;
       font-weight: 600;
       color: white;

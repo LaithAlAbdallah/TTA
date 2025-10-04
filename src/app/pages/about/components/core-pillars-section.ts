@@ -52,7 +52,6 @@ interface Pillar {
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -127,7 +126,6 @@ interface Pillar {
     }
 
     .pillar-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.5rem;
       font-weight: 700;
       color: #0c2440;

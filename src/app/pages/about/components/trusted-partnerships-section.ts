@@ -103,7 +103,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -175,7 +174,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .highlight-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -218,7 +216,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .list-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.75rem;
       font-weight: 700;
       color: white;

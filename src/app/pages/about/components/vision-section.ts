@@ -73,7 +73,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -82,7 +81,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .vision-lead {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.5rem;
       font-weight: 500;
       color: #0c2440;

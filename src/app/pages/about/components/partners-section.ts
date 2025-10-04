@@ -35,16 +35,6 @@ interface Partner {
             <a href="#contact" class="cta-button">Get in Touch</a>
           </div>
         </div>
-
-        <div class="back-to-top">
-          <a href="#vision" class="back-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="12" y1="19" x2="12" y2="5"/>
-              <polyline points="5 12 12 5 19 12"/>
-            </svg>
-            <span>Back to top</span>
-          </a>
-        </div>
       </div>
     </section>
   `,
@@ -61,7 +51,6 @@ interface Partner {
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -114,14 +103,12 @@ interface Partner {
     }
 
     .partner-initial {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #D4AF37;
     }
 
     .partner-name {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -172,7 +159,6 @@ interface Partner {
     }
 
     .cta-content h3 {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2rem;
       font-weight: 700;
       color: white;
@@ -210,33 +196,6 @@ interface Partner {
       box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
     }
 
-    .back-to-top {
-      text-align: center;
-    }
-
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #0c2440;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      padding: 12px 24px;
-      border: 2px solid #EAF6FB;
-      border-radius: 30px;
-    }
-
-    .back-link:hover {
-      border-color: #D4AF37;
-      color: #D4AF37;
-      gap: 12px;
-    }
-
-    .back-link svg {
-      flex-shrink: 0;
-    }
 
     @media (max-width: 768px) {
       .partners-section {

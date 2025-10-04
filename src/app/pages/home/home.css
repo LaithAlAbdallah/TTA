@@ -207,13 +207,14 @@
 .icon-circle {
   width: 200px;
   height: 200px;
-  background: white;
+  background: linear-gradient(135deg, #D4AF37 0%, #f0d06f 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  color: white;
 }
 
 .two-column .content-wrapper {

@@ -64,7 +64,6 @@ interface Principal {
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -144,7 +143,6 @@ interface Principal {
     }
 
     .chip-name {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 1.25rem;
       font-weight: 700;
       color: #0c2440;

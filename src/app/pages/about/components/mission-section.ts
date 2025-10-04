@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <section id="mission" class="mission-section">
       <div class="mission-container">
+        <h2 class="section-title">Our Mission</h2>
         <div class="mission-card">
           <div class="gold-accent"></div>
           <blockquote class="mission-statement">
@@ -64,6 +65,15 @@ import { CommonModule } from '@angular/common';
       z-index: 1;
     }
 
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      margin: 0 0 48px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
     .mission-card {
       position: relative;
       padding-left: 48px;
@@ -79,7 +89,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .mission-statement {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2rem;
       font-weight: 500;
       color: white;
@@ -140,6 +149,11 @@ import { CommonModule } from '@angular/common';
 
       .mission-card {
         padding-left: 32px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 32px;
       }
 
       .mission-statement {

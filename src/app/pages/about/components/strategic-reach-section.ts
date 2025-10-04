@@ -47,7 +47,7 @@ import { CommonModule } from '@angular/common';
             <h2 class="section-title">Our Strategic Reach</h2>
             <p class="reach-description">TTA serves as a vital link between international manufacturers and global markets. We cover key economies and are expanding into high-potential regions. Our expertise helps brands navigate diverse markets and achieve sustainable growth.</p>
 
-            <div class="stats-grid">
+            <!-- <div class="stats-grid">
               <div class="stat-card">
                 <div class="stat-icon">
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -86,7 +86,7 @@ import { CommonModule } from '@angular/common';
                   <div class="stat-label">Key Economies</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -124,7 +124,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .section-title {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2.5rem;
       font-weight: 700;
       color: #0c2440;
@@ -180,7 +179,6 @@ import { CommonModule } from '@angular/common';
     }
 
     .stat-value {
-      font-family: 'Playfair Display', 'Georgia', serif;
       font-size: 2rem;
       font-weight: 700;
       color: #0c2440;
