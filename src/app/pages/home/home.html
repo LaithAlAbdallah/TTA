@@ -5,8 +5,8 @@
     </div>
     <div class="hero-content">
       <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
-      <h1 class="hero-title">Strategic Distribution Excellence Across the Middle East</h1>
-      <p class="hero-subtitle">Connecting world-class brands with thriving GCC markets through trusted partnerships and proven expertise</p>
+      <h1 class="hero-title">Leading Bridge Between Global Manufacturers and Markets Worldwide</h1>
+      <p class="hero-subtitle">Enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all</p>
       <div class="hero-cta">
         <a href="/about" class="btn btn-primary">Learn About Us</a>
         <a href="#contact" class="btn btn-secondary" (click)="scrollToContact($event)">Contact Us</a>
@@ -25,7 +25,8 @@
         <div class="visual-content">
           <div class="icon-circle">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-              <path d="M40 10L45 25H60L48 35L53 50L40 42L27 50L32 35L20 25H35L40 10Z" fill="#D4AF37"/>
+              <path d="M40 15C25 15 12.5 27.5 12.5 40C12.5 52.5 25 65 40 65C55 65 67.5 52.5 67.5 40C67.5 27.5 55 15 40 15ZM40 55C30 55 22.5 47.5 22.5 40C22.5 32.5 30 25 40 25C50 25 57.5 32.5 57.5 40C57.5 47.5 50 55 40 55Z" fill="#D4AF37"/>
+              <circle cx="40" cy="40" r="8" fill="#D4AF37"/>
             </svg>
           </div>
         </div>
@@ -37,12 +38,6 @@
     <div class="section-content two-column">
       <div class="content-wrapper">
         <div class="column">
-          <div class="icon-badge">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="20" stroke="#D4AF37" stroke-width="2"/>
-              <path d="M24 8L24 40M8 24L40 24" stroke="#D4AF37" stroke-width="2"/>
-            </svg>
-          </div>
           <h2 class="section-title">{{ sections[1].title }}</h2>
           <p class="section-excerpt">{{ sections[1].excerpt }}</p>
           <a [href]="'/about#' + sections[1].id" class="read-more">Read more <span class="arrow">→</span></a>
@@ -50,10 +45,10 @@
         <div class="column highlight-box">
           <h3>Why Choose TTA?</h3>
           <ul class="bullet-list">
-            <li>Deep market expertise</li>
-            <li>Established networks</li>
-            <li>Strategic partnerships</li>
-            <li>Proven track record</li>
+            <li>Proven leadership from P&G, Coca-Cola, BAT & Fine Hygienic executives</li>
+            <li>$100M+ business scaling experience across 50+ markets</li>
+            <li>Real portfolio: PureBorn, Mega Prime, Bauducco & more</li>
+            <li>Hands-on route-to-market & restructuring expertise</li>
           </ul>
         </div>
       </div>
@@ -65,7 +60,14 @@
       <div class="content-wrapper">
         <div class="image-side">
           <div class="shape-container">
-            <div class="shape-circle"></div>
+            <div class="shape-circle">
+              <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                <circle cx="100" cy="100" r="80" stroke="white" stroke-width="4" fill="none"/>
+                <circle cx="100" cy="100" r="50" stroke="white" stroke-width="4" fill="none"/>
+                <circle cx="100" cy="100" r="20" stroke="white" stroke-width="4" fill="white"/>
+                <path d="M100 20L100 40M100 160L100 180M20 100L40 100M160 100L180 100" stroke="white" stroke-width="3"/>
+              </svg>
+            </div>
           </div>
         </div>
         <div class="text-side">
@@ -84,24 +86,50 @@
         <p class="section-excerpt-center">{{ sections[3].excerpt }}</p>
         <div class="mini-cards">
           <div class="mini-card">
-            <div class="card-icon">01</div>
-            <h3>Integrity</h3>
-            <p>Unwavering ethical standards</p>
+            <div class="card-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <!-- Globe/Earth representing global market knowledge -->
+                <circle cx="20" cy="20" r="15" stroke="#D4AF37" stroke-width="2" fill="none"/>
+                <!-- Latitude lines -->
+                <path d="M8 20C8 20 12 16 20 16C28 16 32 20 32 20" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                <path d="M8 20C8 20 12 24 20 24C28 24 32 20 32 20" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                <!-- Longitude lines -->
+                <path d="M20 8C20 8 16 12 16 20C16 28 20 32 20 32" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                <path d="M20 8C20 8 24 12 24 20C24 28 20 32 20 32" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                <!-- Central analytics/data point -->
+                <circle cx="20" cy="20" r="3" fill="#D4AF37"/>
+                <!-- Small market indicators around the globe -->
+                <circle cx="12" cy="15" r="1.5" fill="#D4AF37" opacity="0.7"/>
+                <circle cx="28" cy="15" r="1.5" fill="#D4AF37" opacity="0.7"/>
+                <circle cx="12" cy="25" r="1.5" fill="#D4AF37" opacity="0.7"/>
+                <circle cx="28" cy="25" r="1.5" fill="#D4AF37" opacity="0.7"/>
+                <!-- Connection lines showing market insights -->
+                <path d="M20 20L12 15M20 20L28 15M20 20L12 25M20 20L28 25" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3>Market Knowledge</h3>
+            <p>Global insights with local expertise</p>
           </div>
           <div class="mini-card">
-            <div class="card-icon">02</div>
-            <h3>Expertise</h3>
-            <p>Decades of experience</p>
+            <div class="card-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" fill="#D4AF37"/>
+                <path d="M15 20L20 15L25 20L20 25L15 20Z" fill="white"/>
+              </svg>
+            </div>
+            <h3>Continuous Growth</h3>
+            <p>Adapting to changing markets</p>
           </div>
           <div class="mini-card">
-            <div class="card-icon">03</div>
-            <h3>Innovation</h3>
-            <p>Forward-thinking approach</p>
-          </div>
-          <div class="mini-card">
-            <div class="card-icon">04</div>
-            <h3>Partnership</h3>
-            <p>Long-term commitment</p>
+            <div class="card-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M15 20C15 15 18 10 25 10C32 10 35 15 35 20C35 25 32 30 25 30C18 30 15 25 15 20Z" fill="#D4AF37"/>
+                <path d="M25 20C25 15 22 10 15 10C8 10 5 15 5 20C5 25 8 30 15 30C22 30 25 25 25 20Z" fill="#D4AF37"/>
+                <path d="M20 15L20 25" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Win-Win Partnerships</h3>
+            <p>Ensuring profitability and trust</p>
           </div>
         </div>
         <a [href]="'/about#' + sections[3].id" class="read-more centered">Read more <span class="arrow">→</span></a>
@@ -119,9 +147,14 @@
         </div>
         <div class="image-side">
           <div class="map-visual">
-            <div class="location-dot"></div>
-            <div class="location-dot"></div>
-            <div class="location-dot"></div>
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="90" stroke="#D4AF37" stroke-width="3" fill="none"/>
+              <path d="M100 10C100 10 120 30 130 50C140 70 135 90 120 100C105 110 95 110 80 100C65 90 60 70 70 50C80 30 100 10 100 10Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+              <path d="M100 190C100 190 80 170 70 150C60 130 65 110 80 100C95 90 105 90 120 100C135 110 140 130 130 150C120 170 100 190 100 190Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+              <circle cx="80" cy="80" r="4" fill="#D4AF37"/>
+              <circle cx="120" cy="120" r="4" fill="#D4AF37"/>
+              <circle cx="100" cy="60" r="4" fill="#D4AF37"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -137,24 +170,52 @@
         </div>
         <div class="timeline-items">
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="8" y="12" width="24" height="16" rx="2" stroke="white" stroke-width="2" fill="none"/>
+                <path d="M12 20H28M12 16H20M12 24H20" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
             <div class="timeline-content">
-              <h3>The Principal</h3>
-              <p>World-class brands</p>
+              <h3>B2B</h3>
+              <p>Business partnerships</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="6" y="8" width="28" height="20" rx="2" stroke="white" stroke-width="2" fill="none"/>
+                <circle cx="20" cy="18" r="3" fill="white"/>
+                <path d="M16 24L24 24" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
             <div class="timeline-content">
-              <h3>TTA</h3>
-              <p>Strategic connector</p>
+              <h3>Online Platforms</h3>
+              <p>Digital distribution</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
+            <div class="timeline-marker">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M8 16L20 8L32 16V28L20 36L8 28V16Z" stroke="white" stroke-width="2" fill="none"/>
+                <circle cx="20" cy="22" r="4" fill="white"/>
+              </svg>
+            </div>
             <div class="timeline-content">
-              <h3>The Distributor</h3>
-              <p>Regional experts</p>
+              <h3>Modern Trade</h3>
+              <p>Retail excellence</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="10" y="12" width="20" height="16" rx="1" stroke="white" stroke-width="2" fill="none"/>
+                <path d="M12 16H28M12 20H28M12 24H28" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <h3>Traditional Retail</h3>
+              <p>Established channels</p>
             </div>
           </div>
         </div>
@@ -169,9 +230,11 @@
         <div class="visual-content-left">
           <div class="partnership-icon">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-              <circle cx="35" cy="50" r="15" stroke="#D4AF37" stroke-width="3"/>
-              <circle cx="65" cy="50" r="15" stroke="#D4AF37" stroke-width="3"/>
-              <path d="M50 35L50 65" stroke="#D4AF37" stroke-width="3"/>
+              <path d="M25 40C25 35 30 30 35 30C40 30 45 35 45 40C45 45 40 50 35 50C30 50 25 45 25 40Z" stroke="#D4AF37" stroke-width="3" fill="none"/>
+              <path d="M55 40C55 35 60 30 65 30C70 30 75 35 75 40C75 45 70 50 65 50C60 50 55 45 55 40Z" stroke="#D4AF37" stroke-width="3" fill="none"/>
+              <path d="M35 50C35 50 40 55 45 50M55 50C55 50 60 55 65 50" stroke="#D4AF37" stroke-width="3" fill="none"/>
+              <path d="M45 50L55 50" stroke="#D4AF37" stroke-width="3"/>
+              <path d="M40 60L60 60" stroke="#D4AF37" stroke-width="2"/>
             </svg>
           </div>
         </div>
@@ -187,15 +250,37 @@
   <section class="section section-principals">
     <div class="section-content compact-feature">
       <div class="content-wrapper">
-        <div class="feature-badge">
-          <span class="badge-text">Our Portfolio</span>
+        <div class="principals-icon">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <!-- Central hub -->
+            <circle cx="40" cy="40" r="12" fill="#D4AF37" stroke="white" stroke-width="3"/>
+            
+            <!-- Partner nodes -->
+            <circle cx="20" cy="20" r="8" fill="#D4AF37"/>
+            <circle cx="60" cy="20" r="8" fill="#D4AF37"/>
+            <circle cx="20" cy="60" r="8" fill="#D4AF37"/>
+            <circle cx="60" cy="60" r="8" fill="#D4AF37"/>
+            <circle cx="40" cy="15" r="8" fill="#D4AF37"/>
+            <circle cx="40" cy="65" r="8" fill="#D4AF37"/>
+            <circle cx="15" cy="40" r="8" fill="#D4AF37"/>
+            <circle cx="65" cy="40" r="8" fill="#D4AF37"/>
+            
+            <!-- Connection lines -->
+            <path d="M40 40L20 20M40 40L60 20M40 40L20 60M40 40L60 60M40 40L40 15M40 40L40 65M40 40L15 40M40 40L65 40" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
+            
+            <!-- Inner network lines -->
+            <path d="M20 20L40 15M60 20L40 15M20 60L40 65M60 60L40 65M15 40L20 20M15 40L20 60M65 40L60 20M65 40L60 60" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+          </svg>
         </div>
         <h2 class="section-title">{{ sections[7].title }}</h2>
         <p class="section-excerpt">{{ sections[7].excerpt }}</p>
         <div class="feature-highlights">
+          <span class="highlight-tag">Manufacturing</span>
+          <span class="highlight-tag">Distribution</span>
+          <span class="highlight-tag">Retail</span>
           <span class="highlight-tag">Consumer Goods</span>
-          <span class="highlight-tag">Food & Beverage</span>
-          <span class="highlight-tag">Health & Wellness</span>
+          <span class="highlight-tag">Business Services</span>
+          <span class="highlight-tag">Technology</span>
         </div>
         <a [href]="'/about#' + sections[7].id" class="read-more centered">Read more <span class="arrow">→</span></a>
       </div>
@@ -207,8 +292,38 @@
       <div class="content-wrapper">
         <div class="emphasis-side">
           <div class="stat-box">
-            <div class="stat-number">100+</div>
-            <div class="stat-label">Partner Network</div>
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style="margin-bottom: 1rem;">
+              <!-- Central hub -->
+              <circle cx="60" cy="60" r="8" fill="#D4AF37" stroke="white" stroke-width="2"/>
+              
+              <!-- Primary nodes -->
+              <circle cx="30" cy="30" r="5" fill="#D4AF37"/>
+              <circle cx="90" cy="30" r="5" fill="#D4AF37"/>
+              <circle cx="30" cy="90" r="5" fill="#D4AF37"/>
+              <circle cx="90" cy="90" r="5" fill="#D4AF37"/>
+              <circle cx="60" cy="20" r="5" fill="#D4AF37"/>
+              <circle cx="60" cy="100" r="5" fill="#D4AF37"/>
+              <circle cx="20" cy="60" r="5" fill="#D4AF37"/>
+              <circle cx="100" cy="60" r="5" fill="#D4AF37"/>
+              
+              <!-- Secondary nodes -->
+              <circle cx="45" cy="45" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="75" cy="45" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="45" cy="75" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="75" cy="75" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="40" cy="20" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="80" cy="20" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="40" cy="100" r="3" fill="#D4AF37" opacity="0.7"/>
+              <circle cx="80" cy="100" r="3" fill="#D4AF37" opacity="0.7"/>
+              
+              <!-- Connection lines -->
+              <path d="M60 60L30 30M60 60L90 30M60 60L30 90M60 60L90 90M60 60L60 20M60 60L60 100M60 60L20 60M60 60L100 60" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+              <path d="M30 30L45 45M90 30L75 45M30 90L45 75M90 90L75 75M60 20L40 20M60 20L80 20M60 100L40 100M60 100L80 100M20 60L40 20M20 60L40 100M100 60L80 20M100 60L80 100" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
+              
+              <!-- Outer ring -->
+              <circle cx="60" cy="60" r="50" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.3"/>
+            </svg>
+            <div class="stat-label">Global Partner Network</div>
           </div>
         </div>
         <div class="text-side">
@@ -220,14 +335,14 @@
     </div>
   </section>
 
-  <section class="section section-team-preview">
+  <section class="section section-team-preview" id="who-we-are">
     <div class="section-content team-showcase">
       <div class="content-wrapper">
         <h2 class="section-title-center">{{ sections[9].title }}</h2>
         <p class="section-excerpt-center">{{ sections[9].excerpt }}</p>
 
         <div class="team-grid">
-          <div class="team-member-card" *ngFor="let member of teamMembers">
+          <a [href]="i === 0 ? '/about#james-lafferty' : '/about#nedal-zatari'" class="team-member-card" *ngFor="let member of teamMembers; let i = index">
             <div class="member-image-wrapper">
               <img [src]="member.image" [alt]="member.name" class="member-image">
             </div>
@@ -236,7 +351,7 @@
               <p class="member-title">{{ member.title }}</p>
               <p class="member-bio">{{ member.shortBio }}</p>
             </div>
-          </div>
+          </a>
         </div>
 
         <a href="/about#who-we-are" class="read-more centered large">Meet the team <span class="arrow">→</span></a>
@@ -244,3 +359,5 @@
     </div>
   </section>
 </div>
+
+<app-floating-actions></app-floating-actions>
