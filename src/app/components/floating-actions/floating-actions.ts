@@ -37,7 +37,17 @@ export class FloatingActions implements OnInit, OnDestroy {
   scrollToContact() {
     const footer = document.getElementById('contact');
     if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
+      // Get the actual header height dynamically
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.getBoundingClientRect().height : 80;
+      
+      // Calculate precise position - element top minus header height
+      const elementPosition = footer.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      
+      window.scrollTo({
+        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+        behavior: 'smooth'
+      });
     }
   }
 }

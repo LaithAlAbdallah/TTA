@@ -577,9 +577,13 @@
   font-weight: 500;
 }
 
+.section-team-preview {
+  padding: 2rem 0;
+}
+
 .team-showcase {
   background: white;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .team-grid {
@@ -756,5 +760,13 @@
   .compact-feature {
     padding: 3rem 1.5rem;
     border-radius: 16px;
+  }
+
+  .section-team-preview {
+    padding: 1.5rem 0;
+  }
+
+  .team-showcase {
+    padding: 1.5rem 1.5rem;
   }
 }
