@@ -31,4 +31,28 @@ export class HeaderComponent {
       footer.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  scrollToWhoWeAre(event: Event) {
+    event.preventDefault();
+    this.closeMenu();
+    
+    const currentPath = window.location.pathname;
+    
+    if (currentPath === '/') {
+      // On home page - scroll to team section
+      const teamSection = document.getElementById('who-we-are');
+      if (teamSection) {
+        teamSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (currentPath === '/about') {
+      // On about page - scroll to who-we-are section
+      const whoWeAreSection = document.getElementById('who-we-are');
+      if (whoWeAreSection) {
+        whoWeAreSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // On any other page - navigate to about page
+      window.location.href = '/about#who-we-are';
+    }
+  }
 }

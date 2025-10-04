@@ -26,132 +26,105 @@ export class ContentService {
       {
         id: 'vision',
         title: 'Our Vision',
-        excerpt: 'Building tomorrow\'s distribution networks across the GCC and Middle East today.',
+        excerpt: 'We aim to be the leading bridge between global manufacturers and markets worldwide—enabling seamless trade, smart distribution, and lasting partnerships.',
         fullContent: `<h2>Our Vision</h2>
-          <p>At TTA, we envision a future where innovative distribution networks seamlessly connect leading brands with thriving markets across the GCC and Middle East. We are committed to building tomorrow's supply chain infrastructure today, creating lasting value for our principals, partners, and the communities we serve.</p>
-          <p>Our vision extends beyond traditional distribution—we aim to be the catalyst for market transformation, bringing world-class products and services to underserved regions while fostering sustainable business growth and economic development.</p>`
+          <p>We aim to be the leading bridge between global manufacturers and markets worldwide—enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all.</p>
+          <p>Our focus is helping outstanding regional companies scale globally. We represent some of the finest start-ups and mid-sized businesses ready to expand. With hands-on operational experience—from building route-to-market strategies to restructuring—we deliver proven results. We are a lean, agile team, bringing unmatched value to every partnership.</p>`
       },
       {
         id: 'about-us-and-role',
         title: 'About Us & Our Role',
-        excerpt: 'Strategic partners in distribution excellence, connecting global brands with regional markets.',
+        excerpt: 'TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide.',
         fullContent: `<h2>About Us & Our Role</h2>
-          <p>TTA (The Turnaround Artists) is a Dubai-based trading and distribution company specializing in connecting international brands with strategic markets across the GCC and Middle East region. Founded on principles of integrity, innovation, and partnership, we serve as the vital link between world-class principals and dynamic regional distributors.</p>
-          <p>Our role transcends traditional distribution—we are strategic advisors, market developers, and trusted partners committed to the long-term success of every brand we represent. We combine deep market knowledge with operational excellence to create sustainable competitive advantages for our principals.</p>`
+          <p>TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide. With a strong international presence, deep market knowledge, and an extensive partner network, we deliver value, visibility, and scale for brands.</p>
+          <p>We manage top global brands in over 100 countries, supported by 80+ years of expertise in international expansion.</p>`
       },
       {
         id: 'mission',
         title: 'Our Mission',
-        excerpt: 'Delivering exceptional distribution solutions through integrity, innovation, and strategic partnerships.',
+        excerpt: 'We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset.',
         fullContent: `<h2>Our Mission</h2>
-          <p>Our mission is to deliver exceptional distribution solutions that create measurable value for our principals and partners. We achieve this through:</p>
-          <ul>
-            <li><strong>Strategic Market Development:</strong> Identifying and cultivating high-potential distribution channels across the GCC and Middle East</li>
-            <li><strong>Operational Excellence:</strong> Implementing best-in-class supply chain and logistics management</li>
-            <li><strong>Partnership Integrity:</strong> Building lasting relationships founded on trust, transparency, and mutual success</li>
-            <li><strong>Continuous Innovation:</strong> Adapting to market dynamics and leveraging emerging opportunities</li>
-          </ul>
-          <p>We are committed to transforming distribution challenges into strategic opportunities, ensuring our principals achieve and exceed their regional market objectives.</p>`
+          <p>We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain. Leveraging our experience, we identify the right distributors and design cost-efficient go-to-market strategies that benefit both manufacturers and customers.</p>`
       },
       {
         id: 'core-pillars',
         title: 'Our Core Pillars',
-        excerpt: 'Built on integrity, expertise, innovation, and commitment to partnership excellence.',
+        excerpt: 'Market Knowledge, Continuous Growth, and Win-Win Partnerships form the foundation of our success.',
         fullContent: `<h2>Our Core Pillars</h2>
-          <p>TTA's success is built on four fundamental pillars that guide every aspect of our business:</p>
-          <h3>1. Integrity</h3>
-          <p>We conduct business with unwavering ethical standards, ensuring transparency and accountability in all our relationships. Our reputation is built on trust, and we safeguard it through every decision and action.</p>
-          <h3>2. Expertise</h3>
-          <p>Our team brings decades of combined experience in regional distribution, market development, and supply chain management. We leverage this expertise to deliver insights and solutions that drive measurable results.</p>
-          <h3>3. Innovation</h3>
-          <p>We continuously seek new ways to optimize distribution networks, expand market reach, and create value. Our forward-thinking approach keeps our principals ahead of market trends and competitive pressures.</p>
-          <h3>4. Partnership</h3>
-          <p>We view every relationship as a long-term partnership. Our success is measured by the success of our principals and distributors, and we invest deeply in nurturing these relationships for mutual growth.</p>`
+          <h3>Market Knowledge</h3>
+          <p>Combining global insights with local expertise to match the right products with the right channels, supported by targeted marketing strategies.</p>
+          <h3>Continuous Growth</h3>
+          <p>Adapting to changing markets and building strong, mutually beneficial relationships for sustainable success.</p>
+          <h3>Win-Win Partnerships</h3>
+          <p>Aligning with supplier goals to ensure profitability and long-term trust across the value chain.</p>`
       },
       {
         id: 'strategic-reach',
         title: 'Our Strategic Reach',
-        excerpt: 'Comprehensive coverage across GCC and Middle East markets with established networks.',
+        excerpt: 'TTA serves as a vital link between international manufacturers and global markets.',
         fullContent: `<h2>Our Strategic Reach</h2>
-          <p>TTA maintains strategic presence and established distribution networks across key markets in the GCC and Middle East region, including:</p>
-          <ul>
-            <li><strong>United Arab Emirates:</strong> Our Dubai headquarters serves as the regional hub for operations</li>
-            <li><strong>Kingdom of Saudi Arabia:</strong> Extensive networks across major cities and growing markets</li>
-            <li><strong>Kuwait:</strong> Strong partnerships with leading distributors</li>
-            <li><strong>Qatar:</strong> Established presence in retail and commercial sectors</li>
-            <li><strong>Bahrain:</strong> Growing market footprint with strategic partnerships</li>
-            <li><strong>Oman:</strong> Developing distribution channels in emerging markets</li>
-          </ul>
-          <p>Our regional presence enables rapid market entry, efficient logistics, and localized support for our principals' brands.</p>`
+          <p>TTA serves as a vital link between international manufacturers and global markets. We cover key economies and are expanding into high-potential regions. Our expertise helps brands navigate diverse markets and achieve sustainable growth.</p>`
       },
       {
         id: 'business-model',
         title: 'Our Business Model: Built on Teamwork',
-        excerpt: 'Collaborative approach combining principal expertise with regional market knowledge.',
+        excerpt: 'Teamwork is the foundation of our success through a global network of partners, distributors, and channels.',
         fullContent: `<h2>Our Business Model: Built on Teamwork</h2>
-          <p>TTA's business model is fundamentally collaborative. We believe that sustainable success comes from aligning the goals and capabilities of three key parties:</p>
-          <h3>The Principal</h3>
-          <p>World-class brands seeking strategic market expansion in the GCC and Middle East region. We represent principals who value quality distribution partnerships and long-term market development.</p>
-          <h3>The Distributor</h3>
-          <p>Established regional distributors with strong market presence, logistics capabilities, and customer relationships. We partner with distributors who share our commitment to excellence and brand stewardship.</p>
-          <h3>TTA: The Strategic Connector</h3>
-          <p>We serve as the strategic bridge, facilitating seamless collaboration between principals and distributors. Our role includes market assessment, partner selection, contract negotiation, ongoing relationship management, and performance optimization.</p>
-          <p>This triangular partnership model ensures aligned incentives, clear communication, and shared commitment to market success.</p>`
+          <p>Teamwork is the foundation of our success. TTA operates through a global network of partners, distributors, and channels—including B2B, online platforms, modern trade, and traditional retail. Our scalable solutions ensure consistent supply, cost efficiency, and outstanding service.</p>
+          <p>At TTA, we don't just distribute products—we create markets.</p>`
       },
       {
         id: 'trusted-partnerships',
-        title: 'Trusted Partnerships',
-        excerpt: 'Long-term relationships built on mutual success, transparency, and shared growth.',
-        fullContent: `<h2>Trusted Partnerships</h2>
-          <p>At TTA, partnerships are more than business arrangements—they are strategic alliances built on mutual respect, shared objectives, and commitment to excellence. We invest in understanding our partners' businesses, challenges, and aspirations.</p>
-          <h3>Our Partnership Approach</h3>
+        title: 'Trusted Partnerships Across Industries',
+        excerpt: 'We collaborate with leading brands to build sustainable value chains and long-term benefits.',
+        fullContent: `<h2>Trusted Partnerships Across Industries</h2>
+          <p>We collaborate with leading brands to build sustainable value chains and long-term benefits for all stakeholders. Examples include:</p>
           <ul>
-            <li><strong>Due Diligence:</strong> Rigorous vetting to ensure alignment of values and capabilities</li>
-            <li><strong>Clear Communication:</strong> Transparent dialogue and regular performance reviews</li>
-            <li><strong>Mutual Investment:</strong> Shared resources for market development and brand building</li>
-            <li><strong>Long-term Commitment:</strong> Focus on sustainable growth rather than short-term gains</li>
-            <li><strong>Problem-Solving Mindset:</strong> Collaborative approach to overcoming challenges</li>
-          </ul>
-          <p>Our partnership philosophy has resulted in lasting relationships spanning many years, with multiple successful brand launches and market expansions.</p>`
+            <li><strong>Global Manufacturing Co.</strong> – Manufacturing</li>
+            <li><strong>Worldwide Distributors</strong> – Distribution</li>
+            <li><strong>International Retail Chain</strong> – Retail</li>
+            <li><strong>Global Brands Ltd.</strong> – Consumer Goods</li>
+            <li><strong>Strategic Partners Group</strong> – Business Services</li>
+            <li><strong>Market Leaders Inc.</strong> – Technology</li>
+          </ul>`
       },
       {
         id: 'principals',
         title: 'Our Principals',
-        excerpt: 'Representing world-class brands across diverse industries and categories.',
+        excerpt: 'TTA\'s strength lies in trusted partnerships with world-class distributors and strategic principals.',
         fullContent: `<h2>Our Principals</h2>
-          <p>TTA is proud to represent a select portfolio of international brands seeking strategic distribution in the GCC and Middle East markets. Our principals span various industries, including:</p>
+          <p>TTA's strength lies in trusted partnerships with world-class distributors and strategic principals. We know what to look for in top-tier distributors and how to design cost-effective routes-to-market that benefit all parties.</p>
+          <p>Some of the key global principals we work with include:</p>
           <ul>
-            <li>Consumer Goods & FMCG</li>
-            <li>Food & Beverage</li>
-            <li>Health & Wellness</li>
-            <li>Personal Care & Cosmetics</li>
-            <li>Home & Lifestyle Products</li>
-            <li>Industrial & Commercial Solutions</li>
-          </ul>
-          <p>We carefully select principals whose products and values align with regional market needs and consumer preferences. Our selective approach ensures we can dedicate the attention and resources needed to maximize each brand's market potential.</p>
-          <p>If you're seeking strategic distribution partnership in the GCC and Middle East region, we invite you to explore how TTA can accelerate your market success.</p>`
+            <li><strong>Global Manufacturing Co.</strong> – Manufacturing</li>
+            <li><strong>Worldwide Distributors</strong> – Distribution</li>
+            <li><strong>International Retail Chain</strong> – Retail</li>
+            <li><strong>Global Brands Ltd.</strong> – Consumer Goods</li>
+            <li><strong>Strategic Partners Group</strong> – Business Services</li>
+            <li><strong>Market Leaders Inc.</strong> – Technology</li>
+          </ul>`
       },
       {
         id: 'partners',
         title: 'Our Partners',
-        excerpt: 'Network of established distributors with proven track records across the region.',
+        excerpt: 'TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth.',
         fullContent: `<h2>Our Partners</h2>
-          <p>TTA works with a carefully curated network of distribution partners across the GCC and Middle East region. Our partners are selected based on:</p>
+          <p>TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions:</p>
           <ul>
-            <li><strong>Market Presence:</strong> Established operations with strong retail and commercial reach</li>
-            <li><strong>Infrastructure Capability:</strong> Modern warehousing, logistics, and distribution systems</li>
-            <li><strong>Financial Stability:</strong> Sound financial position to support inventory and growth investments</li>
-            <li><strong>Brand Stewardship:</strong> Demonstrated commitment to representing brands with integrity</li>
-            <li><strong>Growth Orientation:</strong> Ambition to expand market share and develop new channels</li>
-          </ul>
-          <p>We continuously evaluate and expand our partner network to ensure we can offer principals the best possible market coverage and distribution excellence.</p>`
+            <li><strong>PureBorn:</strong> Eco-friendly nappies, wipes, and baby essentials designed for sensitive skin, blending health, style, and sustainability.</li>
+            <li><strong>Mega Prime:</strong> Premium canned sardines and tuna with strong consumer loyalty in multiple markets.</li>
+            <li><strong>Bauducco:</strong> Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.</li>
+            <li><strong>pH Plex:</strong> DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.</li>
+            <li><strong>Kaly:</strong> Premium syrup brand offering rich flavor and quality for beverages and culinary uses.</li>
+            <li><strong>Jucai:</strong> High-quality Acai products meeting global standards.</li>
+          </ul>`
       },
       {
         id: 'who-we-are',
         title: 'Who We Are',
-        excerpt: 'Meet the experienced leadership team driving TTA\'s vision and success.',
+        excerpt: 'TTA is led by two founders with decades of hands-on experience turning businesses into sustainable profit engines.',
         fullContent: `<h2>Who We Are</h2>
-          <p>TTA's leadership combines decades of experience in regional distribution, market development, and strategic partnerships. Our team's deep understanding of both international business practices and regional market dynamics positions us uniquely to deliver exceptional results.</p>`
+          <p>TTA is led by two founders with decades of hands-on experience turning businesses into sustainable profit engines:</p>`
       }
     ];
   }
@@ -160,21 +133,17 @@ export class ContentService {
     return [
       {
         name: 'James Michael Lafferty',
-        title: 'Managing Partner',
+        title: 'CEO',
         image: 'assets/images/James.jpg',
-        shortBio: 'Strategic leader with extensive experience in GCC market development and distribution.',
-        fullBio: `<p>James Michael Lafferty brings over two decades of experience in regional distribution and market development across the GCC and Middle East. As Managing Partner of TTA, James leads strategic initiatives, principal relationships, and business development.</p>
-          <p>His deep understanding of regional market dynamics, combined with a track record of successful brand launches and distribution network development, has established TTA as a trusted partner for international brands seeking market entry and expansion.</p>
-          <p>James's leadership philosophy centers on building lasting partnerships, operational excellence, and creating sustainable value for all stakeholders. His hands-on approach and commitment to integrity have been instrumental in TTA's growth and reputation in the region.</p>`
+        shortBio: 'Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding with 40+ years of experience.',
+        fullBio: `<p>James Michael Lafferty – CEO: Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding, with 40+ years of experience across North America, Europe, Eastern Europe, MENA, Africa, and Asia.</p>`
       },
       {
         name: 'Nedal Al Zatari',
-        title: 'Managing Partner',
+        title: 'Chief Commercial Officer',
         image: 'assets/images/Nedal.jpg',
-        shortBio: 'Regional distribution expert with strong network across Middle East markets.',
-        fullBio: `<p>Nedal Al Zatari is a seasoned distribution professional with extensive experience across Middle East markets. As Managing Partner of TTA, Nedal oversees distributor relationships, market operations, and regional network development.</p>
-          <p>With deep roots in the region and fluency in navigating diverse market environments, Nedal brings invaluable insights into consumer behavior, regulatory landscapes, and distribution best practices. His extensive network of relationships across the GCC has been crucial in establishing TTA's market presence.</p>
-          <p>Nedal's collaborative approach and problem-solving mindset ensure that both principals and distributors receive the support and guidance needed for sustained market success. His commitment to partnership excellence drives TTA's operational performance and market outcomes.</p>`
+        shortBio: 'Drove Fine HORECA Business from start-up to $100M across 50 markets with 30+ years in geographic expansion.',
+        fullBio: `<p>Nedal Al Zatari – Chief Commercial Officer: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
       }
     ];
   }
