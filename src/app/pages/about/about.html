@@ -25,10 +25,21 @@
     </aside>
 
     <main class="about-main">
-      <article *ngFor="let section of sections" [id]="section.id" class="content-section">
-        <div [innerHTML]="section.fullContent" class="section-content"></div>
+      <app-vision-section></app-vision-section>
+      <app-about-role-section></app-about-role-section>
+      <app-mission-section></app-mission-section>
+      <app-core-pillars-section></app-core-pillars-section>
+      <app-strategic-reach-section></app-strategic-reach-section>
+      <app-business-model-section></app-business-model-section>
+      <app-trusted-partnerships-section></app-trusted-partnerships-section>
+      <app-principals-section></app-principals-section>
+      <app-partners-section></app-partners-section>
 
-        <div class="section-actions" *ngIf="section.id === 'who-we-are'">
+      <section id="who-we-are" class="who-we-are-section">
+        <div class="who-we-are-container">
+          <h2 class="section-title">Who We Are</h2>
+          <p class="section-intro">TTA is led by two founders with decades of hands-on experience turning businesses into sustainable profit engines:</p>
+
           <div class="team-members">
             <div class="team-member" *ngFor="let member of teamMembers; let i = index" [id]="i === 0 ? 'james-lafferty' : 'nedal-zatari'">
               <div class="member-image-container">
@@ -42,7 +53,7 @@
             </div>
           </div>
         </div>
-      </article>
+      </section>
     </main>
   </div>
 </div>

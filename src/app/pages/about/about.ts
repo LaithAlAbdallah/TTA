@@ -3,10 +3,31 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
+import { VisionSection } from './components/vision-section';
+import { AboutRoleSection } from './components/about-role-section';
+import { MissionSection } from './components/mission-section';
+import { CorePillarsSection } from './components/core-pillars-section';
+import { StrategicReachSection } from './components/strategic-reach-section';
+import { BusinessModelSection } from './components/business-model-section';
+import { TrustedPartnershipsSection } from './components/trusted-partnerships-section';
+import { PrincipalsSection } from './components/principals-section';
+import { PartnersSection } from './components/partners-section';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule, FloatingActions],
+  imports: [
+    CommonModule,
+    FloatingActions,
+    VisionSection,
+    AboutRoleSection,
+    MissionSection,
+    CorePillarsSection,
+    StrategicReachSection,
+    BusinessModelSection,
+    TrustedPartnershipsSection,
+    PrincipalsSection,
+    PartnersSection
+  ],
   templateUrl: './about.html',
   styleUrl: './about.css',
   standalone: true
