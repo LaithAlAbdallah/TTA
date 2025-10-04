@@ -221,6 +221,7 @@
   grid-template-columns: 350px 1fr;
   gap: 3rem;
   transition: all 0.3s ease;
+  scroll-margin-top: 100px; /* Offset for smooth scrolling */
 }
 
 .team-member:hover {
@@ -273,47 +274,6 @@
   font-size: 1.05rem;
   color: #4a5568;
   margin: 0 0 1.5rem;
-}
-
-.section-navigation {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 2px solid #f1f1f1;
-}
-
-.nav-button {
-  padding: 0.875rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-  background: white;
-  color: #0c2440;
-  border: 2px solid #e2e8f0;
-}
-
-.nav-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-color: #D4AF37;
-}
-
-.nav-button.primary {
-  background: #D4AF37;
-  color: white;
-  border-color: #D4AF37;
-}
-
-.nav-button.primary:hover {
-  background: #e5c248;
-  border-color: #e5c248;
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
 @keyframes fadeIn {
@@ -425,14 +385,5 @@
 
   .member-image-container {
     height: 350px;
-  }
-
-  .section-navigation {
-    flex-direction: column;
-  }
-
-  .nav-button {
-    width: 100%;
-    text-align: center;
   }
 }

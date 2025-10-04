@@ -2,10 +2,11 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
+import { FloatingActions } from '../../components/floating-actions/floating-actions';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule],
+  imports: [CommonModule, FloatingActions],
   templateUrl: './about.html',
   styleUrl: './about.css',
   standalone: true

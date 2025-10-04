@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
+import { FloatingActions } from '../../components/floating-actions/floating-actions';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, FloatingActions],
   templateUrl: './home.html',
   styleUrl: './home.css',
   standalone: true
