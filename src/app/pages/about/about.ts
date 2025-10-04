@@ -29,12 +29,23 @@ export class About implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        setTimeout(() => {
+        // Use requestAnimationFrame for smoother timing
+        requestAnimationFrame(() => {
           const element = document.getElementById(fragment);
           if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Get the actual header height dynamically
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.getBoundingClientRect().height : 80;
+            
+            // Calculate precise position - element top minus header height
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            
+            window.scrollTo({
+              top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+              behavior: 'smooth'
+            });
           }
-        }, 100);
+        });
       }
     });
   }
@@ -48,7 +59,17 @@ export class About implements OnInit, AfterViewInit {
     this.sidebarOpen = false;
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Get the actual header height dynamically
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.getBoundingClientRect().height : 80;
+      
+      // Calculate precise position - element top minus header height
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      
+      window.scrollTo({
+        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+        behavior: 'smooth'
+      });
     }
   }
 

@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,8 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
   isScrolled = false;
   menuOpen = false;
+
+  constructor(private router: Router) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -28,7 +31,17 @@ export class HeaderComponent {
     this.closeMenu();
     const footer = document.getElementById('contact');
     if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
+      // Get the actual header height dynamically
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.getBoundingClientRect().height : 80;
+      
+      // Calculate precise position - element top minus header height
+      const elementPosition = footer.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      
+      window.scrollTo({
+        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+        behavior: 'smooth'
+      });
     }
   }
 
@@ -42,17 +55,37 @@ export class HeaderComponent {
       // On home page - scroll to team section
       const teamSection = document.getElementById('who-we-are');
       if (teamSection) {
-        teamSection.scrollIntoView({ behavior: 'smooth' });
+        // Get the actual header height dynamically
+        const header = document.querySelector('.header');
+        const headerHeight = header ? header.getBoundingClientRect().height : 80;
+        
+        // Calculate precise position - element top minus header height
+        const elementPosition = teamSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+          behavior: 'smooth'
+        });
       }
     } else if (currentPath === '/about') {
       // On about page - scroll to who-we-are section
       const whoWeAreSection = document.getElementById('who-we-are');
       if (whoWeAreSection) {
-        whoWeAreSection.scrollIntoView({ behavior: 'smooth' });
+        // Get the actual header height dynamically
+        const header = document.querySelector('.header');
+        const headerHeight = header ? header.getBoundingClientRect().height : 80;
+        
+        // Calculate precise position - element top minus header height
+        const elementPosition = whoWeAreSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+          behavior: 'smooth'
+        });
       }
     } else {
-      // On any other page - navigate to about page
-      window.location.href = '/about#who-we-are';
+      // On any other page - navigate to about page with fragment
+      this.router.navigate(['/about'], { fragment: 'who-we-are' });
     }
   }
 }
