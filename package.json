@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "build:prod": "ng build --configuration=production",
+    "serve:prod": "ng serve --configuration=production",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=dist/demo/browser"
   },
   "dependencies": {
     "@angular/animations": "^20.0.0",
