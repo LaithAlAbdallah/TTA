@@ -552,7 +552,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
-  align-items: center;
+  align-items: stretch;
+}
+
+.emphasis-side {
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-box {
@@ -562,6 +567,11 @@
   border-radius: 24px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(12, 36, 64, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .stat-number {
@@ -576,6 +586,62 @@
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
+}
+
+.partners-grid-side {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 24px;
+}
+
+.partners-grid-side .section-title {
+  margin-bottom: 0.75rem;
+}
+
+.partners-grid-side .section-excerpt {
+  margin-bottom: 2rem;
+}
+
+.partners-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.partner-logo-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.partner-logo-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  background: #fafbfc;
+}
+
+.partner-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo-box:hover img {
+  transform: scale(1.1);
 }
 
 .section-team-preview {
@@ -709,6 +775,11 @@
   .team-grid {
     grid-template-columns: 1fr;
   }
+
+  .partners-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -769,5 +840,18 @@
 
   .team-showcase {
     padding: 1.5rem 1.5rem;
+  }
+
+  .partners-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .partner-logo-box {
+    padding: 1.5rem;
+  }
+
+  .partners-grid-side {
+    padding: 2rem;
   }
 }
