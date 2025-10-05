@@ -5,6 +5,7 @@ interface Partner {
   name: string;
   description: string;
   category: string;
+  logo: string;
 }
 
 @Component({
@@ -19,8 +20,8 @@ interface Partner {
 
         <div class="partners-grid">
           <div *ngFor="let partner of partners" class="partner-card">
-            <div class="partner-logo-placeholder">
-              <span class="partner-initial">{{ getInitial(partner.name) }}</span>
+            <div class="partner-logo-container">
+              <img [src]="'assets/images/' + partner.logo" [alt]="partner.name + ' logo'" class="partner-logo">
             </div>
             <h3 class="partner-name">{{ partner.name }}</h3>
             <div class="partner-category">{{ partner.category }}</div>
@@ -90,22 +91,25 @@ interface Partner {
       transform: translateY(-8px);
     }
 
-    .partner-logo-placeholder {
+    .partner-logo-container {
       width: 100px;
       height: 100px;
-      background: linear-gradient(135deg, #0c2440 0%, #1a3a5c 100%);
+      background: white;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 24px;
       border: 3px solid #D4AF37;
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .partner-initial {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #D4AF37;
+    .partner-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
     }
 
     .partner-name {
@@ -238,32 +242,38 @@ export class PartnersSection {
     {
       name: 'PureBorn',
       category: 'Baby Care',
-      description: 'Eco-friendly nappies, wipes, and baby essentials designed for sensitive skin, blending health, style, and sustainability.'
+      description: 'Eco-friendly nappies, wipes, and baby essentials designed for sensitive skin, blending health, style, and sustainability.',
+      logo: 'Pure.png'
     },
     {
       name: 'Mega Prime',
       category: 'Food & Beverage',
-      description: 'Premium canned sardines and tuna with strong consumer loyalty in multiple markets.'
+      description: 'Premium canned sardines and tuna with strong consumer loyalty in multiple markets.',
+      logo: 'Mega-Prime.png'
     },
     {
       name: 'Bauducco',
       category: 'Snacks',
-      description: 'Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.'
+      description: 'Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.',
+      logo: 'Bauducco.png'
     },
     {
       name: 'pH Plex',
       category: 'Haircare',
-      description: 'DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.'
+      description: 'DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.',
+      logo: 'PHplex.png'
     },
     {
       name: 'Kaly',
       category: 'Food & Beverage',
-      description: 'Premium syrup brand offering rich flavor and quality for beverages and culinary uses.'
+      description: 'Premium syrup brand offering rich flavor and quality for beverages and culinary uses.',
+      logo: 'Kaly.png'
     },
     {
       name: 'Jucai',
       category: 'Food & Beverage',
-      description: 'High-quality Acai products meeting global standards.'
+      description: 'High-quality Acai products meeting global standards.',
+      logo: 'Jucai.png'
     }
   ];
 
