@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
+import { ContactCard } from '../../components/contact-card/contact-card';
 import { VisionSection } from './components/vision-section';
 import { AboutRoleSection } from './components/about-role-section';
 import { MissionSection } from './components/mission-section';
@@ -18,6 +19,7 @@ import { PartnersSection } from './components/partners-section';
   imports: [
     CommonModule,
     FloatingActions,
+    ContactCard,
     VisionSection,
     AboutRoleSection,
     MissionSection,

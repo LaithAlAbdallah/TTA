@@ -355,22 +355,30 @@
     <div class="section-content team-showcase">
       <div class="content-wrapper">
         <h2 class="section-title-center">{{ sections[9].title }}</h2>
-        <p class="section-excerpt-center">{{ sections[9].excerpt }}</p>
+        <p class="section-excerpt-center">TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:</p>
 
-        <div class="team-grid">
-          <a [href]="i === 0 ? '/about#james-lafferty' : '/about#nedal-zatari'" class="team-member-card" *ngFor="let member of teamMembers; let i = index">
+        <div class="team-grid-four">
+          <div class="team-member-card" *ngFor="let member of teamMembers; let i = index">
             <div class="member-image-wrapper">
-              <img [src]="member.image" [alt]="member.name" class="member-image">
+              <img [src]="member.image" [alt]="'Photo of ' + member.name" class="member-image">
             </div>
             <div class="member-info">
               <h3 class="member-name">{{ member.name }}</h3>
               <p class="member-title">{{ member.title }}</p>
               <p class="member-bio">{{ member.shortBio }}</p>
             </div>
-          </a>
+          </div>
         </div>
 
-        <a href="/about#who-we-are" class="read-more centered large">Meet the team <span class="arrow">→</span></a>
+        <a href="/about#who-we-are" class="read-more centered large">Meet the full team <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact-card">
+    <div class="section-content">
+      <div class="contact-card-wrapper">
+        <app-contact-card></app-contact-card>
       </div>
     </div>
   </section>
