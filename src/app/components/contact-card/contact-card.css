@@ -1,0 +1,134 @@
+.contact-card {
+  background: white;
+  border: 2px solid #0c2440;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(12, 36, 64, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 24px rgba(12, 36, 64, 0.15);
+  transform: translateY(-2px);
+}
+
+.contact-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0c2440;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.contact-section {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #0c2440;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.icon {
+  color: #D4AF37;
+  flex-shrink: 0;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.contact-item:hover {
+  background: #0c2440;
+  border-color: #D4AF37;
+  transform: translateX(4px);
+}
+
+.contact-item:hover .contact-number,
+.contact-item:hover .contact-location {
+  color: white;
+}
+
+.contact-item:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+.contact-number {
+  font-weight: 600;
+  color: #0c2440;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.contact-location {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.address-link {
+  display: block;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #0c2440;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.address-link:hover {
+  background: #0c2440;
+  color: white;
+  border-color: #D4AF37;
+  transform: translateX(4px);
+}
+
+.address-link:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-number {
+    font-size: 1rem;
+  }
+
+  .contact-location {
+    font-size: 0.8125rem;
+  }
+}
