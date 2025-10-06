@@ -24,9 +24,9 @@ export class Home implements OnInit {
 
   scrollToContact(event: Event) {
     event.preventDefault();
-    const footer = document.getElementById('contact');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
+    const contactCard = document.getElementById('contact');
+    if (contactCard) {
+      contactCard.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }

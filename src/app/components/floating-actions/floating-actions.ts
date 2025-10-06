@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-floating-actions',
@@ -11,6 +12,8 @@ import { CommonModule } from '@angular/common';
 export class FloatingActions implements OnInit, OnDestroy {
   showBackToTop = false;
   private scrollThreshold = 300; // Show button after scrolling 300px
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.checkScrollPosition();
@@ -35,19 +38,27 @@ export class FloatingActions implements OnInit, OnDestroy {
   }
 
   scrollToContact() {
-    const footer = document.getElementById('contact');
-    if (footer) {
-      // Get the actual header height dynamically
-      const header = document.querySelector('.header');
-      const headerHeight = header ? header.getBoundingClientRect().height : 80;
-      
-      // Calculate precise position - element top minus header height
-      const elementPosition = footer.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-      
-      window.scrollTo({
-        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
-        behavior: 'smooth'
-      });
+    const currentPath = window.location.pathname;
+    
+    if (currentPath === '/') {
+      // On home page - scroll to contact card
+      const contactCard = document.getElementById('contact');
+      if (contactCard) {
+        // Get the actual header height dynamically
+        const header = document.querySelector('.header');
+        const headerHeight = header ? header.getBoundingClientRect().height : 80;
+        
+        // Calculate precise position - element top minus header height
+        const elementPosition = contactCard.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // On any other page - navigate to home page with contact fragment
+      this.router.navigate(['/'], { fragment: 'contact' });
     }
   }
 }

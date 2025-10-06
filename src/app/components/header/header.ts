@@ -29,19 +29,28 @@ export class HeaderComponent {
   scrollToContact(event: Event) {
     event.preventDefault();
     this.closeMenu();
-    const footer = document.getElementById('contact');
-    if (footer) {
-      // Get the actual header height dynamically
-      const header = document.querySelector('.header');
-      const headerHeight = header ? header.getBoundingClientRect().height : 80;
-      
-      // Calculate precise position - element top minus header height
-      const elementPosition = footer.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-      
-      window.scrollTo({
-        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
-        behavior: 'smooth'
-      });
+    
+    const currentPath = window.location.pathname;
+    
+    if (currentPath === '/') {
+      // On home page - scroll to contact card
+      const contactCard = document.getElementById('contact');
+      if (contactCard) {
+        // Get the actual header height dynamically
+        const header = document.querySelector('.header');
+        const headerHeight = header ? header.getBoundingClientRect().height : 80;
+        
+        // Calculate precise position - element top minus header height
+        const elementPosition = contactCard.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
+        window.scrollTo({
+          top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // On any other page - navigate to home page with contact fragment
+      this.router.navigate(['/'], { fragment: 'contact' });
     }
   }
 

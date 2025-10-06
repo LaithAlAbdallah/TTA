@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 interface Partner {
   name: string;
@@ -33,7 +34,7 @@ interface Partner {
           <div class="cta-content">
             <h3>Ready to Partner with Us?</h3>
             <p>Join our network of trusted partners and expand your market reach globally.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <a (click)="navigateToContact($event)" class="cta-button">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -238,6 +239,13 @@ interface Partner {
   `]
 })
 export class PartnersSection {
+  constructor(private router: Router) {}
+
+  navigateToContact(event: Event) {
+    event.preventDefault();
+    this.router.navigate(['/'], { fragment: 'contact' });
+  }
+
   partners: Partner[] = [
     {
       name: 'PureBorn',

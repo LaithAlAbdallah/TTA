@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export interface TeamMember {
+  id: string;
   name: string;
   title: string;
   image: string;
@@ -132,13 +133,7 @@ export class ContentService {
   getTeamMembers(): TeamMember[] {
     return [
       {
-        name: 'Nedal Al Zatari',
-        title: 'Managing Partner',
-        image: 'assets/images/Nedal.jpg',
-        shortBio: 'Drove Fine HORECA Business from start-up to $100M across 50 markets with 30+ years in geographic expansion.',
-        fullBio: `<p>Nedal Al Zatari – Managing Partner: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
-      },
-      {
+        id: 'james-lafferty',
         name: 'James Michael Lafferty',
         title: 'Managing Partner',
         image: 'assets/images/James.jpg',
@@ -146,18 +141,28 @@ export class ContentService {
         fullBio: `<p>James Michael Lafferty – Managing Partner: Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding, with 40+ years of experience across North America, Europe, Eastern Europe, MENA, Africa, and Asia.</p>`
       },
       {
-        name: 'Ahmad Al Awamleh',
-        title: 'Business Development Manager',
-        image: 'assets/images/Ahmad-Awamleh.jpg',
-        shortBio: 'Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions.',
-        fullBio: `<p>Ahmad Al Awamleh – Business Development Manager: Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions. Partnered with leading names such as Red Bull and Floward.</p>`
+        id: 'nedal-zatari',
+        name: 'Nedal Al Zatari',
+        title: 'Managing Partner',
+        image: 'assets/images/Nedal.jpg',
+        shortBio: 'Drove Fine HORECA Business from start-up to $100M across 50 markets with 30+ years in geographic expansion.',
+        fullBio: `<p>Nedal Al Zatari – Managing Partner: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
       },
       {
+        id: 'ruslan-humbatov',
         name: 'Ruslan Humbatov',
         title: 'Commercial Executive',
         image: 'assets/images/Ruslan.jpg',
         shortBio: 'Dynamic and results-driven Commercial Executive with over 15 years of progressive leadership experience in the FMCG industry across the CIS region.',
         fullBio: `<p>Ruslan Humbatov – Commercial Executive: Dynamic and results-driven Commercial Executive with over 15 years of progressive leadership experience in the FMCG industry across the CIS region. Recognized with the prestigious Global P&G CEO Award for outstanding performance. Proven track record in Distributor network management, Market entry and expansion, Strategic planning and execution, Capability building, Leadership and influence.</p>`
+      },
+      {
+        id: 'ahmad-awamleh',
+        name: 'Ahmad Al Awamleh',
+        title: 'Business Development Manager',
+        image: 'assets/images/Ahmad-Awamleh.jpg',
+        shortBio: 'Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions.',
+        fullBio: `<p>Ahmad Al Awamleh – Business Development Manager: Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions. Partnered with leading names such as Red Bull and Floward.</p>`
       }
     ];
   }
