@@ -133,17 +133,17 @@ export class ContentService {
     return [
       {
         name: 'James Michael Lafferty',
-        title: 'CEO',
+        title: 'Managing Partner',
         image: 'assets/images/James.jpg',
         shortBio: 'Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding with 40+ years of experience.',
-        fullBio: `<p>James Michael Lafferty – CEO: Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding, with 40+ years of experience across North America, Europe, Eastern Europe, MENA, Africa, and Asia.</p>`
+        fullBio: `<p>James Michael Lafferty – Managing Partner: Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding, with 40+ years of experience across North America, Europe, Eastern Europe, MENA, Africa, and Asia.</p>`
       },
       {
         name: 'Nedal Al Zatari',
-        title: 'Chief Commercial Officer',
+        title: 'Managing Partner',
         image: 'assets/images/Nedal.jpg',
         shortBio: 'Drove Fine HORECA Business from start-up to $100M across 50 markets with 30+ years in geographic expansion.',
-        fullBio: `<p>Nedal Al Zatari – Chief Commercial Officer: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
+        fullBio: `<p>Nedal Al Zatari – Managing Partner: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
       }
     ];
   }
