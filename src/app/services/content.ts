@@ -112,7 +112,6 @@ export class ContentService {
         fullContent: `<h2>Our Partners</h2>
           <p>TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions:</p>
           <ul>
-            <li><strong>PureBorn:</strong> Eco-friendly nappies, wipes, and baby essentials designed for sensitive skin, blending health, style, and sustainability.</li>
             <li><strong>Mega Prime:</strong> Premium canned sardines and tuna with strong consumer loyalty in multiple markets.</li>
             <li><strong>Bauducco:</strong> Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.</li>
             <li><strong>pH Plex:</strong> DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.</li>
@@ -133,36 +132,42 @@ export class ContentService {
   getTeamMembers(): TeamMember[] {
     return [
       {
+        id: 'nidal-al-zaatari',
+        name: 'Nidal Al Zaatari',
+        title: 'Managing Partner',
+        image: 'assets/images/Nedal.jpg',
+        shortBio: 'With over three decades of experience driving business growth and strategy across multiple sectors, specializing in building sustainable, high-performing commercial organizations.',
+        fullBio: `<p>With over three decades of experience driving business growth and strategy across multiple sectors, I specialize in building sustainable, high-performing commercial organizations. My expertise spans energy, finance, marketing, sales, digital transformation, and e-commerce, enabling me to design and execute long-term business strategies that deliver consistent revenue and profit growth.</p>
+        <p>As Chief Commercial Officer at Fine Hygienic Holding, I lead diverse business channels across 35+ countries and seven clusters, managing modern trade, traditional trade, HORECA, and distributor markets. I work closely with investors to identify merger and acquisition opportunities, driving double-digit annual growth while fostering a culture of sustainability, innovation, and excellence.</p>
+        <p>A firm believer in continuous learning and empowerment, I'm passionate about creating agile, forward-thinking FMCG organizations through optimized strategies and digital innovation. I aim to build thriving business ecosystems that generate lasting value and impact across global markets.</p>`
+      },
+      {
         id: 'james-lafferty',
         name: 'James Michael Lafferty',
         title: 'Managing Partner',
         image: 'assets/images/James.jpg',
-        shortBio: 'Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding with 40+ years of experience.',
-        fullBio: `<p>James Michael Lafferty – Managing Partner: Former senior executive at P&G, Coca-Cola, BAT, and Fine Hygienic Holding, with 40+ years of experience across North America, Europe, Eastern Europe, MENA, Africa, and Asia.</p>`
-      },
-      {
-        id: 'nedal-zatari',
-        name: 'Nedal Al Zatari',
-        title: 'Managing Partner',
-        image: 'assets/images/Nedal.jpg',
-        shortBio: 'Drove Fine HORECA Business from start-up to $100M across 50 markets with 30+ years in geographic expansion.',
-        fullBio: `<p>Nedal Al Zatari – Managing Partner: Drove Fine HORECA Business from start-up to $100M across 50 markets. Expert in MENA, Africa, and South Asia with 30+ years in geographic expansion.</p>`
+        shortBio: 'Chief Executive Officer of Fine Hygienic Holding and one of the most dynamic and multifaceted CEOs in the world, with nearly 40 years of global experience.',
+        fullBio: `<p>James Michael Lafferty is the Chief Executive Officer of Fine Hygienic Holding (FHH) and one of the most dynamic and multifaceted CEOs in the world. With nearly 40 years of global experience, he has led top FMCG companies including Procter & Gamble, Coca-Cola, and British American Tobacco across five continents.</p>
+        <p>Beyond his corporate achievements, James is an Olympic coach, award-winning journalist, college professor, and world champion athlete. He has coached national and Olympic-level athletes, most notably guiding pole-vaulter EJ Obiena to a world #2 ranking and a 4th place finish at the 2024 Paris Olympics.</p>
+        <p>A passionate advocate for wellness and leadership, James has been recognized globally — named CEO of the Year by both the Burj CEO Awards and the GCC Best Employer Awards, and listed multiple times by Forbes Middle East among the region's Top 100 CEOs.</p>`
       },
       {
         id: 'ruslan-humbatov',
         name: 'Ruslan Humbatov',
         title: 'Commercial Executive',
         image: 'assets/images/Ruslan.jpg',
-        shortBio: 'Dynamic and results-driven Commercial Executive with over 15 years of progressive leadership experience in the FMCG industry across the CIS region.',
-        fullBio: `<p>Ruslan Humbatov – Commercial Executive: Dynamic and results-driven Commercial Executive with over 15 years of progressive leadership experience in the FMCG industry across the CIS region. Recognized with the prestigious Global P&G CEO Award for outstanding performance. Proven track record in Distributor network management, Market entry and expansion, Strategic planning and execution, Capability building, Leadership and influence.</p>`
+        shortBio: 'Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region.',
+        fullBio: `<p>Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region. Recipient of the Global P&G CEO Award for outstanding performance. Skilled in distributor network management, market expansion, and strategic planning, with a proven record of driving sustainable growth and operational excellence.</p>
+        <p>A certified P&G Trainer, I have established Data & Analytics Centers and led impactful capability-building programs that empowered teams and strengthened organizational performance. With a strong commercial mindset, cross-cultural expertise, and a passion for developing people, I excel in building high-performing teams and fostering long-term business success in dynamic markets.</p>`
       },
       {
         id: 'ahmad-awamleh',
         name: 'Ahmad Al Awamleh',
         title: 'Business Development Manager',
         image: 'assets/images/Ahmad-Awamleh.jpg',
-        shortBio: 'Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions.',
-        fullBio: `<p>Ahmad Al Awamleh – Business Development Manager: Engineer and business strategist with 12+ years of experience building brands, optimizing quality, and expanding markets across regions. Partnered with leading names such as Red Bull and Floward.</p>`
+        shortBio: 'Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions.',
+        fullBio: `<p>Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions. Known for a data-driven approach and strong leadership in optimizing quality, compliance, and performance, with successful partnerships with global names such as Red Bull and Floward, contributing to increased market share and customer satisfaction.</p>
+        <p>Skilled in building scalable systems, improving efficiency, and developing strategies that align innovation with commercial success. Passionate about continuous improvement and sustainable growth, with a focus on delivering measurable results that enhance brand reputation, strengthen operations, and ensure long-term profitability.</p>`
       }
     ];
   }

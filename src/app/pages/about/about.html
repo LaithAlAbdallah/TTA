@@ -45,7 +45,18 @@
               <div class="member-details-full">
                 <h3 class="member-name-full">{{ member.name }}</h3>
                 <p class="member-title-full">{{ member.title }}</p>
-                <div [innerHTML]="member.fullBio" class="member-bio-full"></div>
+                <div class="member-bio-container-full">
+                  <p class="member-bio-short" [class.expanded]="member.isExpanded">{{ member.shortBio }}</p>
+                  <div class="member-bio-full" [class.expanded]="member.isExpanded" [innerHTML]="member.fullBio"></div>
+                  <button 
+                    class="read-more-btn-full" 
+                    (click)="toggleBio(member)"
+                    [attr.aria-expanded]="member.isExpanded"
+                    [attr.aria-label]="member.isExpanded ? 'Read less about ' + member.name : 'Read more about ' + member.name">
+                    {{ member.isExpanded ? 'Read Less' : 'Read More' }}
+                    <span class="arrow" [class.rotated]="member.isExpanded">→</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
