@@ -220,6 +220,8 @@ font-size: 2.5rem;
 .member-details-full {
   padding: 2rem;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .member-name-full {
@@ -238,14 +240,80 @@ font-size: 2.5rem;
   margin: 0 0 1rem;
 }
 
+.member-bio-container-full {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-bio-short {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.member-bio-short.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+}
+
 .member-bio-full {
   line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.member-bio-full.expanded {
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .member-bio-full p {
   font-size: 0.95rem;
   color: #4a5568;
-  margin: 0;
+  margin: 0 0 1rem;
+}
+
+.member-bio-full p:last-child {
+  margin-bottom: 0;
+}
+
+.read-more-btn-full {
+  background: none;
+  border: none;
+  color: #D4AF37;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.read-more-btn-full:hover {
+  color: #e5c248;
+  gap: 1rem;
+}
+
+.read-more-btn-full .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2em;
+}
+
+.read-more-btn-full .arrow.rotated {
+  transform: rotate(180deg);
 }
 
 
@@ -378,6 +446,23 @@ font-size: 2.5rem;
     height: 350px;
   }
 
+  .member-name-full {
+    font-size: 1.4rem;
+  }
+
+  .member-title-full {
+    font-size: 1rem;
+  }
+
+  .member-bio-short,
+  .member-bio-full p {
+    font-size: 0.9rem;
+  }
+
+  .read-more-btn-full {
+    font-size: 0.9rem;
+  }
+
   .member-details {
     padding: 2rem;
   }
@@ -435,15 +520,20 @@ font-size: 2.5rem;
   }
 
   .member-name-full {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .member-title-full {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
+  .member-bio-short,
   .member-bio-full p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .read-more-btn-full {
+    font-size: 0.85rem;
   }
 
 }

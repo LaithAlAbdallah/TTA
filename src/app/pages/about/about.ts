@@ -34,7 +34,7 @@ import { PartnersSection } from './components/partners-section';
 })
 export class About implements OnInit, AfterViewInit {
   sections: ContentSection[] = [];
-  teamMembers: TeamMember[] = [];
+  teamMembers: (TeamMember & { isExpanded: boolean })[] = [];
   sidebarOpen = false;
 
   constructor(
@@ -45,7 +45,14 @@ export class About implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.sections = this.contentService.getHomePageSections();
-    this.teamMembers = this.contentService.getTeamMembers();
+    this.teamMembers = this.contentService.getTeamMembers().map(member => ({
+      ...member,
+      isExpanded: false
+    }));
+  }
+
+  toggleBio(member: TeamMember & { isExpanded: boolean }) {
+    member.isExpanded = !member.isExpanded;
   }
 
   ngAfterViewInit() {

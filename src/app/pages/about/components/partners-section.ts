@@ -248,12 +248,6 @@ export class PartnersSection {
 
   partners: Partner[] = [
     {
-      name: 'PureBorn',
-      category: 'Baby Care',
-      description: 'Eco-friendly nappies, wipes, and baby essentials designed for sensitive skin, blending health, style, and sustainability.',
-      logo: 'Pure.png'
-    },
-    {
       name: 'Mega Prime',
       category: 'Food & Beverage',
       description: 'Premium canned sardines and tuna with strong consumer loyalty in multiple markets.',

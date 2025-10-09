@@ -667,6 +667,7 @@
   color: inherit;
   display: block;
   cursor: pointer;
+  height: 100%;
 }
 
 .team-member-card:hover {
@@ -695,6 +696,9 @@
 
 .member-info {
   padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .member-name {
@@ -782,6 +786,11 @@
   .team-grid,
   .team-grid-four {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .member-image-wrapper {
+    height: 350px;
   }
 
   .partners-logo-grid {
@@ -827,7 +836,19 @@
   }
 
   .member-image-wrapper {
-    height: 350px;
+    height: 300px;
+  }
+
+  .member-name {
+    font-size: 1.3rem;
+  }
+
+  .member-title {
+    font-size: 1rem;
+  }
+
+  .member-bio {
+    font-size: 0.9rem;
   }
 
   .stat-number {
