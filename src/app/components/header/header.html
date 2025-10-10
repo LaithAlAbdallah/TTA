@@ -1,7 +1,7 @@
 <header class="header" [class.scrolled]="isScrolled">
   <div class="header-container">
-    <a href="/" class="logo-link" aria-label="TTA Home">
-      <img src="assets/images/TTA-Mark.png" alt="TTA Logo" class="logo">
+    <a href="/" class="logo-link" [attr.aria-label]="'HEADER.ARIA_LABELS.0' | translate">
+      <img src="assets/images/TTA-Mark.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.FOOTER_LOGO' | translate" class="logo">
     </a>
 
     <div class="header-right">
@@ -11,7 +11,7 @@
         class="menu-toggle"
         (click)="toggleMenu()"
         [attr.aria-expanded]="menuOpen"
-        aria-label="Toggle navigation menu">
+        [attr.aria-label]="'HEADER.ARIA_LABELS.1' | translate">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>

@@ -1,7 +1,7 @@
 <div class="about-page">
   <section class="about-hero">
     <div class="hero-content">
-      <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
+      <img src="assets/images/Full-LOGO.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.HERO_LOGO' | translate" class="hero-logo">
       <h1 class="hero-title">{{ 'HERO.ABOUT_PAGE.0' | translate }}</h1>
       <p class="hero-subtitle">{{ 'HERO.ABOUT_PAGE.1' | translate }}</p>
     </div>
@@ -9,7 +9,7 @@
 
   <div class="about-content-wrapper">
     <aside class="sidebar" [class.open]="sidebarOpen">
-      <button class="sidebar-toggle" (click)="toggleSidebar()" aria-label="Toggle navigation">
+      <button class="sidebar-toggle" (click)="toggleSidebar()" [attr.aria-label]="'NAV.TOGGLE_NAVIGATION' | translate">
         <span class="toggle-icon">☰</span>
       </button>
       <nav class="table-of-contents">
@@ -34,8 +34,8 @@
 
       <section id="who-we-are" class="who-we-are-section">
         <div class="who-we-are-container">
-          <h2 class="section-title">{{ 'ABOUT.WHO_WE_ARE.0' | translate }}</h2>
-          <p class="section-intro">{{ 'ABOUT.WHO_WE_ARE.1' | translate }}</p>
+          <h2 class="section-title">{{ 'WHO_WE_ARE.TITLE' | translate }}</h2>
+          <p class="section-intro">{{ 'WHO_WE_ARE.DESCRIPTION' | translate }}</p>
 
           <div class="team-members-grid">
             <div class="team-member-card-full" *ngFor="let member of teamMembers; let i = index" [id]="member.id">
@@ -52,8 +52,8 @@
                     class="read-more-btn-full" 
                     (click)="toggleBio(member)"
                     [attr.aria-expanded]="member.isExpanded"
-                    [attr.aria-label]="member.isExpanded ? 'Read less about ' + member.name : 'Read more about ' + member.name">
-                    {{ member.isExpanded ? 'Read Less' : 'Read More' }}
+                    [attr.aria-label]="member.isExpanded ? ('COMMON.ARIA_LABELS.TEAM_BIO_BUTTONS.0' | translate) + ' ' + member.name : ('COMMON.ARIA_LABELS.TEAM_BIO_BUTTONS.1' | translate) + ' ' + member.name">
+                    {{ member.isExpanded ? ('WHO_WE_ARE.READ_LESS' | translate) : ('WHO_WE_ARE.READ_MORE' | translate) }}
                     <span class="arrow" [class.rotated]="member.isExpanded">→</span>
                   </button>
                 </div>

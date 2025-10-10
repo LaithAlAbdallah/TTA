@@ -1,7 +1,7 @@
 <div class="home-page">
   <section class="hero">
     <div class="hero-content">
-      <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
+      <img src="assets/images/Full-LOGO.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.HERO_LOGO' | translate" class="hero-logo">
       <h1 class="hero-title">{{ 'HERO.HOME_PAGE.0' | translate }}</h1>
       <p class="hero-subtitle">{{ 'HERO.HOME_PAGE.1' | translate }}</p>
       <div class="hero-cta">
@@ -327,19 +327,19 @@
           <p class="section-excerpt">{{ 'ABOUT.PARTNERS.1' | translate }}</p>
           <div class="partners-logo-grid">
             <div class="partner-logo-box">
-              <img src="assets/images/Mega-Prime.png" alt="Mega Prime">
+              <img src="assets/images/Mega-Prime.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.PARTNER_LOGOS.0' | translate">
             </div>
             <div class="partner-logo-box">
-              <img src="assets/images/Bauducco.png" alt="Bauducco">
+              <img src="assets/images/Bauducco.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.PARTNER_LOGOS.1' | translate">
             </div>
             <div class="partner-logo-box">
-              <img src="assets/images/PHplex.png" alt="pH Plex">
+              <img src="assets/images/PHplex.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.PARTNER_LOGOS.2' | translate">
             </div>
             <div class="partner-logo-box">
-              <img src="assets/images/Kaly.png" alt="Kaly">
+              <img src="assets/images/Kaly.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.PARTNER_LOGOS.3' | translate">
             </div>
             <div class="partner-logo-box">
-              <img src="assets/images/Jucai.png" alt="Jucai">
+              <img src="assets/images/Jucai.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.PARTNER_LOGOS.4' | translate">
             </div>
           </div>
           <a [href]="'/about#' + sections[8].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
@@ -351,7 +351,7 @@
   <section class="section section-team-preview" id="who-we-are">
     <div class="section-content team-showcase">
       <div class="content-wrapper">
-        <h2 class="section-title-center">{{ 'ABOUT.WHO_WE_ARE.0' | translate }}</h2>
+        <h2 class="section-title-center">{{ 'WHO_WE_ARE.TITLE' | translate }}</h2>
         <p class="section-excerpt-center">{{ 'WHO_WE_ARE.DESCRIPTION' | translate }}</p>
 
         <div class="team-grid-four">
