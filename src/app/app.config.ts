@@ -8,7 +8,7 @@ import { routes } from './app.routes';
 
 // Factory function for TranslateHttpLoader
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader();
 }
 
 export const appConfig: ApplicationConfig = {

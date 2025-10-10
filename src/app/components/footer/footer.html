@@ -66,7 +66,7 @@
         <h2 id="contact-modal-title" class="modal-title">{{ 'CONTACT.MODAL.0' | translate }}</h2>
         <button (click)="closeContactModal()" 
                 class="modal-close" 
-                aria-label="{{ 'CONTACT.MODAL.1' | translate }}">
+                [attr.aria-label]="'CONTACT.MODAL.1' | translate">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -84,15 +84,15 @@
               <span class="contact-item-label">{{ 'CONTACT.MODAL.2' | translate }}</span>
             </div>
             <div class="phone-numbers">
-              <a href="tel:+971567509403" class="phone-link" aria-label="{{ 'CONTACT.MODAL.7' | translate }}">
+              <a href="tel:+971567509403" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.7' | translate">
                 <span class="phone-number">+971 56 750 9403</span>
                 <span class="phone-location">{{ 'CONTACT.MODAL.3' | translate }}</span>
               </a>
-              <a href="tel:+962795990880" class="phone-link" aria-label="{{ 'CONTACT.MODAL.8' | translate }}">
+              <a href="tel:+962795990880" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.8' | translate">
                 <span class="phone-number">+962 7 9599 0880</span>
                 <span class="phone-location">{{ 'CONTACT.MODAL.4' | translate }}</span>
               </a>
-              <a href="tel:+994502657442" class="phone-link" aria-label="{{ 'CONTACT.MODAL.9' | translate }}">
+              <a href="tel:+994502657442" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.9' | translate">
                 <span class="phone-number">+994 50 265 7442</span>
                 <span class="phone-location">{{ 'CONTACT.MODAL.5' | translate }}</span>
               </a>
@@ -111,7 +111,7 @@
                target="_blank" 
                rel="noopener noreferrer" 
                class="address-link" 
-               aria-label="{{ 'CONTACT.MODAL.6' | translate }}">
+               [attr.aria-label]="'CONTACT.MODAL.6' | translate">
               <span class="address-text">{{ 'CONTACT.MODAL.7' | translate }}</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="external-link-icon">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
