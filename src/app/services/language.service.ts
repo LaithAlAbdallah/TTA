@@ -14,6 +14,8 @@ export class LanguageService {
   public currentLanguage$ = this.currentLanguageSubject.asObservable();
 
   constructor(private translate: TranslateService) {
+    // Set default language first
+    this.translate.setDefaultLang(this.DEFAULT_LANGUAGE);
     this.initializeLanguage();
   }
 

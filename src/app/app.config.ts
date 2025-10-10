@@ -2,13 +2,22 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { routes } from './app.routes';
 
-// Factory function for TranslateHttpLoader
+// Custom loader for translations
+export class CustomTranslateLoader implements TranslateLoader {
+  constructor(private http: HttpClient) {}
+
+  getTranslation(lang: string): Observable<any> {
+    return this.http.get(`./assets/i18n/${lang}.json`);
+  }
+}
+
+// Factory function for CustomTranslateLoader
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader();
+  return new CustomTranslateLoader(http);
 }
 
 export const appConfig: ApplicationConfig = {
@@ -28,7 +37,8 @@ export const appConfig: ApplicationConfig = {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       },
-      defaultLanguage: 'en'
+      defaultLanguage: 'en',
+      useDefaultLang: true
     }).providers!
   ]
 };
