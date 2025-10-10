@@ -1,0 +1,467 @@
+{
+  "__meta": {
+    "generatedBy": "cursor",
+    "date": "2025-01-10",
+    "version": "2.0",
+    "description": "Normalized i18n structure for TTA website"
+  },
+  "HEADER": {
+    "NAVIGATION": {
+      "HOME": "Home",
+      "ABOUT_US": "About Us",
+      "WHO_WE_ARE": "Who We Are",
+      "CONTACT_US": "Contact Us"
+    },
+    "ARIA_LABELS": {
+      "TTA_HOME": "TTA Home",
+      "TOGGLE_NAVIGATION_MENU": "Toggle navigation menu"
+    }
+  },
+  "NAV": {
+    "TOGGLE_NAVIGATION": "Toggle navigation",
+    "CONTENTS": "Contents"
+  },
+  "HERO": {
+    "HOME_PAGE": {
+      "TITLE": "Leading Bridge Between Global Manufacturers and Markets Worldwide",
+      "SUBTITLE": "Enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all",
+      "LEARN_ABOUT_US_BUTTON": "Learn About Us",
+      "CONTACT_US_BUTTON": "Contact Us"
+    },
+    "ABOUT_PAGE": {
+      "TITLE": "About TTA",
+      "SUBTITLE": "Trading and distribution company connecting world-class manufacturers with diverse markets worldwide"
+    }
+  },
+  "ABOUT": {
+    "TABLE_OF_CONTENTS": {
+      "TITLE": "Contents",
+      "SECTIONS": [
+        "Our Vision",
+        "About Us & Our Role",
+        "Our Mission",
+        "Our Core Pillars",
+        "Our Strategic Reach",
+        "Our Business Model: Built on Teamwork",
+        "Trusted Partnerships Across Industries",
+        "Our Principals",
+        "Our Partners",
+        "Who We Are"
+      ]
+    },
+    "VISION": {
+      "TITLE": "Our Vision",
+      "DESCRIPTION": "We aim to be the leading bridge between global manufacturers and markets worldwide—enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all.",
+      "DETAILED_DESCRIPTION": "Our focus is helping outstanding regional companies scale globally. We represent some of the finest start-ups and mid-sized businesses ready to expand. With hands-on operational experience—from building route-to-market strategies to restructuring—we deliver proven results. We are a lean, agile team, bringing unmatched value to every partnership.",
+      "WHY_IT_MATTERS": "Why it matters",
+      "BENEFITS": [
+        "Seamless connection between manufacturers and global markets",
+        "Proven expertise in scaling regional companies internationally",
+        "Lean, agile approach delivering maximum value"
+      ]
+    },
+    "ABOUT_ROLE": {
+      "TITLE": "About Us & Our Role",
+      "DESCRIPTION": "TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide. With a strong international presence, deep market knowledge, and an extensive partner network, we deliver value, visibility, and scale for brands.",
+      "STATISTICS": "We manage top global brands in over 100 countries, supported by 80+ years of expertise in international expansion.",
+      "DIAGRAM_LABELS": {
+        "MANUFACTURERS": "Manufacturers",
+        "TTA": "TTA",
+        "MARKETS": "Markets"
+      }
+    },
+    "MISSION": {
+      "TITLE": "Our Mission",
+      "DESCRIPTION": "We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain.",
+      "GOALS": [
+        "Identify the right distributors for your brand",
+        "Design cost-efficient go-to-market strategies",
+        "Benefit manufacturers and customers alike"
+      ]
+    },
+    "CORE_PILLARS": {
+      "TITLE": "Our Core Pillars",
+      "DESCRIPTION": "Market Knowledge, Continuous Growth, and Win-Win Partnerships form the foundation of our success.",
+      "PILLARS": [
+        {
+          "TITLE": "Market Knowledge",
+          "SHORT_DESCRIPTION": "Global insights with local expertise to match products with channels.",
+          "DETAILED_DESCRIPTION": "Combining global insights with local expertise to match the right products with the right channels, supported by targeted marketing strategies."
+        },
+        {
+          "TITLE": "Continuous Growth",
+          "SHORT_DESCRIPTION": "Adapting to markets and building mutually beneficial relationships.",
+          "DETAILED_DESCRIPTION": "Adapting to changing markets and building strong, mutually beneficial relationships for sustainable success."
+        },
+        {
+          "TITLE": "Win-Win Partnerships",
+          "SHORT_DESCRIPTION": "Ensuring profitability and long-term trust across the value chain.",
+          "DETAILED_DESCRIPTION": "Aligning with supplier goals to ensure profitability and long-term trust across the value chain."
+        }
+      ],
+      "BUTTONS": {
+        "SHOW_LESS": "Show less",
+        "READ_MORE": "Read more"
+      }
+    },
+    "STRATEGIC_REACH": {
+      "TITLE": "Our Strategic Reach",
+      "DESCRIPTION": "TTA serves as a vital link between international manufacturers and global markets. We cover key economies and are expanding into high-potential regions. Our expertise helps brands navigate diverse markets and achieve sustainable growth.",
+      "GLOBAL_PRESENCE": "Global Presence"
+    },
+    "BUSINESS_MODEL": {
+      "TITLE": "Our Business Model: Built on Teamwork",
+      "DESCRIPTION": "Teamwork is the foundation of our success. TTA operates through a global network of partners, distributors, and channels—including B2B, online platforms, modern trade, and traditional retail. Our scalable solutions ensure consistent supply, cost efficiency, and outstanding service.",
+      "PROCESSES": [
+        {
+          "TITLE": "Sourcing",
+          "DESCRIPTION": "Connect with world-class manufacturers and select premium products"
+        },
+        {
+          "TITLE": "Distribution",
+          "DESCRIPTION": "Build scalable networks through trusted partners across channels"
+        },
+        {
+          "TITLE": "Sales",
+          "DESCRIPTION": "Deliver products through B2B, online, modern and traditional retail"
+        },
+        {
+          "TITLE": "Marketing",
+          "DESCRIPTION": "Create targeted strategies for visibility and market growth"
+        },
+        {
+          "TITLE": "Support",
+          "DESCRIPTION": "Ensure consistent supply, cost efficiency, and outstanding service"
+        }
+      ],
+      "TAGLINE": "At TTA, we don't just distribute products—we create markets."
+    },
+    "TRUSTED_PARTNERSHIPS": {
+      "TITLE": "Trusted Partnerships Across Industries",
+      "DESCRIPTION": "We collaborate with leading brands to build sustainable value chains and long-term benefits for all stakeholders.",
+      "PARTNERSHIPS": [
+        {
+          "TITLE": "Manufacturing Excellence",
+          "COMPANY": "Global Manufacturing Co.",
+          "DESCRIPTION": "Driving efficiency and innovation in manufacturing processes, delivering world-class products to diverse markets with consistent quality and reliability.",
+          "ACHIEVEMENT": "Established sustainable supply chains"
+        },
+        {
+          "TITLE": "Distribution Network",
+          "COMPANY": "Worldwide Distributors",
+          "DESCRIPTION": "Building comprehensive distribution networks that connect products with markets efficiently, ensuring optimal reach and market penetration across regions.",
+          "ACHIEVEMENT": "Expanded market coverage significantly"
+        }
+      ],
+      "INDUSTRIES_SECTION": {
+        "TITLE": "Industries We Serve",
+        "INDUSTRIES": [
+          "Manufacturing",
+          "Distribution",
+          "Retail",
+          "Consumer Goods",
+          "Technology",
+          "Business Services"
+        ]
+      }
+    },
+    "PRINCIPALS": {
+      "TITLE": "Our Principals",
+      "DESCRIPTION": "TTA's strength lies in trusted partnerships with world-class distributors and strategic principals. We know what to look for in top-tier distributors and how to design cost-effective routes-to-market that benefit all parties.",
+      "INTRO": "Some of the key global principals we work with include:",
+      "PRINCIPALS": [
+        {
+          "COMPANY": "Global Manufacturing Co.",
+          "CATEGORY": "Manufacturing",
+          "DESCRIPTION": "Leading manufacturer delivering innovative products and solutions worldwide with a commitment to quality and sustainability."
+        },
+        {
+          "COMPANY": "Worldwide Distributors",
+          "CATEGORY": "Distribution",
+          "DESCRIPTION": "Extensive distribution network connecting products to markets efficiently across multiple regions and channels."
+        },
+        {
+          "COMPANY": "International Retail Chain",
+          "CATEGORY": "Retail",
+          "DESCRIPTION": "Major retail partner providing direct access to consumers through modern trade channels and traditional retail outlets."
+        },
+        {
+          "COMPANY": "Global Brands Ltd.",
+          "CATEGORY": "Consumer Goods",
+          "DESCRIPTION": "Trusted consumer goods manufacturer with strong brand recognition and market presence across diverse categories."
+        },
+        {
+          "COMPANY": "Strategic Partners Group",
+          "CATEGORY": "Business Services",
+          "DESCRIPTION": "Professional services partner providing strategic insights and operational support for business growth and optimization."
+        },
+        {
+          "COMPANY": "Market Leaders Inc.",
+          "CATEGORY": "Technology",
+          "DESCRIPTION": "Innovative technology company bringing cutting-edge solutions to market through strategic partnerships and channels."
+        }
+      ]
+    },
+    "PARTNERS": {
+      "TITLE": "Our Partners",
+      "DESCRIPTION": "TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions.",
+      "PARTNERS": [
+        {
+          "NAME": "Mega Prime",
+          "CATEGORY": "Food & Beverage",
+          "DESCRIPTION": "Premium canned sardines and tuna with strong consumer loyalty in multiple markets."
+        },
+        {
+          "NAME": "Bauducco",
+          "CATEGORY": "Snacks",
+          "DESCRIPTION": "Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes."
+        },
+        {
+          "NAME": "pH Plex",
+          "CATEGORY": "Haircare",
+          "DESCRIPTION": "DIY-friendly haircare products repairing damage from coloring, bleaching, and styling."
+        },
+        {
+          "NAME": "Kaly",
+          "CATEGORY": "Food & Beverage",
+          "DESCRIPTION": "Premium syrup brand offering rich flavor and quality for beverages and culinary uses."
+        },
+        {
+          "NAME": "Jucai",
+          "CATEGORY": "Food & Beverage",
+          "DESCRIPTION": "High-quality Acai products meeting global standards."
+        }
+      ],
+      "CALL_TO_ACTION": {
+        "TITLE": "Ready to Partner with Us?",
+        "DESCRIPTION": "Join our network of trusted partners and expand your market reach globally.",
+        "BUTTON": "Get in Touch"
+      }
+    }
+  },
+  "WHO_WE_ARE": {
+    "TITLE": "Who We Are",
+    "DESCRIPTION": "TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:",
+    "TEAM_PREVIEW": {
+      "DESCRIPTION": "TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:",
+      "MEET_TEAM_BUTTON": "Meet the full team"
+    },
+    "TEAM_MEMBERS": [
+      {
+        "NAME": "Nidal Al Zaatari",
+        "TITLE": "Managing Partner",
+        "SHORT_BIO": "With over three decades of experience driving business growth and strategy across multiple sectors, specializing in building sustainable, high-performing commercial organizations.",
+        "FULL_BIO": "With over three decades of experience driving business growth and strategy across multiple sectors, I specialize in building sustainable, high-performing commercial organizations. My expertise spans energy, finance, marketing, sales, digital transformation, and e-commerce, enabling me to design and execute long-term business strategies that deliver consistent revenue and profit growth. As Chief Commercial Officer at Fine Hygienic Holding, I lead diverse business channels across 35+ countries and seven clusters, managing modern trade, traditional trade, HORECA, and distributor markets. I work closely with investors to identify merger and acquisition opportunities, driving double-digit annual growth while fostering a culture of sustainability, innovation, and excellence. A firm believer in continuous learning and empowerment, I'm passionate about creating agile, forward-thinking FMCG organizations through optimized strategies and digital innovation. I aim to build thriving business ecosystems that generate lasting value and impact across global markets."
+      },
+      {
+        "NAME": "James Michael Lafferty",
+        "TITLE": "Managing Partner",
+        "SHORT_BIO": "Chief Executive Officer of Fine Hygienic Holding and one of the most dynamic and multifaceted CEOs in the world, with nearly 40 years of global experience.",
+        "FULL_BIO": "James Michael Lafferty is the Chief Executive Officer of Fine Hygienic Holding (FHH) and one of the most dynamic and multifaceted CEOs in the world. With nearly 40 years of global experience, he has led top FMCG companies including Procter & Gamble, Coca-Cola, and British American Tobacco across five continents. Beyond his corporate achievements, James is an Olympic coach, award-winning journalist, college professor, and world champion athlete. He has coached national and Olympic-level athletes, most notably guiding pole-vaulter EJ Obiena to a world #2 ranking and a 4th place finish at the 2024 Paris Olympics. A passionate advocate for wellness and leadership, James has been recognized globally — named CEO of the Year by both the Burj CEO Awards and the GCC Best Employer Awards, and listed multiple times by Forbes Middle East among the region's Top 100 CEOs."
+      },
+      {
+        "NAME": "Ruslan Humbatov",
+        "TITLE": "Commercial Executive",
+        "SHORT_BIO": "Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region.",
+        "FULL_BIO": "Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region. Recipient of the Global P&G CEO Award for outstanding performance. Skilled in distributor network management, market expansion, and strategic planning, with a proven record of driving sustainable growth and operational excellence. A certified P&G Trainer, I have established Data & Analytics Centers and led impactful capability-building programs that empowered teams and strengthened organizational performance. With a strong commercial mindset, cross-cultural expertise, and a passion for developing people, I excel in building high-performing teams and fostering long-term business success in dynamic markets."
+      },
+      {
+        "NAME": "Ahmad Al Awamleh",
+        "TITLE": "Business Development Manager",
+        "SHORT_BIO": "Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions.",
+        "FULL_BIO": "Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions. Known for a data-driven approach and strong leadership in optimizing quality, compliance, and performance, with successful partnerships with global names such as Red Bull and Floward, contributing to increased market share and customer satisfaction. Skilled in building scalable systems, improving efficiency, and developing strategies that align innovation with commercial success. Passionate about continuous improvement and sustainable growth, with a focus on delivering measurable results that enhance brand reputation, strengthen operations, and ensure long-term profitability."
+      }
+    ],
+    "BUTTONS": {
+      "READ_LESS": "Read Less",
+      "READ_MORE": "Read More"
+    }
+  },
+  "CONTACT": {
+    "GET_IN_TOUCH": {
+      "TITLE": "Get In Touch",
+      "DESCRIPTION": "Ready to partner with us? Let's start the conversation.",
+      "CALL_US": "Call Us",
+      "LOCATIONS": [
+        "Dubai, United Arab Emirates",
+        "Amman, Jordan",
+        "Baku, Azerbaijan"
+      ],
+      "DUBAI_OFFICE": "Dubai Office",
+      "VIEW_ON_MAPS": "View on Maps",
+      "ADDRESS": "Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates"
+    },
+    "CONTACT_NUMBERS": [
+      "+971 56 750 9403",
+      "+962 7 9599 0880",
+      "+994 50 265 7442"
+    ],
+    "MODAL": {
+      "TITLE": "Contact Information",
+      "CLOSE_BUTTON": "Close contact information",
+      "PHONE_NUMBERS": "Phone Numbers",
+      "LOCATIONS": [
+        "Dubai, United Arab Emirates",
+        "Amman, Jordan",
+        "Baku, Azerbaijan"
+      ],
+      "ADDRESS": "Address",
+      "FULL_ADDRESS": "Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates",
+      "ARIA_LABELS": [
+        "Open Dubai office location in Google Maps",
+        "Call Dubai office",
+        "Call Amman office",
+        "Call Baku office"
+      ]
+    }
+  },
+  "FOOTER": {
+    "COMPANY_INFO": {
+      "COMPANY_NAME": "The Turnaround Artists",
+      "DESCRIPTION": "Trading and distribution company connecting world-class manufacturers with diverse markets worldwide."
+    },
+    "QUICK_LINKS": {
+      "TITLE": "Quick Links",
+      "LINKS": [
+        "Home",
+        "About Us",
+        "Who We Are",
+        "Contact"
+      ]
+    },
+    "CONTACT_SECTION": {
+      "TITLE": "Contact",
+      "VIEW_NUMBERS": "View numbers"
+    },
+    "LEADERSHIP": {
+      "TITLE": "Leadership",
+      "MEMBERS": [
+        {
+          "NAME": "James Michael Lafferty",
+          "TITLE": "Managing Partner"
+        },
+        {
+          "NAME": "Nedal Al Zatari",
+          "TITLE": "Managing Partner"
+        }
+      ]
+    },
+    "COPYRIGHT": "TTA - The Turnaround Artists. All rights reserved."
+  },
+  "PAGES": {
+    "HOME_SECTIONS": {
+      "WHY_CHOOSE_TTA": {
+        "TITLE": "Why Choose TTA?",
+        "POINTS": [
+          "Proven leadership from P&G, Coca-Cola, BAT & Fine Hygienic executives",
+          "$100M+ business scaling experience across 50+ markets",
+          "Real portfolio: PureBorn, Mega Prime, Bauducco & more",
+          "Hands-on route-to-market & restructuring expertise"
+        ]
+      },
+      "CORE_PILLARS": {
+        "PILLARS": [
+          {
+            "TITLE": "Market Knowledge",
+            "DESCRIPTION": "Global insights with local expertise"
+          },
+          {
+            "TITLE": "Continuous Growth",
+            "DESCRIPTION": "Adapting to changing markets"
+          },
+          {
+            "TITLE": "Win-Win Partnerships",
+            "DESCRIPTION": "Ensuring profitability and trust"
+          }
+        ]
+      },
+      "BUSINESS_MODEL": {
+        "CHANNELS": [
+          {
+            "TITLE": "B2B",
+            "DESCRIPTION": "Business partnerships"
+          },
+          {
+            "TITLE": "Online Platforms",
+            "DESCRIPTION": "Digital distribution"
+          },
+          {
+            "TITLE": "Modern Trade",
+            "DESCRIPTION": "Retail excellence"
+          },
+          {
+            "TITLE": "Traditional Retail",
+            "DESCRIPTION": "Established channels"
+          }
+        ]
+      },
+      "FEATURE_HIGHLIGHTS": [
+        "Manufacturing",
+        "Distribution",
+        "Retail",
+        "Consumer Goods",
+        "Business Services",
+        "Technology"
+      ],
+      "GLOBAL_PARTNER_NETWORK": {
+        "TITLE": "Global Partner Network"
+      }
+    }
+  },
+  "COMMON": {
+    "READ_MORE": "Read more",
+    "FLOATING_ACTIONS": {
+      "ARIA_LABELS": [
+        "Contact Us",
+        "Back to Top"
+      ]
+    },
+    "SEO_META": {
+      "PAGE_TITLE": "TTA - The Turnaround Artists | Strategic Distribution Excellence in Middle East",
+      "META_DESCRIPTION": "TTA connects world-class brands with thriving GCC and Middle East markets through trusted distribution partnerships and proven expertise. Dubai-based trading and distribution company.",
+      "META_KEYWORDS": "TTA, The Turnaround Artists, distribution, trading, Dubai, GCC, Middle East, strategic partnerships, brand distribution",
+      "META_AUTHOR": "TTA - The Turnaround Artists",
+      "OG_TITLE": "TTA - The Turnaround Artists | Strategic Distribution Excellence",
+      "OG_DESCRIPTION": "Connecting world-class brands with thriving GCC and Middle East markets through trusted partnerships and proven expertise.",
+      "OG_TYPE": "website",
+      "OG_URL": "https://tta-dubai.com",
+      "TWITTER_TITLE": "TTA - The Turnaround Artists",
+      "TWITTER_DESCRIPTION": "Strategic distribution excellence across the Middle East."
+    },
+    "LOADING_SCREEN": {
+      "LOADING_TITLE": "Loading TTA...",
+      "LOADING_MESSAGE": "Please wait while we prepare your experience."
+    },
+    "IMAGE_ALT_TEXT": {
+      "HERO_LOGO": "TTA - The Turnaround Artists",
+      "FOOTER_LOGO": "TTA Logo",
+      "PARTNER_LOGOS": [
+        "Mega Prime",
+        "Bauducco",
+        "pH Plex",
+        "Kaly",
+        "Jucai"
+      ],
+      "TEAM_PHOTOS": "Photo of"
+    },
+    "ARIA_LABELS": {
+      "NAVIGATION": [
+        "Toggle navigation menu",
+        "Toggle navigation",
+        "Close contact information",
+        "View all contact numbers and address",
+        "Open Dubai office location in Google Maps",
+        "Call Dubai office",
+        "Call Amman office",
+        "Call Baku office",
+        "Open location in Google Maps",
+        "Contact Us",
+        "Back to Top"
+      ],
+      "TEAM_BIO_BUTTONS": [
+        "Read less about",
+        "Read more about"
+      ]
+    }
+  }
+}
