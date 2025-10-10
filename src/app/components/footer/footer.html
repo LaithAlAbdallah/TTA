@@ -3,52 +3,52 @@
     <div class="footer-grid">
       <div class="footer-section">
         <img src="assets/images/Full-LOGO.png" alt="TTA Logo" class="footer-logo">
-        <p class="footer-tagline">The Turnaround Artists</p>
-        <p class="footer-description">Trading and distribution company connecting world-class manufacturers with diverse markets worldwide.</p>
+        <p class="footer-tagline">{{ 'FOOTER.COMPANY_INFO.0' | translate }}</p>
+        <p class="footer-description">{{ 'FOOTER.COMPANY_INFO.1' | translate }}</p>
       </div>
 
       <div class="footer-section">
-        <h3 class="footer-heading">Quick Links</h3>
+        <h3 class="footer-heading">{{ 'FOOTER.QUICK_LINKS.0' | translate }}</h3>
         <nav class="footer-nav">
-          <a href="/" class="footer-link">Home</a>
-          <a href="/about" class="footer-link">About Us</a>
-          <a href="/about#who-we-are" class="footer-link">Who We Are</a>
-          <a (click)="navigateToContact($event)" class="footer-link">Contact</a>
+          <a href="/" class="footer-link">{{ 'FOOTER.QUICK_LINKS.1' | translate }}</a>
+          <a href="/about" class="footer-link">{{ 'FOOTER.QUICK_LINKS.2' | translate }}</a>
+          <a href="/about#who-we-are" class="footer-link">{{ 'FOOTER.QUICK_LINKS.3' | translate }}</a>
+          <a (click)="navigateToContact($event)" class="footer-link">{{ 'FOOTER.QUICK_LINKS.4' | translate }}</a>
         </nav>
       </div>
 
       <div class="footer-section">
-        <h3 class="footer-heading">Contact</h3>
+        <h3 class="footer-heading">{{ 'FOOTER.CONTACT_SECTION.0' | translate }}</h3>
         <div class="contact-micro-panel">
           <div class="contact-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="contact-icon">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
-            <a (click)="navigateToContact($event)" class="contact-link-primary">Contact</a>
+            <a (click)="navigateToContact($event)" class="contact-link-primary">{{ 'FOOTER.CONTACT_SECTION.0' | translate }}</a>
           </div>
           <button (click)="openContactModal()" class="view-numbers-btn" aria-label="View all contact numbers and address">
-            View numbers
+            {{ 'FOOTER.CONTACT_SECTION.1' | translate }}
           </button>
         </div>
       </div>
 
       <div class="footer-section">
-        <h3 class="footer-heading">Leadership</h3>
+        <h3 class="footer-heading">{{ 'FOOTER.LEADERSHIP.0' | translate }}</h3>
         <div class="leadership">
           <div class="leader">
-            <p class="leader-name">James Michael Lafferty</p>
-            <p class="leader-title">Managing Partner</p>
+            <p class="leader-name">{{ 'FOOTER.LEADERSHIP.1' | translate }}</p>
+            <p class="leader-title">{{ 'FOOTER.LEADERSHIP.2' | translate }}</p>
           </div>
           <div class="leader">
-            <p class="leader-name">Nedal Al Zatari</p>
-            <p class="leader-title">Managing Partner</p>
+            <p class="leader-name">{{ 'FOOTER.LEADERSHIP.3' | translate }}</p>
+            <p class="leader-title">{{ 'FOOTER.LEADERSHIP.4' | translate }}</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="copyright">&copy; {{ currentYear }} TTA - The Turnaround Artists. All rights reserved.</p>
+      <p class="copyright">&copy; {{ currentYear }} {{ 'FOOTER.COPYRIGHT.0' | translate }}</p>
     </div>
   </div>
 
@@ -63,10 +63,10 @@
          (click)="$event.stopPropagation()"
          role="document">
       <div class="modal-header">
-        <h2 id="contact-modal-title" class="modal-title">Contact Information</h2>
+        <h2 id="contact-modal-title" class="modal-title">{{ 'CONTACT.MODAL.0' | translate }}</h2>
         <button (click)="closeContactModal()" 
                 class="modal-close" 
-                aria-label="Close contact information">
+                [attr.aria-label]="'CONTACT.MODAL.1' | translate">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -81,20 +81,20 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="contact-item-icon">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
-              <span class="contact-item-label">Phone Numbers</span>
+              <span class="contact-item-label">{{ 'CONTACT.MODAL.2' | translate }}</span>
             </div>
             <div class="phone-numbers">
-              <a href="tel:+971567509403" class="phone-link" aria-label="Call Dubai office">
+              <a href="tel:+971567509403" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.7' | translate">
                 <span class="phone-number">+971 56 750 9403</span>
-                <span class="phone-location">Dubai, United Arab Emirates</span>
+                <span class="phone-location">{{ 'CONTACT.MODAL.3' | translate }}</span>
               </a>
-              <a href="tel:+962795990880" class="phone-link" aria-label="Call Amman office">
+              <a href="tel:+962795990880" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.8' | translate">
                 <span class="phone-number">+962 7 9599 0880</span>
-                <span class="phone-location">Amman, Jordan</span>
+                <span class="phone-location">{{ 'CONTACT.MODAL.4' | translate }}</span>
               </a>
-              <a href="tel:+994502657442" class="phone-link" aria-label="Call Baku office">
+              <a href="tel:+994502657442" class="phone-link" [attr.aria-label]="'CONTACT.MODAL.9' | translate">
                 <span class="phone-number">+994 50 265 7442</span>
-                <span class="phone-location">Baku, Azerbaijan</span>
+                <span class="phone-location">{{ 'CONTACT.MODAL.5' | translate }}</span>
               </a>
             </div>
           </div>
@@ -105,14 +105,14 @@
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <span class="contact-item-label">Address</span>
+              <span class="contact-item-label">{{ 'CONTACT.MODAL.6' | translate }}</span>
             </div>
             <a href="https://www.google.com/maps/search/?api=1&query=Mohammed+Salem+Bakhit+Al+Bakhit+Al+Falsi%2C+Hor+Al+Anz+East%2C+Owned+Property+No.+175-M17%2C+Dubai%2C+United+Arab+Emirates" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="address-link" 
-               aria-label="Open Dubai office location in Google Maps">
-              <span class="address-text">Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates</span>
+               [attr.aria-label]="'CONTACT.MODAL.6' | translate">
+              <span class="address-text">{{ 'CONTACT.MODAL.7' | translate }}</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="external-link-icon">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15,3 21,3 21,9"></polyline>
