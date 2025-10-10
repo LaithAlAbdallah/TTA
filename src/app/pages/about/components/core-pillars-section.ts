@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Pillar {
   id: string;
@@ -13,24 +14,52 @@ interface Pillar {
 @Component({
   selector: 'app-core-pillars-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="core-pillars" class="core-pillars-section">
       <div class="pillars-container">
-        <h2 class="section-title">Our Core Pillars</h2>
-        <p class="section-intro">Market Knowledge, Continuous Growth, and Win-Win Partnerships form the foundation of our success.</p>
+        <h2 class="section-title">{{ 'ABOUT.CORE_PILLARS.0' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.CORE_PILLARS.1' | translate }}</p>
 
         <div class="pillars-grid">
-          <div *ngFor="let pillar of pillars" class="pillar-card" [class.expanded]="pillar.expanded">
-            <div class="pillar-icon" [innerHTML]="pillar.icon"></div>
-            <h3 class="pillar-title">{{ pillar.title }}</h3>
-            <p class="pillar-summary">{{ pillar.summary }}</p>
-            <div class="pillar-full" *ngIf="pillar.expanded">
-              <p>{{ pillar.fullContent }}</p>
+          <div class="pillar-card" [class.expanded]="pillars[0].expanded">
+            <div class="pillar-icon" [innerHTML]="pillars[0].icon"></div>
+            <h3 class="pillar-title">{{ 'ABOUT.CORE_PILLARS.2' | translate }}</h3>
+            <p class="pillar-summary">{{ 'ABOUT.CORE_PILLARS.3' | translate }}</p>
+            <div class="pillar-full" *ngIf="pillars[0].expanded">
+              <p>{{ 'ABOUT.CORE_PILLARS.4' | translate }}</p>
             </div>
-            <button class="read-more-btn" (click)="togglePillar(pillar)">
-              {{ pillar.expanded ? 'Show less' : 'Read more' }}
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="pillar.expanded">
+            <button class="read-more-btn" (click)="togglePillar(pillars[0])">
+              {{ pillars[0].expanded ? ('COMMON.SHOW_LESS' | translate) : ('COMMON.READ_MORE' | translate) }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="pillars[0].expanded">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="pillar-card" [class.expanded]="pillars[1].expanded">
+            <div class="pillar-icon" [innerHTML]="pillars[1].icon"></div>
+            <h3 class="pillar-title">{{ 'ABOUT.CORE_PILLARS.5' | translate }}</h3>
+            <p class="pillar-summary">{{ 'ABOUT.CORE_PILLARS.6' | translate }}</p>
+            <div class="pillar-full" *ngIf="pillars[1].expanded">
+              <p>{{ 'ABOUT.CORE_PILLARS.7' | translate }}</p>
+            </div>
+            <button class="read-more-btn" (click)="togglePillar(pillars[1])">
+              {{ pillars[1].expanded ? ('COMMON.SHOW_LESS' | translate) : ('COMMON.READ_MORE' | translate) }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="pillars[1].expanded">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+          </div>
+          <div class="pillar-card" [class.expanded]="pillars[2].expanded">
+            <div class="pillar-icon" [innerHTML]="pillars[2].icon"></div>
+            <h3 class="pillar-title">{{ 'ABOUT.CORE_PILLARS.8' | translate }}</h3>
+            <p class="pillar-summary">{{ 'ABOUT.CORE_PILLARS.9' | translate }}</p>
+            <div class="pillar-full" *ngIf="pillars[2].expanded">
+              <p>{{ 'ABOUT.CORE_PILLARS.10' | translate }}</p>
+            </div>
+            <button class="read-more-btn" (click)="togglePillar(pillars[2])">
+              {{ pillars[2].expanded ? ('COMMON.SHOW_LESS' | translate) : ('COMMON.READ_MORE' | translate) }}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="pillars[2].expanded">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
