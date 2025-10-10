@@ -16,6 +16,11 @@ body {
   background: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+  transition: direction 0.3s ease;
+}
+
+[dir="rtl"] body {
+  font-family: 'Tajawal', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,4 +100,56 @@ button {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* RTL Direction Fixes for Numeric Values */
+/* Phone numbers, statistics, and other numeric values should maintain LTR direction */
+.contact-number,
+.phone-number-ltr,
+.stat-value,
+.numeric-value,
+[class*="phone"],
+[class*="number"],
+[class*="stat"] {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  display: inline-block;
+}
+
+[dir="rtl"] .contact-number,
+[dir="rtl"] .phone-number-ltr,
+[dir="rtl"] .stat-value,
+[dir="rtl"] .numeric-value,
+[dir="rtl"] [class*="phone"],
+[dir="rtl"] [class*="number"],
+[dir="rtl"] [class*="stat"] {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+}
+
+/* Additional RTL fixes for footer elements */
+[dir="rtl"] .view-numbers-btn {
+  direction: rtl !important;
+  text-align: center !important;
+  unicode-bidi: bidi-override !important;
+}
+
+[dir="rtl"] .phone-location {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: bidi-override !important;
+}
+
+[dir="rtl"] .contact-item-label {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: bidi-override !important;
+}
+
+[dir="rtl"] .modal-title {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: bidi-override !important;
 }

@@ -206,11 +206,53 @@
   outline-offset: 2px;
 }
 
+/* Phone number direction fix for RTL languages */
 .contact-number {
   font-weight: 600;
   color: white;
   font-size: 1.125rem;
   transition: color 0.3s ease;
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  display: inline-block;
+}
+
+/* Ensure phone numbers are not affected by RTL */
+[dir="rtl"] .contact-number {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+}
+
+/* Additional phone number direction fix */
+.phone-number-ltr {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  display: inline-block;
+}
+
+[dir="rtl"] .phone-number-ltr {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+}
+
+/* General numeric value direction fix for RTL languages */
+.stat-value,
+.numeric-value {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  display: inline-block;
+}
+
+[dir="rtl"] .stat-value,
+[dir="rtl"] .numeric-value {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
 }
 
 .contact-location {

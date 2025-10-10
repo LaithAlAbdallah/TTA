@@ -1,37 +1,38 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mission-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="mission" class="mission-section">
       <div class="mission-container">
-        <h2 class="section-title">Our Mission</h2>
+        <h2 class="section-title">{{ 'ABOUT.MISSION.TITLE' | translate }}</h2>
         <div class="mission-card">
           <div class="gold-accent"></div>
           <blockquote class="mission-statement">
-            We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain.
+            {{ 'ABOUT.MISSION.DESCRIPTION' | translate }}
           </blockquote>
           <div class="mission-actions">
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Identify the right distributors for your brand</span>
+              <span>{{ 'ABOUT.MISSION.GOALS.0' | translate }}</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Design cost-efficient go-to-market strategies</span>
+              <span>{{ 'ABOUT.MISSION.GOALS.1' | translate }}</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Benefit manufacturers and customers alike</span>
+              <span>{{ 'ABOUT.MISSION.GOALS.2' | translate }}</span>
             </div>
           </div>
         </div>
@@ -45,6 +46,11 @@ import { CommonModule } from '@angular/common';
       scroll-margin-top: 100px;
       position: relative;
       overflow: hidden;
+    }
+
+    /* RTL fixes for mission section */
+    [dir="rtl"] .mission-section {
+      direction: rtl;
     }
 
     .mission-section::before {
@@ -65,6 +71,11 @@ import { CommonModule } from '@angular/common';
       z-index: 1;
     }
 
+    /* RTL fixes for mission container */
+    [dir="rtl"] .mission-container {
+      direction: rtl;
+    }
+
     .section-title {
       font-size: 2.5rem;
       font-weight: 700;
@@ -72,11 +83,28 @@ import { CommonModule } from '@angular/common';
       margin: 0 0 48px;
       text-align: center;
       line-height: 1.2;
+      direction: ltr;
+    }
+
+    /* RTL fixes for section title */
+    [dir="rtl"] .section-title {
+      direction: rtl;
+      text-align: center;
+      unicode-bidi: normal;
+      writing-mode: horizontal-tb;
+      text-orientation: mixed;
     }
 
     .mission-card {
       position: relative;
       padding-left: 48px;
+    }
+
+    /* RTL fixes for mission card */
+    [dir="rtl"] .mission-card {
+      padding-left: 0;
+      padding-right: 48px;
+      direction: rtl;
     }
 
     .gold-accent {
@@ -88,6 +116,12 @@ import { CommonModule } from '@angular/common';
       background: linear-gradient(to bottom, #D4AF37 0%, #f0d06f 100%);
     }
 
+    /* RTL fixes for gold accent */
+    [dir="rtl"] .gold-accent {
+      left: auto;
+      right: 0;
+    }
+
     .mission-statement {
       font-size: 2rem;
       font-weight: 500;
@@ -95,6 +129,31 @@ import { CommonModule } from '@angular/common';
       line-height: 1.6;
       margin: 0 0 48px;
       quotes: """ """ "'" "'";
+      direction: ltr;
+      text-align: left;
+      unicode-bidi: normal;
+    }
+
+    /* RTL fixes for mission statement */
+    [dir="rtl"] .mission-statement {
+      direction: rtl !important;
+      text-align: right !important;
+      unicode-bidi: normal;
+      writing-mode: horizontal-tb;
+      text-orientation: mixed;
+    }
+
+    /* Additional RTL fix for mission statement text content */
+    [dir="rtl"] .mission-statement * {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+
+    /* Force RTL for mission statement in RTL context */
+    [dir="rtl"] blockquote.mission-statement {
+      direction: rtl !important;
+      text-align: right !important;
+      unicode-bidi: normal !important;
     }
 
     .mission-statement::before {
@@ -104,6 +163,12 @@ import { CommonModule } from '@angular/common';
       vertical-align: -0.4em;
       color: #D4AF37;
       margin-right: 8px;
+    }
+
+    /* RTL fixes for mission statement quote */
+    [dir="rtl"] .mission-statement::before {
+      margin-right: 0;
+      margin-left: 8px;
     }
 
     .mission-actions {
@@ -140,6 +205,17 @@ import { CommonModule } from '@angular/common';
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.9);
       font-weight: 500;
+      direction: ltr;
+      text-align: left;
+    }
+
+    /* RTL fixes for action item text */
+    [dir="rtl"] .action-item span {
+      direction: rtl;
+      text-align: right;
+      unicode-bidi: normal;
+      writing-mode: horizontal-tb;
+      text-orientation: mixed;
     }
 
     @media (max-width: 768px) {
@@ -149,6 +225,13 @@ import { CommonModule } from '@angular/common';
 
       .mission-card {
         padding-left: 32px;
+      }
+
+      /* RTL responsive fixes */
+      [dir="rtl"] .mission-card {
+        padding-left: 0;
+        padding-right: 32px;
+        direction: rtl;
       }
 
       .section-title {

@@ -2,11 +2,11 @@
   <section class="hero">
     <div class="hero-content">
       <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
-      <h1 class="hero-title">Leading Bridge Between Global Manufacturers and Markets Worldwide</h1>
-      <p class="hero-subtitle">Enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all</p>
+      <h1 class="hero-title">{{ 'HERO.HOME_PAGE.TITLE' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'HERO.HOME_PAGE.SUBTITLE' | translate }}</p>
       <div class="hero-cta">
-        <a href="/about" class="btn btn-primary">Learn About Us</a>
-        <a href="#contact" class="btn btn-secondary" (click)="scrollToContact($event)">Contact Us</a>
+        <a href="/about" class="btn btn-primary">{{ 'HERO.HOME_PAGE.LEARN_ABOUT_US_BUTTON' | translate }}</a>
+        <a href="#contact" class="btn btn-secondary" (click)="scrollToContact($event)">{{ 'HERO.HOME_PAGE.CONTACT_US_BUTTON' | translate }}</a>
       </div>
     </div>
   </section>
@@ -15,9 +15,9 @@
     <div class="section-content full-bleed">
       <div class="content-wrapper">
         <div class="text-content">
-          <h2 class="section-title">{{ sections[0].title }}</h2>
-          <p class="section-excerpt">{{ sections[0].excerpt }}</p>
-          <a [href]="'/about#' + sections[0].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <h2 class="section-title">{{ 'ABOUT.VISION.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.VISION.DESCRIPTION' | translate }}</p>
+          <a [href]="'/about#' + sections[0].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
         <div class="visual-content">
           <div class="icon-circle">
@@ -43,17 +43,17 @@
     <div class="section-content two-column">
       <div class="content-wrapper">
         <div class="column">
-          <h2 class="section-title">{{ sections[1].title }}</h2>
-          <p class="section-excerpt">{{ sections[1].excerpt }}</p>
-          <a [href]="'/about#' + sections[1].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <h2 class="section-title">{{ 'ABOUT.ABOUT_ROLE.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.ABOUT_ROLE.DESCRIPTION' | translate }}</p>
+          <a [href]="'/about#' + sections[1].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
         <div class="column highlight-box">
-          <h3>Why Choose TTA?</h3>
+          <h3>{{ 'PAGES.HOME_SECTIONS.WHY_CHOOSE_TTA.TITLE' | translate }}</h3>
           <ul class="bullet-list">
-            <li>Proven leadership from P&G, Coca-Cola, BAT & Fine Hygienic executives</li>
-            <li>$100M+ business scaling experience across 50+ markets</li>
-            <li>Real portfolio: PureBorn, Mega Prime, Bauducco & more</li>
-            <li>Hands-on route-to-market & restructuring expertise</li>
+            <li>{{ 'PAGES.HOME_SECTIONS.WHY_CHOOSE_TTA.POINTS.0' | translate }}</li>
+            <li>{{ 'PAGES.HOME_SECTIONS.WHY_CHOOSE_TTA.POINTS.1' | translate }}</li>
+            <li>{{ 'PAGES.HOME_SECTIONS.WHY_CHOOSE_TTA.POINTS.2' | translate }}</li>
+            <li>{{ 'PAGES.HOME_SECTIONS.WHY_CHOOSE_TTA.POINTS.3' | translate }}</li>
           </ul>
         </div>
       </div>
@@ -76,9 +76,9 @@
           </div>
         </div>
         <div class="text-side">
-          <h2 class="section-title">{{ sections[2].title }}</h2>
-          <p class="section-excerpt">{{ sections[2].excerpt }}</p>
-          <a [href]="'/about#' + sections[2].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <h2 class="section-title">{{ 'ABOUT.MISSION.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.MISSION.DESCRIPTION' | translate }}</p>
+          <a [href]="'/about#' + sections[2].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -87,8 +87,8 @@
   <section class="section section-pillars">
     <div class="section-content cards-cluster">
       <div class="content-wrapper">
-        <h2 class="section-title-center">{{ sections[3].title }}</h2>
-        <p class="section-excerpt-center">{{ sections[3].excerpt }}</p>
+        <h2 class="section-title-center">{{ 'ABOUT.CORE_PILLARS.TITLE' | translate }}</h2>
+        <p class="section-excerpt-center">{{ 'ABOUT.CORE_PILLARS.DESCRIPTION' | translate }}</p>
         <div class="mini-cards">
           <div class="mini-card">
             <div class="card-icon">
@@ -112,8 +112,8 @@
                 <path d="M20 20L12 15M20 20L28 15M20 20L12 25M20 20L28 25" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
               </svg>
             </div>
-            <h3>Market Knowledge</h3>
-            <p>Global insights with local expertise</p>
+            <h3>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.0.TITLE' | translate }}</h3>
+            <p>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.0.DESCRIPTION' | translate }}</p>
           </div>
           <div class="mini-card">
             <div class="card-icon">
@@ -122,8 +122,8 @@
                 <path d="M15 20L20 15L25 20L20 25L15 20Z" fill="white"/>
               </svg>
             </div>
-            <h3>Continuous Growth</h3>
-            <p>Adapting to changing markets</p>
+            <h3>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.1.TITLE' | translate }}</h3>
+            <p>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.1.DESCRIPTION' | translate }}</p>
           </div>
           <div class="mini-card">
             <div class="card-icon">
@@ -133,11 +133,11 @@
                 <path d="M20 15L20 25" stroke="white" stroke-width="2"/>
               </svg>
             </div>
-            <h3>Win-Win Partnerships</h3>
-            <p>Ensuring profitability and trust</p>
+            <h3>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.2.TITLE' | translate }}</h3>
+            <p>{{ 'PAGES.HOME_SECTIONS.CORE_PILLARS.PILLARS.2.DESCRIPTION' | translate }}</p>
           </div>
         </div>
-        <a [href]="'/about#' + sections[3].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+        <a [href]="'/about#' + sections[3].id" class="read-more centered">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -146,9 +146,9 @@
     <div class="section-content alternating-layout">
       <div class="content-wrapper reverse">
         <div class="text-side">
-          <h2 class="section-title">{{ sections[4].title }}</h2>
-          <p class="section-excerpt">{{ sections[4].excerpt }}</p>
-          <a [href]="'/about#' + sections[4].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <h2 class="section-title">{{ 'ABOUT.STRATEGIC_REACH.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.STRATEGIC_REACH.DESCRIPTION' | translate }}</p>
+          <a [href]="'/about#' + sections[4].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
         <div class="image-side">
           <div class="map-visual">
@@ -170,8 +170,8 @@
     <div class="section-content timeline-layout">
       <div class="content-wrapper">
         <div class="timeline-header">
-          <h2 class="section-title">{{ sections[5].title }}</h2>
-          <p class="section-excerpt">{{ sections[5].excerpt }}</p>
+          <h2 class="section-title">{{ 'ABOUT.BUSINESS_MODEL.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.BUSINESS_MODEL.DESCRIPTION' | translate }}</p>
         </div>
         <div class="timeline-items">
           <div class="timeline-item">
@@ -182,8 +182,8 @@
               </svg>
             </div>
             <div class="timeline-content">
-              <h3>B2B</h3>
-              <p>Business partnerships</p>
+              <h3>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.0.TITLE' | translate }}</h3>
+              <p>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.0.DESCRIPTION' | translate }}</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -195,8 +195,8 @@
               </svg>
             </div>
             <div class="timeline-content">
-              <h3>Online Platforms</h3>
-              <p>Digital distribution</p>
+              <h3>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.1.TITLE' | translate }}</h3>
+              <p>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.1.DESCRIPTION' | translate }}</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -207,8 +207,8 @@
               </svg>
             </div>
             <div class="timeline-content">
-              <h3>Modern Trade</h3>
-              <p>Retail excellence</p>
+              <h3>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.2.TITLE' | translate }}</h3>
+              <p>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.2.DESCRIPTION' | translate }}</p>
             </div>
           </div>
           <div class="timeline-item">
@@ -219,12 +219,12 @@
               </svg>
             </div>
             <div class="timeline-content">
-              <h3>Traditional Retail</h3>
-              <p>Established channels</p>
+              <h3>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.3.TITLE' | translate }}</h3>
+              <p>{{ 'PAGES.HOME_SECTIONS.BUSINESS_MODEL.CHANNELS.3.DESCRIPTION' | translate }}</p>
             </div>
           </div>
         </div>
-        <a [href]="'/about#' + sections[5].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+        <a [href]="'/about#' + sections[5].id" class="read-more centered">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -244,9 +244,9 @@
           </div>
         </div>
         <div class="text-content">
-          <h2 class="section-title">{{ sections[6].title }}</h2>
-          <p class="section-excerpt">{{ sections[6].excerpt }}</p>
-          <a [href]="'/about#' + sections[6].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <h2 class="section-title">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.DESCRIPTION' | translate }}</p>
+          <a [href]="'/about#' + sections[6].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -277,17 +277,17 @@
             <path d="M20 20L40 15M60 20L40 15M20 60L40 65M60 60L40 65M15 40L20 20M15 40L20 60M65 40L60 20M65 40L60 60" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
           </svg>
         </div>
-        <h2 class="section-title">{{ sections[7].title }}</h2>
-        <p class="section-excerpt">{{ sections[7].excerpt }}</p>
+        <h2 class="section-title">{{ 'ABOUT.PRINCIPALS.TITLE' | translate }}</h2>
+        <p class="section-excerpt">{{ 'ABOUT.PRINCIPALS.DESCRIPTION' | translate }}</p>
         <div class="feature-highlights">
-          <span class="highlight-tag">Manufacturing</span>
-          <span class="highlight-tag">Distribution</span>
-          <span class="highlight-tag">Retail</span>
-          <span class="highlight-tag">Consumer Goods</span>
-          <span class="highlight-tag">Business Services</span>
-          <span class="highlight-tag">Technology</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.0' | translate }}</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.1' | translate }}</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.2' | translate }}</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.3' | translate }}</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.4' | translate }}</span>
+          <span class="highlight-tag">{{ 'PAGES.HOME_SECTIONS.FEATURE_HIGHLIGHTS.5' | translate }}</span>
         </div>
-        <a [href]="'/about#' + sections[7].id" class="read-more centered">Read more <span class="arrow">→</span></a>
+        <a [href]="'/about#' + sections[7].id" class="read-more centered">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -319,12 +319,12 @@
               <path d="M30 30L45 45M90 30L75 45M30 90L45 75M90 90L75 75M60 20L40 20M60 20L80 20M60 100L40 100M60 100L80 100M20 60L40 20M20 60L40 100M100 60L80 20M100 60L80 100" stroke="#D4AF37" stroke-width="1" opacity="0.4"/>
               <circle cx="60" cy="60" r="50" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.3"/>
             </svg>
-            <div class="stat-label">Global Partner Network</div>
+            <div class="stat-label">{{ 'PAGES.HOME_SECTIONS.GLOBAL_PARTNER_NETWORK.TITLE' | translate }}</div>
           </div>
         </div>
         <div class="partners-grid-side">
-          <h2 class="section-title">{{ sections[8].title }}</h2>
-          <p class="section-excerpt">{{ sections[8].excerpt }}</p>
+          <h2 class="section-title">{{ 'ABOUT.PARTNERS.TITLE' | translate }}</h2>
+          <p class="section-excerpt">{{ 'ABOUT.PARTNERS.DESCRIPTION' | translate }}</p>
           <div class="partners-logo-grid">
             <div class="partner-logo-box">
               <img src="assets/images/Mega-Prime.png" alt="Mega Prime">
@@ -342,7 +342,7 @@
               <img src="assets/images/Jucai.png" alt="Jucai">
             </div>
           </div>
-          <a [href]="'/about#' + sections[8].id" class="read-more">Read more <span class="arrow">→</span></a>
+          <a [href]="'/about#' + sections[8].id" class="read-more">{{ 'COMMON.READ_MORE' | translate }} <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -351,8 +351,8 @@
   <section class="section section-team-preview" id="who-we-are">
     <div class="section-content team-showcase">
       <div class="content-wrapper">
-        <h2 class="section-title-center">{{ sections[9].title }}</h2>
-        <p class="section-excerpt-center">TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:</p>
+        <h2 class="section-title-center">{{ 'WHO_WE_ARE.TITLE' | translate }}</h2>
+        <p class="section-excerpt-center">{{ 'WHO_WE_ARE.TEAM_PREVIEW.DESCRIPTION' | translate }}</p>
 
         <div class="team-grid-four">
           <a [href]="'/about#' + member.id" class="team-member-card" *ngFor="let member of teamMembers; let i = index">
@@ -360,14 +360,14 @@
               <img [src]="member.image" [alt]="'Photo of ' + member.name" class="member-image">
             </div>
             <div class="member-info">
-              <h3 class="member-name">{{ member.name }}</h3>
-              <p class="member-title">{{ member.title }}</p>
-              <p class="member-bio">{{ member.shortBio }}</p>
+              <h3 class="member-name">{{ member.name | translate }}</h3>
+              <p class="member-title">{{ member.title | translate }}</p>
+              <p class="member-bio">{{ member.shortBio | translate }}</p>
             </div>
           </a>
         </div>
 
-        <a href="/about#who-we-are" class="read-more centered large">Meet the full team <span class="arrow">→</span></a>
+        <a href="/about#who-we-are" class="read-more centered large">{{ 'WHO_WE_ARE.TEAM_PREVIEW.MEET_TEAM_BUTTON' | translate }} <span class="arrow">→</span></a>
       </div>
     </div>
   </section>

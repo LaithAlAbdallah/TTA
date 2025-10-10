@@ -2,22 +2,22 @@
   <section class="about-hero">
     <div class="hero-content">
       <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
-      <h1 class="hero-title">About TTA</h1>
-      <p class="hero-subtitle">Trading and distribution company connecting world-class manufacturers with diverse markets worldwide</p>
+      <h1 class="hero-title">{{ 'HERO.ABOUT_PAGE.TITLE' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'HERO.ABOUT_PAGE.SUBTITLE' | translate }}</p>
     </div>
   </section>
 
   <div class="about-content-wrapper">
     <aside class="sidebar" [class.open]="sidebarOpen">
-      <button class="sidebar-toggle" (click)="toggleSidebar()" aria-label="Toggle navigation">
+      <button class="sidebar-toggle" (click)="toggleSidebar()" [attr.aria-label]="'NAV.TOGGLE_NAVIGATION' | translate">
         <span class="toggle-icon">☰</span>
       </button>
       <nav class="table-of-contents">
-        <h3 class="toc-title">Contents</h3>
-        <a *ngFor="let section of sections"
-           [href]="'#' + section.id"
+        <h3 class="toc-title">{{ 'ABOUT.TABLE_OF_CONTENTS.TITLE' | translate }}</h3>
+        <a *ngFor="let sectionTitle of tableOfContentsSections; let i = index"
+           [href]="'#' + sectionIds[i]"
            class="toc-link"
-           (click)="scrollToSection($event, section.id)">{{ section.title }}</a>
+           (click)="scrollToSection($event, sectionIds[i])">{{ sectionTitle | translate }}</a>
       </nav>
     </aside>
 
@@ -34,8 +34,8 @@
 
       <section id="who-we-are" class="who-we-are-section">
         <div class="who-we-are-container">
-          <h2 class="section-title">Who We Are</h2>
-          <p class="section-intro">TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:</p>
+          <h2 class="section-title">{{ 'WHO_WE_ARE.TITLE' | translate }}</h2>
+          <p class="section-intro">{{ 'WHO_WE_ARE.DESCRIPTION' | translate }}</p>
 
           <div class="team-members-grid">
             <div class="team-member-card-full" *ngFor="let member of teamMembers; let i = index" [id]="member.id">
@@ -43,17 +43,17 @@
                 <img [src]="member.image" [alt]="'Photo of ' + member.name" class="team-image-full">
               </div>
               <div class="member-details-full">
-                <h3 class="member-name-full">{{ member.name }}</h3>
-                <p class="member-title-full">{{ member.title }}</p>
+                <h3 class="member-name-full">{{ member.name | translate }}</h3>
+                <p class="member-title-full">{{ member.title | translate }}</p>
                 <div class="member-bio-container-full">
-                  <p class="member-bio-short" [class.expanded]="member.isExpanded">{{ member.shortBio }}</p>
-                  <div class="member-bio-full" [class.expanded]="member.isExpanded" [innerHTML]="member.fullBio"></div>
+                  <p class="member-bio-short" [class.expanded]="member.isExpanded">{{ member.shortBio | translate }}</p>
+                  <div class="member-bio-full" [class.expanded]="member.isExpanded">{{ member.fullBio | translate }}</div>
                   <button 
                     class="read-more-btn-full" 
                     (click)="toggleBio(member)"
                     [attr.aria-expanded]="member.isExpanded"
-                    [attr.aria-label]="member.isExpanded ? 'Read less about ' + member.name : 'Read more about ' + member.name">
-                    {{ member.isExpanded ? 'Read Less' : 'Read More' }}
+                    [attr.aria-label]="member.isExpanded ? ('COMMON.ARIA_LABELS.TEAM_BIO_BUTTONS.0' | translate) + ' ' + (member.name | translate) : ('COMMON.ARIA_LABELS.TEAM_BIO_BUTTONS.1' | translate) + ' ' + (member.name | translate)">
+                    {{ member.isExpanded ? ('WHO_WE_ARE.BUTTONS.READ_LESS' | translate) : ('WHO_WE_ARE.BUTTONS.READ_MORE' | translate) }}
                     <span class="arrow" [class.rotated]="member.isExpanded">→</span>
                   </button>
                 </div>

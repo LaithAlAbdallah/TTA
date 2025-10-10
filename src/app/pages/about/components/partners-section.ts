@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 interface Partner {
@@ -12,12 +13,12 @@ interface Partner {
 @Component({
   selector: 'app-partners-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="partners" class="partners-section">
       <div class="partners-container">
-        <h2 class="section-title">Our Partners</h2>
-        <p class="section-intro">TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions.</p>
+        <h2 class="section-title">{{ 'ABOUT.PARTNERS.TITLE' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.PARTNERS.DESCRIPTION' | translate }}</p>
 
         <div class="partners-grid">
           <div *ngFor="let partner of partners" class="partner-card">
@@ -25,16 +26,16 @@ interface Partner {
               <img [src]="'assets/images/' + partner.logo" [alt]="partner.name + ' logo'" class="partner-logo">
             </div>
             <h3 class="partner-name">{{ partner.name }}</h3>
-            <div class="partner-category">{{ partner.category }}</div>
-            <p class="partner-description">{{ partner.description }}</p>
+            <div class="partner-category">{{ partner.category | translate }}</div>
+            <p class="partner-description">{{ partner.description | translate }}</p>
           </div>
         </div>
 
         <div class="cta-section">
           <div class="cta-content">
-            <h3>Ready to Partner with Us?</h3>
-            <p>Join our network of trusted partners and expand your market reach globally.</p>
-            <a (click)="navigateToContact($event)" class="cta-button">Get in Touch</a>
+            <h3>{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.TITLE' | translate }}</h3>
+            <p>{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.DESCRIPTION' | translate }}</p>
+            <a (click)="navigateToContact($event)" class="cta-button">{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.BUTTON' | translate }}</a>
           </div>
         </div>
       </div>
@@ -249,32 +250,32 @@ export class PartnersSection {
   partners: Partner[] = [
     {
       name: 'Mega Prime',
-      category: 'Food & Beverage',
-      description: 'Premium canned sardines and tuna with strong consumer loyalty in multiple markets.',
+      category: 'ABOUT.PARTNERS.PARTNERS.0.CATEGORY',
+      description: 'ABOUT.PARTNERS.PARTNERS.0.DESCRIPTION',
       logo: 'Mega-Prime.png'
     },
     {
       name: 'Bauducco',
-      category: 'Snacks',
-      description: 'Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.',
+      category: 'ABOUT.PARTNERS.PARTNERS.1.CATEGORY',
+      description: 'ABOUT.PARTNERS.PARTNERS.1.DESCRIPTION',
       logo: 'Bauducco.png'
     },
     {
       name: 'pH Plex',
-      category: 'Haircare',
-      description: 'DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.',
+      category: 'ABOUT.PARTNERS.PARTNERS.2.CATEGORY',
+      description: 'ABOUT.PARTNERS.PARTNERS.2.DESCRIPTION',
       logo: 'PHplex.png'
     },
     {
       name: 'Kaly',
-      category: 'Food & Beverage',
-      description: 'Premium syrup brand offering rich flavor and quality for beverages and culinary uses.',
+      category: 'ABOUT.PARTNERS.PARTNERS.3.CATEGORY',
+      description: 'ABOUT.PARTNERS.PARTNERS.3.DESCRIPTION',
       logo: 'Kaly.png'
     },
     {
       name: 'Jucai',
-      category: 'Food & Beverage',
-      description: 'High-quality Acai products meeting global standards.',
+      category: 'ABOUT.PARTNERS.PARTNERS.4.CATEGORY',
+      description: 'ABOUT.PARTNERS.PARTNERS.4.DESCRIPTION',
       logo: 'Jucai.png'
     }
   ];

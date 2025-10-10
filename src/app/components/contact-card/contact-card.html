@@ -9,8 +9,8 @@
   <div class="contact-band-container">
     <!-- Header -->
     <div class="contact-header">
-      <h2 class="contact-title">Get In Touch</h2>
-      <p class="contact-subtitle">Ready to partner with us? Let's start the conversation.</p>
+      <h2 class="contact-title">{{ 'CONTACT.GET_IN_TOUCH.TITLE' | translate }}</h2>
+      <p class="contact-subtitle">{{ 'CONTACT.GET_IN_TOUCH.DESCRIPTION' | translate }}</p>
     </div>
 
     <!-- Two equal blocks -->
@@ -22,20 +22,20 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="block-icon">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
-            <h3 class="block-title">Call Us</h3>
+            <h3 class="block-title">{{ 'CONTACT.GET_IN_TOUCH.CALL_US' | translate }}</h3>
           </div>
           <div class="contact-details">
-            <a href="tel:+971567509403" class="contact-link" aria-label="Call Dubai office">
-              <span class="contact-number">+971 56 750 9403</span>
-              <span class="contact-location">Dubai, United Arab Emirates</span>
+            <a href="tel:+971567509403" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.5' | translate">
+              <span class="contact-number phone-number-ltr">+971 56 750 9403</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.0' | translate }}</span>
             </a>
-            <a href="tel:+962795990880" class="contact-link" aria-label="Call Amman office">
-              <span class="contact-number">+962 7 9599 0880</span>
-              <span class="contact-location">Amman, Jordan</span>
+            <a href="tel:+962795990880" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.6' | translate">
+              <span class="contact-number phone-number-ltr">+962 7 9599 0880</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.1' | translate }}</span>
             </a>
-            <a href="tel:+994502657442" class="contact-link" aria-label="Call Baku office">
-              <span class="contact-number">+994 50 265 7442</span>
-              <span class="contact-location">Baku, Azerbaijan</span>
+            <a href="tel:+994502657442" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.7' | translate">
+              <span class="contact-number phone-number-ltr">+994 50 265 7442</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.2' | translate }}</span>
             </a>
           </div>
         </div>
@@ -49,18 +49,18 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
-            <h3 class="block-title">Dubai Office</h3>
+            <h3 class="block-title">{{ 'CONTACT.GET_IN_TOUCH.DUBAI_OFFICE' | translate }}</h3>
           </div>
           <div class="block-description">
-            <p>Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates</p>
+            <p>{{ 'CONTACT.GET_IN_TOUCH.ADDRESS' | translate }}</p>
           </div>
           <div class="contact-details">
-            <a [href]="address.mapLink" target="_blank" rel="noopener noreferrer" class="map-link" aria-label="Open location in Google Maps">
+            <a [href]="address.mapLink" target="_blank" rel="noopener noreferrer" class="map-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.7' | translate">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              View on Maps
+              {{ 'CONTACT.GET_IN_TOUCH.VIEW_ON_MAPS' | translate }}
             </a>
           </div>
         </div>

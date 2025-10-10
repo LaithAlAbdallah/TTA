@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
@@ -17,6 +18,7 @@ import { PartnersSection } from './components/partners-section';
   selector: 'app-about',
   imports: [
     CommonModule,
+    TranslateModule,
     FloatingActions,
     VisionSection,
     AboutRoleSection,
@@ -36,6 +38,33 @@ export class About implements OnInit, AfterViewInit {
   sections: ContentSection[] = [];
   teamMembers: (TeamMember & { isExpanded: boolean })[] = [];
   sidebarOpen = false;
+  
+  // Table of contents data
+  tableOfContentsSections = [
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.0',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.1',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.2',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.3',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.4',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.5',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.6',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.7',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.8',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.9'
+  ];
+  
+  sectionIds = [
+    'vision',
+    'about-us-and-role',
+    'mission',
+    'core-pillars',
+    'strategic-reach',
+    'business-model',
+    'trusted-partnerships',
+    'principals',
+    'partners',
+    'who-we-are'
+  ];
 
   constructor(
     private contentService: ContentService,

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-vision-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="vision" class="vision-section">
       <div class="vision-container">
@@ -23,16 +24,16 @@ import { CommonModule } from '@angular/common';
               <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
             </svg>
           </div>
-          <h2 class="section-title">Our Vision</h2>
-          <p class="vision-lead">We aim to be the leading bridge between global manufacturers and markets worldwide—enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all.</p>
+          <h2 class="section-title">{{ 'ABOUT.VISION.TITLE' | translate }}</h2>
+          <p class="vision-lead">{{ 'ABOUT.VISION.DESCRIPTION' | translate }}</p>
           <div class="vision-content">
-            <p class="vision-detail">Our focus is helping outstanding regional companies scale globally. We represent some of the finest start-ups and mid-sized businesses ready to expand. With hands-on operational experience—from building route-to-market strategies to restructuring—we deliver proven results. We are a lean, agile team, bringing unmatched value to every partnership.</p>
+            <p class="vision-detail">{{ 'ABOUT.VISION.DETAILED_DESCRIPTION' | translate }}</p>
             <div class="vision-callout">
-              <h3>Why it matters</h3>
+              <h3>{{ 'ABOUT.VISION.WHY_IT_MATTERS' | translate }}</h3>
               <ul>
-                <li>Seamless connection between manufacturers and global markets</li>
-                <li>Proven expertise in scaling regional companies internationally</li>
-                <li>Lean, agile approach delivering maximum value</li>
+                <li>{{ 'ABOUT.VISION.BENEFITS.0' | translate }}</li>
+                <li>{{ 'ABOUT.VISION.BENEFITS.1' | translate }}</li>
+                <li>{{ 'ABOUT.VISION.BENEFITS.2' | translate }}</li>
               </ul>
             </div>
           </div>
