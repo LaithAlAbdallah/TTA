@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
@@ -17,6 +18,7 @@ import { PartnersSection } from './components/partners-section';
   selector: 'app-about',
   imports: [
     CommonModule,
+    TranslateModule,
     FloatingActions,
     VisionSection,
     AboutRoleSection,

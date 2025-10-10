@@ -2,8 +2,8 @@
   <section class="about-hero">
     <div class="hero-content">
       <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
-      <h1 class="hero-title">About TTA</h1>
-      <p class="hero-subtitle">Trading and distribution company connecting world-class manufacturers with diverse markets worldwide</p>
+      <h1 class="hero-title">{{ 'HERO.ABOUT_PAGE.0' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'HERO.ABOUT_PAGE.1' | translate }}</p>
     </div>
   </section>
 
@@ -13,7 +13,7 @@
         <span class="toggle-icon">☰</span>
       </button>
       <nav class="table-of-contents">
-        <h3 class="toc-title">Contents</h3>
+        <h3 class="toc-title">{{ 'NAV.CONTENTS' | translate }}</h3>
         <a *ngFor="let section of sections"
            [href]="'#' + section.id"
            class="toc-link"
@@ -34,8 +34,8 @@
 
       <section id="who-we-are" class="who-we-are-section">
         <div class="who-we-are-container">
-          <h2 class="section-title">Who We Are</h2>
-          <p class="section-intro">TTA is led by experienced professionals with decades of hands-on expertise turning businesses into sustainable profit engines:</p>
+          <h2 class="section-title">{{ 'ABOUT.WHO_WE_ARE.0' | translate }}</h2>
+          <p class="section-intro">{{ 'ABOUT.WHO_WE_ARE.1' | translate }}</p>
 
           <div class="team-members-grid">
             <div class="team-member-card-full" *ngFor="let member of teamMembers; let i = index" [id]="member.id">
