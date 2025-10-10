@@ -4,21 +4,25 @@
       <img src="assets/images/TTA-Mark.png" alt="TTA Logo" class="logo">
     </a>
 
-    <button
-      class="menu-toggle"
-      (click)="toggleMenu()"
-      [attr.aria-expanded]="menuOpen"
-      aria-label="Toggle navigation menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+    <div class="header-right">
+      <app-lang-switcher></app-lang-switcher>
+      
+      <button
+        class="menu-toggle"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="menuOpen"
+        aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
 
     <nav class="nav" [class.open]="menuOpen">
-      <a href="/" class="nav-link" (click)="closeMenu()">Home</a>
-      <a href="/about" class="nav-link" (click)="closeMenu()">About Us</a>
-      <a href="#" class="nav-link" (click)="scrollToWhoWeAre($event)">Who We Are</a>
-      <a href="#contact" class="nav-link" (click)="scrollToContact($event)">Contact Us</a>
+      <a href="/" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAVIGATION.0' | translate }}</a>
+      <a href="/about" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAVIGATION.1' | translate }}</a>
+      <a href="#" class="nav-link" (click)="scrollToWhoWeAre($event)">{{ 'HEADER.NAVIGATION.2' | translate }}</a>
+      <a href="#contact" class="nav-link" (click)="scrollToContact($event)">{{ 'HEADER.NAVIGATION.3' | translate }}</a>
     </nav>
   </div>
 </header>

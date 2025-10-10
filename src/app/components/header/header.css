@@ -24,6 +24,12 @@
   height: 80px;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .logo-link {
   display: flex;
   align-items: center;
