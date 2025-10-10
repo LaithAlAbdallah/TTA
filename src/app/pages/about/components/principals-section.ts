@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 
 interface Principal {
   id: string;
@@ -13,12 +12,12 @@ interface Principal {
 @Component({
   selector: 'app-principals-section',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule],
   template: `
     <section id="principals" class="principals-section">
       <div class="principals-container">
-        <h2 class="section-title">{{ 'ABOUT.PRINCIPALS.0' | translate }}</h2>
-        <p class="section-intro">{{ 'ABOUT.PRINCIPALS.1' | translate }}</p>
+        <h2 class="section-title">Our Principals</h2>
+        <p class="section-intro">TTA's strength lies in trusted partnerships with world-class distributors and strategic principals. We know what to look for in top-tier distributors and how to design cost-effective routes-to-market that benefit all parties.</p>
 
         <div class="principals-intro-card">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -27,7 +26,7 @@ interface Principal {
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
-          <p>{{ 'ABOUT.PRINCIPALS.2' | translate }}</p>
+          <p>Some of the key global principals we work with include:</p>
         </div>
 
         <div class="principals-chips">

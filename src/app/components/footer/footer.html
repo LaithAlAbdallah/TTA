@@ -2,7 +2,7 @@
   <div class="footer-content">
     <div class="footer-grid">
       <div class="footer-section">
-        <img src="assets/images/Full-LOGO.png" [attr.alt]="'COMMON.IMAGE_ALT_TEXT.FOOTER_LOGO' | translate" class="footer-logo">
+        <img src="assets/images/Full-LOGO.png" alt="TTA Logo" class="footer-logo">
         <p class="footer-tagline">{{ 'FOOTER.COMPANY_INFO.0' | translate }}</p>
         <p class="footer-description">{{ 'FOOTER.COMPANY_INFO.1' | translate }}</p>
       </div>
@@ -26,7 +26,7 @@
             </svg>
             <a (click)="navigateToContact($event)" class="contact-link-primary">{{ 'FOOTER.CONTACT_SECTION.0' | translate }}</a>
           </div>
-          <button (click)="openContactModal()" class="view-numbers-btn" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.3' | translate">
+          <button (click)="openContactModal()" class="view-numbers-btn" aria-label="View all contact numbers and address">
             {{ 'FOOTER.CONTACT_SECTION.1' | translate }}
           </button>
         </div>

@@ -1,38 +1,37 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mission-section',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule],
   template: `
     <section id="mission" class="mission-section">
       <div class="mission-container">
-        <h2 class="section-title">{{ 'ABOUT.MISSION.0' | translate }}</h2>
+        <h2 class="section-title">Our Mission</h2>
         <div class="mission-card">
           <div class="gold-accent"></div>
           <blockquote class="mission-statement">
-            {{ 'ABOUT.MISSION.1' | translate }}
+            We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain.
           </blockquote>
           <div class="mission-actions">
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>{{ 'ABOUT.MISSION.2' | translate }}</span>
+              <span>Identify the right distributors for your brand</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>{{ 'ABOUT.MISSION.3' | translate }}</span>
+              <span>Design cost-efficient go-to-market strategies</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>{{ 'ABOUT.MISSION.4' | translate }}</span>
+              <span>Benefit manufacturers and customers alike</span>
             </div>
           </div>
         </div>

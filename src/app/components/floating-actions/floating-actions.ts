@@ -1,11 +1,10 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-floating-actions',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule],
   templateUrl: './floating-actions.html',
   styleUrl: './floating-actions.css',
   standalone: true

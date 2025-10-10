@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-business-model-section',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule],
   template: `
     <section id="business-model" class="business-model-section">
       <div class="model-container">
-        <h2 class="section-title">{{ 'ABOUT.BUSINESS_MODEL.0' | translate }}</h2>
-        <p class="section-intro">{{ 'ABOUT.BUSINESS_MODEL.1' | translate }}</p>
+        <h2 class="section-title">Our Business Model: Built on Teamwork</h2>
+        <p class="section-intro">Teamwork is the foundation of our success. TTA operates through a global network of partners, distributors, and channels—including B2B, online platforms, modern trade, and traditional retail. Our scalable solutions ensure consistent supply, cost efficiency, and outstanding service.</p>
 
         <div class="process-flow">
           <div class="flow-step">
@@ -19,8 +18,8 @@ import { TranslateModule } from '@ngx-translate/core';
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
             </div>
-            <h3 class="step-title">{{ 'ABOUT.BUSINESS_MODEL.2' | translate }}</h3>
-            <p class="step-description">{{ 'ABOUT.BUSINESS_MODEL.3' | translate }}</p>
+            <h3 class="step-title">Sourcing</h3>
+            <p class="step-description">Connect with world-class manufacturers and select premium products</p>
           </div>
 
           <div class="flow-arrow">
@@ -39,8 +38,8 @@ import { TranslateModule } from '@ngx-translate/core';
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <h3 class="step-title">{{ 'ABOUT.BUSINESS_MODEL.4' | translate }}</h3>
-            <p class="step-description">{{ 'ABOUT.BUSINESS_MODEL.5' | translate }}</p>
+            <h3 class="step-title">Distribution</h3>
+            <p class="step-description">Build scalable networks through trusted partners across channels</p>
           </div>
 
           <div class="flow-arrow">
@@ -58,8 +57,8 @@ import { TranslateModule } from '@ngx-translate/core';
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
               </svg>
             </div>
-            <h3 class="step-title">{{ 'ABOUT.BUSINESS_MODEL.6' | translate }}</h3>
-            <p class="step-description">{{ 'ABOUT.BUSINESS_MODEL.7' | translate }}</p>
+            <h3 class="step-title">Sales</h3>
+            <p class="step-description">Deliver products through B2B, online, modern and traditional retail</p>
           </div>
 
           <div class="flow-arrow">
@@ -76,8 +75,8 @@ import { TranslateModule } from '@ngx-translate/core';
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
             </div>
-            <h3 class="step-title">{{ 'ABOUT.BUSINESS_MODEL.8' | translate }}</h3>
-            <p class="step-description">{{ 'ABOUT.BUSINESS_MODEL.9' | translate }}</p>
+            <h3 class="step-title">Marketing</h3>
+            <p class="step-description">Create targeted strategies for visibility and market growth</p>
           </div>
 
           <div class="flow-arrow">
