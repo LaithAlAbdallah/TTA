@@ -24,8 +24,11 @@
 }
 
 .flag {
-  font-size: 20px;
-  line-height: 1;
+  width: 24px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
 }
 
 .language-name {
