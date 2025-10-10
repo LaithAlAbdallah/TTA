@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-role-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="about-us-and-role" class="about-role-section">
       <div class="about-role-container">
         <div class="content-grid">
           <div class="text-content">
-            <h2 class="section-title">About Us <span class="ampersand">&</span> Our Role</h2>
-            <p class="first-paragraph">TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide. With a strong international presence, deep market knowledge, and an extensive partner network, we deliver value, visibility, and scale for brands.</p>
-            <p>We manage top global brands in over 100 countries, supported by 80+ years of expertise in international expansion.</p>
+            <h2 class="section-title">{{ 'ABOUT.ABOUT_ROLE.0' | translate }} <span class="ampersand">&</span> {{ 'ABOUT.ABOUT_ROLE.2' | translate }}</h2>
+            <p class="first-paragraph">{{ 'ABOUT.ABOUT_ROLE.1' | translate }}</p>
+            <p>{{ 'ABOUT.ABOUT_ROLE.3' | translate }}</p>
           </div>
           <div class="visual-content">
             <div class="visual-illustration">
@@ -27,9 +28,9 @@ import { CommonModule } from '@angular/common';
                 <circle cx="200" cy="150" r="60" fill="url(#grad1)" opacity="0.6"/>
                 <circle cx="300" cy="150" r="60" fill="url(#grad1)" opacity="0.6"/>
                 <path d="M 160 150 L 240 150" stroke="#D4AF37" stroke-width="3" stroke-dasharray="5,5"/>
-                <text x="100" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">Manufacturers</text>
-                <text x="200" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">TTA</text>
-                <text x="300" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">Markets</text>
+                <text x="100" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">{{ 'ABOUT.ABOUT_ROLE.4' | translate }}</text>
+                <text x="200" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">{{ 'ABOUT.ABOUT_ROLE.5' | translate }}</text>
+                <text x="300" y="155" text-anchor="middle" fill="#0c2440" font-size="14" font-weight="600">{{ 'ABOUT.ABOUT_ROLE.6' | translate }}</text>
               </svg>
             </div>
           </div>

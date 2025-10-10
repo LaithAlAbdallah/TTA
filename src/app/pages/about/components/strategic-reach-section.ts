@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-strategic-reach-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="strategic-reach" class="strategic-reach-section">
       <div class="reach-container">
@@ -39,13 +40,13 @@ import { CommonModule } from '@angular/common';
               <line x1="300" y1="150" x2="450" y2="200" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
               <line x1="450" y1="200" x2="380" y2="280" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
               <line x1="200" y1="260" x2="380" y2="280" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
-              <text x="300" y="380" text-anchor="middle" fill="#0c2440" font-size="18" font-weight="600">Global Presence</text>
+              <text x="300" y="380" text-anchor="middle" fill="#0c2440" font-size="18" font-weight="600">{{ 'ABOUT.STRATEGIC_REACH.0' | translate }}</text>
             </svg>
           </div>
 
           <div class="text-content">
-            <h2 class="section-title">Our Strategic Reach</h2>
-            <p class="reach-description">TTA serves as a vital link between international manufacturers and global markets. We cover key economies and are expanding into high-potential regions. Our expertise helps brands navigate diverse markets and achieve sustainable growth.</p>
+            <h2 class="section-title">{{ 'ABOUT.STRATEGIC_REACH.1' | translate }}</h2>
+            <p class="reach-description">{{ 'ABOUT.STRATEGIC_REACH.2' | translate }}</p>
 
             <!-- <div class="stats-grid">
               <div class="stat-card">

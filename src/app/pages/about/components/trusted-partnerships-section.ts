@@ -1,44 +1,45 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-trusted-partnerships-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="trusted-partnerships" class="partnerships-section">
       <div class="partnerships-container">
-        <h2 class="section-title">Trusted Partnerships Across Industries</h2>
-        <p class="section-intro">We collaborate with leading brands to build sustainable value chains and long-term benefits for all stakeholders.</p>
+        <h2 class="section-title">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.0' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.1' | translate }}</p>
 
         <div class="partnerships-grid">
           <div class="partnership-highlight">
-            <div class="highlight-badge">Manufacturing Excellence</div>
-            <h3 class="highlight-title">Global Manufacturing Co.</h3>
-            <p class="highlight-description">Driving efficiency and innovation in manufacturing processes, delivering world-class products to diverse markets with consistent quality and reliability.</p>
+            <div class="highlight-badge">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.2' | translate }}</div>
+            <h3 class="highlight-title">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.3' | translate }}</h3>
+            <p class="highlight-description">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.4' | translate }}</p>
             <div class="highlight-result">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Established sustainable supply chains</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.5' | translate }}</span>
             </div>
           </div>
 
           <div class="partnership-highlight">
-            <div class="highlight-badge">Distribution Network</div>
-            <h3 class="highlight-title">Worldwide Distributors</h3>
-            <p class="highlight-description">Building comprehensive distribution networks that connect products with markets efficiently, ensuring optimal reach and market penetration across regions.</p>
+            <div class="highlight-badge">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.6' | translate }}</div>
+            <h3 class="highlight-title">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.7' | translate }}</h3>
+            <p class="highlight-description">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.8' | translate }}</p>
             <div class="highlight-result">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Expanded market coverage significantly</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.9' | translate }}</span>
             </div>
           </div>
         </div>
 
         <div class="industry-list">
-          <h3 class="list-title">Industries We Serve</h3>
+          <h3 class="list-title">{{ 'ABOUT.TRUSTED_PARTNERSHIPS.10' | translate }}</h3>
           <div class="industry-tags">
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -47,13 +48,13 @@ import { CommonModule } from '@angular/common';
                 <rect x="14" y="14" width="7" height="7"/>
                 <rect x="3" y="14" width="7" height="7"/>
               </svg>
-              <span>Manufacturing</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.11' | translate }}</span>
             </div>
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
-              <span>Distribution</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.12' | translate }}</span>
             </div>
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -61,7 +62,7 @@ import { CommonModule } from '@angular/common';
                 <circle cx="20" cy="21" r="1"/>
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
               </svg>
-              <span>Retail</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.13' | translate }}</span>
             </div>
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -69,21 +70,21 @@ import { CommonModule } from '@angular/common';
                 <path d="M12 16v-4"/>
                 <path d="M12 8h.01"/>
               </svg>
-              <span>Consumer Goods</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.14' | translate }}</span>
             </div>
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="16 18 22 12 16 6"/>
                 <polyline points="8 6 2 12 8 18"/>
               </svg>
-              <span>Technology</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.15' | translate }}</span>
             </div>
             <div class="industry-tag">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                 <path d="M2 17l10 5 10-5"/>
               </svg>
-              <span>Business Services</span>
+              <span>{{ 'ABOUT.TRUSTED_PARTNERSHIPS.16' | translate }}</span>
             </div>
           </div>
         </div>

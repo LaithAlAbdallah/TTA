@@ -1,37 +1,38 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mission-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="mission" class="mission-section">
       <div class="mission-container">
-        <h2 class="section-title">Our Mission</h2>
+        <h2 class="section-title">{{ 'ABOUT.MISSION.0' | translate }}</h2>
         <div class="mission-card">
           <div class="gold-accent"></div>
           <blockquote class="mission-statement">
-            We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain.
+            {{ 'ABOUT.MISSION.1' | translate }}
           </blockquote>
           <div class="mission-actions">
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Identify the right distributors for your brand</span>
+              <span>{{ 'ABOUT.MISSION.2' | translate }}</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Design cost-efficient go-to-market strategies</span>
+              <span>{{ 'ABOUT.MISSION.3' | translate }}</span>
             </div>
             <div class="action-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Benefit manufacturers and customers alike</span>
+              <span>{{ 'ABOUT.MISSION.4' | translate }}</span>
             </div>
           </div>
         </div>

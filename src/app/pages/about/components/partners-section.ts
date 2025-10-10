@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 interface Partner {
@@ -12,12 +13,12 @@ interface Partner {
 @Component({
   selector: 'app-partners-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="partners" class="partners-section">
       <div class="partners-container">
-        <h2 class="section-title">Our Partners</h2>
-        <p class="section-intro">TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions.</p>
+        <h2 class="section-title">{{ 'ABOUT.PARTNERS.0' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.PARTNERS.1' | translate }}</p>
 
         <div class="partners-grid">
           <div *ngFor="let partner of partners" class="partner-card">
@@ -32,9 +33,9 @@ interface Partner {
 
         <div class="cta-section">
           <div class="cta-content">
-            <h3>Ready to Partner with Us?</h3>
-            <p>Join our network of trusted partners and expand your market reach globally.</p>
-            <a (click)="navigateToContact($event)" class="cta-button">Get in Touch</a>
+            <h3>{{ 'ABOUT.PARTNERS.2' | translate }}</h3>
+            <p>{{ 'ABOUT.PARTNERS.3' | translate }}</p>
+            <a (click)="navigateToContact($event)" class="cta-button">{{ 'ABOUT.PARTNERS.4' | translate }}</a>
           </div>
         </div>
       </div>
