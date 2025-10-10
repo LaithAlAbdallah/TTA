@@ -1,9 +1,10 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-card',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './contact-card.html',
   styleUrl: './contact-card.css',
   standalone: true

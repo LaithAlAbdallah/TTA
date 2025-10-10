@@ -561,18 +561,57 @@
   height: 100%;
 }
 
+/* RTL fixes for stat-box */
+[dir="rtl"] .stat-box {
+  text-align: center;
+  direction: rtl;
+}
+
+.stat-box .stat-label {
+  direction: inherit;
+  text-align: center;
+}
+
+[dir="rtl"] .stat-box .stat-label {
+  direction: rtl;
+  text-align: center;
+  unicode-bidi: normal;
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+}
+
 .stat-number {
   font-size: 4rem;
   font-weight: 800;
   color: #D4AF37;
   margin-bottom: 0.5rem;
   line-height: 1;
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: center;
+}
+
+[dir="rtl"] .stat-number {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: center;
 }
 
 .stat-label {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
+  text-align: center;
+  direction: ltr;
+  unicode-bidi: normal;
+}
+
+[dir="rtl"] .stat-label {
+  direction: rtl;
+  text-align: center;
+  unicode-bidi: normal;
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
 }
 
 .partners-grid-side {

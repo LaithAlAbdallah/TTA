@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Pillar {
   id: string;
@@ -13,23 +14,23 @@ interface Pillar {
 @Component({
   selector: 'app-core-pillars-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="core-pillars" class="core-pillars-section">
       <div class="pillars-container">
-        <h2 class="section-title">Our Core Pillars</h2>
-        <p class="section-intro">Market Knowledge, Continuous Growth, and Win-Win Partnerships form the foundation of our success.</p>
+        <h2 class="section-title">{{ 'ABOUT.CORE_PILLARS.TITLE' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.CORE_PILLARS.DESCRIPTION' | translate }}</p>
 
         <div class="pillars-grid">
           <div *ngFor="let pillar of pillars" class="pillar-card" [class.expanded]="pillar.expanded">
             <div class="pillar-icon" [innerHTML]="pillar.icon"></div>
-            <h3 class="pillar-title">{{ pillar.title }}</h3>
-            <p class="pillar-summary">{{ pillar.summary }}</p>
+            <h3 class="pillar-title">{{ pillar.title | translate }}</h3>
+            <p class="pillar-summary">{{ pillar.summary | translate }}</p>
             <div class="pillar-full" *ngIf="pillar.expanded">
-              <p>{{ pillar.fullContent }}</p>
+              <p>{{ pillar.fullContent | translate }}</p>
             </div>
             <button class="read-more-btn" (click)="togglePillar(pillar)">
-              {{ pillar.expanded ? 'Show less' : 'Read more' }}
+              {{ pillar.expanded ? ('ABOUT.CORE_PILLARS.BUTTONS.SHOW_LESS' | translate) : ('ABOUT.CORE_PILLARS.BUTTONS.READ_MORE' | translate) }}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="pillar.expanded">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
@@ -204,38 +205,38 @@ export class CorePillarsSection {
   pillars: Pillar[] = [
     {
       id: 'market-knowledge',
-      title: 'Market Knowledge',
+      title: 'ABOUT.CORE_PILLARS.PILLARS.0.TITLE',
       icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
         <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
         <line x1="12" y1="22.08" x2="12" y2="12"/>
       </svg>`,
-      summary: 'Global insights with local expertise to match products with channels.',
-      fullContent: 'Combining global insights with local expertise to match the right products with the right channels, supported by targeted marketing strategies.',
+      summary: 'ABOUT.CORE_PILLARS.PILLARS.0.SHORT_DESCRIPTION',
+      fullContent: 'ABOUT.CORE_PILLARS.PILLARS.0.DETAILED_DESCRIPTION',
       expanded: false
     },
     {
       id: 'continuous-growth',
-      title: 'Continuous Growth',
+      title: 'ABOUT.CORE_PILLARS.PILLARS.1.TITLE',
       icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
         <polyline points="17 6 23 6 23 12"/>
       </svg>`,
-      summary: 'Adapting to markets and building mutually beneficial relationships.',
-      fullContent: 'Adapting to changing markets and building strong, mutually beneficial relationships for sustainable success.',
+      summary: 'ABOUT.CORE_PILLARS.PILLARS.1.SHORT_DESCRIPTION',
+      fullContent: 'ABOUT.CORE_PILLARS.PILLARS.1.DETAILED_DESCRIPTION',
       expanded: false
     },
     {
       id: 'win-win-partnerships',
-      title: 'Win-Win Partnerships',
+      title: 'ABOUT.CORE_PILLARS.PILLARS.2.TITLE',
       icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
         <circle cx="9" cy="7" r="4"/>
         <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>`,
-      summary: 'Ensuring profitability and long-term trust across the value chain.',
-      fullContent: 'Aligning with supplier goals to ensure profitability and long-term trust across the value chain.',
+      summary: 'ABOUT.CORE_PILLARS.PILLARS.2.SHORT_DESCRIPTION',
+      fullContent: 'ABOUT.CORE_PILLARS.PILLARS.2.DETAILED_DESCRIPTION',
       expanded: false
     }
   ];

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface Principal {
   id: string;
@@ -12,12 +13,12 @@ interface Principal {
 @Component({
   selector: 'app-principals-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   template: `
     <section id="principals" class="principals-section">
       <div class="principals-container">
-        <h2 class="section-title">Our Principals</h2>
-        <p class="section-intro">TTA's strength lies in trusted partnerships with world-class distributors and strategic principals. We know what to look for in top-tier distributors and how to design cost-effective routes-to-market that benefit all parties.</p>
+        <h2 class="section-title">{{ 'ABOUT.PRINCIPALS.TITLE' | translate }}</h2>
+        <p class="section-intro">{{ 'ABOUT.PRINCIPALS.DESCRIPTION' | translate }}</p>
 
         <div class="principals-intro-card">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -26,7 +27,7 @@ interface Principal {
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
-          <p>Some of the key global principals we work with include:</p>
+          <p>{{ 'ABOUT.PRINCIPALS.INTRO' | translate }}</p>
         </div>
 
         <div class="principals-chips">
@@ -36,15 +37,15 @@ interface Principal {
                (click)="togglePrincipal(principal)">
             <div class="chip-header">
               <div class="chip-info">
-                <h3 class="chip-name">{{ principal.name }}</h3>
-                <span class="chip-industry">{{ principal.industry }}</span>
+                <h3 class="chip-name">{{ principal.name | translate }}</h3>
+                <span class="chip-industry">{{ principal.industry | translate }}</span>
               </div>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" [class.rotated]="principal.expanded">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </div>
             <div class="chip-description" *ngIf="principal.expanded">
-              <p>{{ principal.description }}</p>
+              <p>{{ principal.description | translate }}</p>
             </div>
           </div>
         </div>
@@ -216,44 +217,44 @@ export class PrincipalsSection {
   principals: Principal[] = [
     {
       id: '1',
-      name: 'Global Manufacturing Co.',
-      industry: 'Manufacturing',
-      description: 'Leading manufacturer delivering innovative products and solutions worldwide with a commitment to quality and sustainability.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.0.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.0.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.0.DESCRIPTION',
       expanded: false
     },
     {
       id: '2',
-      name: 'Worldwide Distributors',
-      industry: 'Distribution',
-      description: 'Extensive distribution network connecting products to markets efficiently across multiple regions and channels.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.1.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.1.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.1.DESCRIPTION',
       expanded: false
     },
     {
       id: '3',
-      name: 'International Retail Chain',
-      industry: 'Retail',
-      description: 'Major retail partner providing direct access to consumers through modern trade channels and traditional retail outlets.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.2.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.2.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.2.DESCRIPTION',
       expanded: false
     },
     {
       id: '4',
-      name: 'Global Brands Ltd.',
-      industry: 'Consumer Goods',
-      description: 'Trusted consumer goods manufacturer with strong brand recognition and market presence across diverse categories.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.3.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.3.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.3.DESCRIPTION',
       expanded: false
     },
     {
       id: '5',
-      name: 'Strategic Partners Group',
-      industry: 'Business Services',
-      description: 'Professional services partner providing strategic insights and operational support for business growth and optimization.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.4.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.4.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.4.DESCRIPTION',
       expanded: false
     },
     {
       id: '6',
-      name: 'Market Leaders Inc.',
-      industry: 'Technology',
-      description: 'Innovative technology company bringing cutting-edge solutions to market through strategic partnerships and channels.',
+      name: 'ABOUT.PRINCIPALS.PRINCIPALS.5.COMPANY',
+      industry: 'ABOUT.PRINCIPALS.PRINCIPALS.5.CATEGORY',
+      description: 'ABOUT.PRINCIPALS.PRINCIPALS.5.DESCRIPTION',
       expanded: false
     }
   ];
