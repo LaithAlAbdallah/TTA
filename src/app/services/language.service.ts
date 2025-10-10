@@ -15,9 +15,9 @@ export class LanguageService {
   private readonly STORAGE_KEY = 'selectedLanguage';
 
   public readonly languages: Language[] = [
-    { code: 'en', name: 'English', flag: '🇺🇸', dir: 'ltr' },
-    { code: 'ar', name: 'العربية', flag: '🇦🇪', dir: 'rtl' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺', dir: 'ltr' }
+    { code: 'en', name: 'English', flag: 'assets/images/flags/usa.png', dir: 'ltr' },
+    { code: 'ar', name: 'العربية', flag: 'assets/images/flags/uae.png', dir: 'rtl' },
+    { code: 'ru', name: 'Русский', flag: 'assets/images/flags/russia.png', dir: 'ltr' }
   ];
 
   public currentLanguage: Language;

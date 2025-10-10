@@ -4,7 +4,7 @@
     (click)="toggleDropdown()"
     [attr.aria-expanded]="isOpen"
     aria-label="Select language">
-    <span class="flag">{{ languageService.currentLanguage.flag }}</span>
+    <img class="flag" [src]="languageService.currentLanguage.flag" [alt]="languageService.currentLanguage.name + ' flag'" />
     <span class="language-name">{{ languageService.currentLanguage.name }}</span>
     <span class="arrow" [class.open]="isOpen">▼</span>
   </button>
@@ -16,7 +16,7 @@
       [class.active]="language.code === languageService.currentLanguage.code"
       (click)="selectLanguage(language.code)"
       [attr.aria-label]="'Switch to ' + language.name">
-      <span class="flag">{{ language.flag }}</span>
+      <img class="flag" [src]="language.flag" [alt]="language.name + ' flag'" />
       <span class="language-name">{{ language.name }}</span>
     </button>
   </div>
