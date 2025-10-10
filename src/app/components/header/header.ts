@@ -1,14 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { LangSwitcherComponent } from '../lang-switcher/lang-switcher.component';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
-  standalone: true,
-  imports: [LangSwitcherComponent, TranslateModule]
+  standalone: true
 })
 export class HeaderComponent {
   isScrolled = false;

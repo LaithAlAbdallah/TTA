@@ -1,9 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header';
 import { FooterComponent } from './components/footer/footer';
-import { LanguageService } from './services/language.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -24,23 +22,6 @@ import { Subscription } from 'rxjs';
     }
   `]
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent {
   title = 'TTA - The Turnaround Artists';
-  private languageSubscription?: Subscription;
-
-  constructor(private languageService: LanguageService) {}
-
-  ngOnInit(): void {
-    // Subscribe to language changes for any additional handling if needed
-    this.languageSubscription = this.languageService.currentLanguage$.subscribe(lang => {
-      // Language change handling is already done in LanguageService
-      // This subscription is here for any additional app-level handling if needed
-    });
-  }
-
-  ngOnDestroy(): void {
-    if (this.languageSubscription) {
-      this.languageSubscription.unsubscribe();
-    }
-  }
 }
