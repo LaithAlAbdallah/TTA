@@ -1,0 +1,25 @@
+<div class="language-switcher">
+  <button
+    class="language-button"
+    (click)="toggleDropdown()"
+    [attr.aria-expanded]="isOpen"
+    aria-label="Select language">
+    <span class="flag">{{ languageService.currentLanguage.flag }}</span>
+    <span class="language-name">{{ languageService.currentLanguage.name }}</span>
+    <span class="arrow" [class.open]="isOpen">▼</span>
+  </button>
+
+  <div class="dropdown" [class.open]="isOpen" *ngIf="isOpen">
+    <button
+      *ngFor="let language of languageService.languages"
+      class="dropdown-item"
+      [class.active]="language.code === languageService.currentLanguage.code"
+      (click)="selectLanguage(language.code)"
+      [attr.aria-label]="'Switch to ' + language.name">
+      <span class="flag">{{ language.flag }}</span>
+      <span class="language-name">{{ language.name }}</span>
+    </button>
+  </div>
+</div>
+
+<div class="backdrop" *ngIf="isOpen" (click)="closeDropdown()"></div>

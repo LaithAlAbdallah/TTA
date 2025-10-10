@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header';
 import { FooterComponent } from './components/footer/footer';
+import { LanguageService } from './services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,11 @@ import { FooterComponent } from './components/footer/footer';
     }
   `]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'TTA - The Turnaround Artists';
+
+  constructor(private languageService: LanguageService) {}
+
+  ngOnInit(): void {
+  }
 }

@@ -16,6 +16,11 @@ body {
   background: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+  transition: direction 0.3s ease;
+}
+
+[dir="rtl"] body {
+  font-family: 'Tajawal', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
