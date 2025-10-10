@@ -27,8 +27,8 @@ import { LanguageService } from '../../services/language.service';
 
     .lang-btn {
       background: transparent;
-      border: 1px solid rgba(12, 36, 64, 0.3);
-      color: #0c2440;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
       padding: 6px 12px;
       border-radius: 4px;
       cursor: pointer;
@@ -39,27 +39,14 @@ import { LanguageService } from '../../services/language.service';
     }
 
     .lang-btn:hover {
-      background: rgba(12, 36, 64, 0.1);
-      border-color: rgba(12, 36, 64, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.5);
     }
 
     .lang-btn.active {
-      background: rgba(12, 36, 64, 0.2);
-      border-color: rgba(12, 36, 64, 0.6);
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.6);
       font-weight: 600;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .lang-switcher {
-        gap: 4px;
-      }
-      
-      .lang-btn {
-        padding: 4px 8px;
-        font-size: 11px;
-        min-width: 35px;
-      }
     }
 
     /* RTL adjustments */
