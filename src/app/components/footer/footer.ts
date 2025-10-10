@@ -1,13 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.html',
   styleUrls: ['./footer.css'],
-  standalone: true,
-  imports: [TranslateModule]
+  standalone: true
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
