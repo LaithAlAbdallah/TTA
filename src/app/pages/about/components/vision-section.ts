@@ -150,6 +150,19 @@ import { TranslateModule } from '@ngx-translate/core';
       font-weight: bold;
     }
 
+    /* RTL fixes for vision callout list */
+    :host-context([dir="rtl"]) .vision-callout li {
+      padding-left: 0 !important;
+      padding-right: 24px !important;
+      text-align: right !important;
+    }
+
+    :host-context([dir="rtl"]) .vision-callout li::before {
+      left: auto !important;
+      right: 0 !important;
+      content: '←' !important; /* Use left arrow for RTL */
+    }
+
     @media (max-width: 1024px) {
       .vision-content {
         grid-template-columns: 1fr;

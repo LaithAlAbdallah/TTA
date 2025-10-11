@@ -101,10 +101,10 @@ import { TranslateModule } from '@ngx-translate/core';
     }
 
     /* RTL fixes for mission card */
-    [dir="rtl"] .mission-card {
-      padding-left: 0;
-      padding-right: 48px;
-      direction: rtl;
+    :host-context([dir="rtl"]) .mission-card {
+      padding-left: 0 !important;
+      padding-right: 48px !important;
+      direction: rtl !important;
     }
 
     .gold-accent {
@@ -117,9 +117,9 @@ import { TranslateModule } from '@ngx-translate/core';
     }
 
     /* RTL fixes for gold accent */
-    [dir="rtl"] .gold-accent {
-      left: auto;
-      right: 0;
+    :host-context([dir="rtl"]) .gold-accent {
+      left: auto !important;
+      right: 0 !important;
     }
 
     .mission-statement {
@@ -132,15 +132,19 @@ import { TranslateModule } from '@ngx-translate/core';
       direction: ltr;
       text-align: left;
       unicode-bidi: normal;
+      position: relative;
+      padding-left: 3rem;
     }
 
     /* RTL fixes for mission statement */
-    [dir="rtl"] .mission-statement {
+    :host-context([dir="rtl"]) .mission-statement {
       direction: rtl !important;
       text-align: right !important;
       unicode-bidi: normal;
       writing-mode: horizontal-tb;
       text-orientation: mixed;
+      padding-left: 0 !important;
+      padding-right: 3rem !important;
     }
 
     /* Additional RTL fix for mission statement text content */
@@ -157,18 +161,24 @@ import { TranslateModule } from '@ngx-translate/core';
     }
 
     .mission-statement::before {
-      content: open-quote;
+      content: '"';
       font-size: 4rem;
       line-height: 0;
       vertical-align: -0.4em;
       color: #D4AF37;
       margin-right: 8px;
+      position: absolute;
+      left: 0;
+      top: 0.2em;
     }
 
     /* RTL fixes for mission statement quote */
-    [dir="rtl"] .mission-statement::before {
-      margin-right: 0;
-      margin-left: 8px;
+    :host-context([dir="rtl"]) .mission-statement::before {
+      left: auto !important;
+      right: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 8px !important;
+      top: 0.2em !important;
     }
 
     .mission-actions {
@@ -228,10 +238,10 @@ import { TranslateModule } from '@ngx-translate/core';
       }
 
       /* RTL responsive fixes */
-      [dir="rtl"] .mission-card {
-        padding-left: 0;
-        padding-right: 32px;
-        direction: rtl;
+      :host-context([dir="rtl"]) .mission-card {
+        padding-left: 0 !important;
+        padding-right: 32px !important;
+        direction: rtl !important;
       }
 
       .section-title {

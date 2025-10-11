@@ -205,6 +205,11 @@ import { TranslateModule } from '@ngx-translate/core';
       padding: 0 8px;
     }
 
+    /* RTL fixes for flow arrows */
+    :host-context([dir="rtl"]) .flow-arrow svg {
+      transform: scaleX(-1) !important;
+    }
+
     .value-proposition {
       background: linear-gradient(135deg, #0c2440 0%, #1a3a5c 100%);
       border-radius: 16px;
