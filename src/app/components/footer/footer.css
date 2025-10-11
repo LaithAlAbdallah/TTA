@@ -108,6 +108,14 @@
   padding-left: 1rem;
 }
 
+/* RTL fixes for leader gold line */
+:host-context([dir="rtl"]) .leader {
+  border-left: none !important;
+  border-right: 3px solid #D4AF37 !important;
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
 .leader-name {
   font-size: 1rem;
   font-weight: 600;

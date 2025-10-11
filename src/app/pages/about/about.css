@@ -316,6 +316,15 @@ font-size: 2.5rem;
   transform: rotate(180deg);
 }
 
+/* RTL fixes for read more arrows */
+:host-context([dir="rtl"]) .read-more-btn-full .arrow {
+  transform: scaleX(-1) !important;
+}
+
+:host-context([dir="rtl"]) .read-more-btn-full .arrow.rotated {
+  transform: scaleX(-1) rotate(180deg) !important;
+}
+
 
 .team-member {
   background: white;

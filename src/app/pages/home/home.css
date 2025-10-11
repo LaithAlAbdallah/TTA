@@ -178,6 +178,15 @@
   transform: translateX(4px);
 }
 
+/* RTL fixes for read more arrows */
+:host-context([dir="rtl"]) .read-more .arrow {
+  transform: scaleX(-1) !important;
+}
+
+:host-context([dir="rtl"]) .read-more:hover .arrow {
+  transform: scaleX(-1) translateX(-4px) !important;
+}
+
 .full-bleed {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 5rem 2rem;
@@ -248,6 +257,18 @@
   left: 0;
   color: #D4AF37;
   font-weight: bold;
+}
+
+/* RTL fixes for bullet list */
+:host-context([dir="rtl"]) .bullet-list li {
+  padding-left: 0 !important;
+  padding-right: 2rem !important;
+  text-align: right !important;
+}
+
+:host-context([dir="rtl"]) .bullet-list li::before {
+  left: auto !important;
+  right: 0 !important;
 }
 
 .diagonal-layout .content-wrapper {
@@ -332,6 +353,15 @@
 
 .alternating-layout .content-wrapper.reverse > * {
   direction: ltr;
+}
+
+/* RTL fixes for alternating layout */
+:host-context([dir="rtl"]) .alternating-layout .content-wrapper.reverse {
+  direction: ltr !important;
+}
+
+:host-context([dir="rtl"]) .alternating-layout .content-wrapper.reverse > * {
+  direction: rtl !important;
 }
 
 .map-visual {

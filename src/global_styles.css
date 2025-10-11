@@ -153,3 +153,102 @@ button {
   text-align: right !important;
   unicode-bidi: bidi-override !important;
 }
+
+/* RTL Bullet List Fixes */
+/* Default (LTR) behaviour — keep existing look */
+.bullet-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0;
+  padding-inline-start: 1.2rem; /* logical property — acts as left padding in LTR */
+  padding-inline-end: 0;
+  text-align: left;
+}
+
+/* RTL: flip marker side, padding and alignment */
+[dir="rtl"] .bullet-list {
+  direction: rtl !important;                  /* places marker on the right in modern browsers */
+  padding-inline-start: 0 !important;         /* start becomes right in RTL — remove extra space */
+  padding-inline-end: 1.2rem !important;      /* add space on the new end side (left in LTR) */
+  text-align: right !important;               /* align text to the right */
+}
+
+/* Make markers consistent */
+.bullet-list li::marker {
+  font-size: 1em;
+  /* color: inherit; */ /* uncomment if you want marker to match text color */
+}
+
+/* Optional fallback if you need marker inside */
+[dir="rtl"] .bullet-list-inside {
+  list-style-position: inside;
+  text-align: right;
+  padding-inline-end: 0.6rem;
+}
+
+/* RTL fixes for footer leadership gold line */
+[dir="rtl"] .leader {
+  border-left: none !important;
+  border-right: 3px solid #D4AF37 !important;
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
+/* RTL fixes for mission section gold accent */
+[dir="rtl"] .gold-accent {
+  left: auto !important;
+  right: 0 !important;
+}
+
+/* RTL fixes for mission card */
+[dir="rtl"] .mission-card {
+  padding-left: 0 !important;
+  padding-right: 48px !important;
+  direction: rtl !important;
+}
+
+/* RTL fixes for mission statement quote */
+[dir="rtl"] .mission-statement::before {
+  left: auto !important;
+  right: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 8px !important;
+  top: 0.2em !important;
+}
+
+/* RTL fixes for mission statement padding */
+[dir="rtl"] .mission-statement {
+  padding-left: 0 !important;
+  padding-right: 3rem !important;
+}
+
+/* RTL fixes for business model flow arrows */
+[dir="rtl"] .flow-arrow svg {
+  transform: scaleX(-1) !important;
+}
+
+/* RTL fixes for read more arrows */
+[dir="rtl"] .read-more .arrow {
+  transform: scaleX(-1) !important;
+}
+
+[dir="rtl"] .read-more:hover .arrow {
+  transform: scaleX(-1) translateX(-4px) !important;
+}
+
+[dir="rtl"] .read-more-btn-full .arrow {
+  transform: scaleX(-1) !important;
+}
+
+[dir="rtl"] .read-more-btn-full .arrow.rotated {
+  transform: scaleX(-1) rotate(180deg) !important;
+}
+
+/* RTL fixes for alternating layout */
+[dir="rtl"] .alternating-layout .content-wrapper.reverse {
+  direction: ltr !important;
+}
+
+[dir="rtl"] .alternating-layout .content-wrapper.reverse > * {
+  direction: rtl !important;
+}
