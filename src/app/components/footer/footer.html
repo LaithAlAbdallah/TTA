@@ -107,7 +107,7 @@
               </svg>
               <span class="contact-item-label">{{ 'CONTACT.MODAL.ADDRESS' | translate }}</span>
             </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Mohammed+Salem+Bakhit+Al+Bakhit+Al+Falsi%2C+Hor+Al+Anz+East%2C+Owned+Property+No.+175-M17%2C+Dubai%2C+United+Arab+Emirates" 
+            <a [href]="getGoogleMapsUrl()" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="address-link" 

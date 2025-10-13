@@ -812,6 +812,20 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .timeline-items {
+    gap: 1.5rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-title {
     font-size: 2.5rem;
@@ -834,22 +848,68 @@
 
   .timeline-items {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 3rem;
+    max-width: 600px;
   }
 
   .timeline-items::before {
-    top: 0;
-    bottom: 0;
-    left: 30px;
-    right: auto;
-    width: 3px;
-    height: auto;
+    display: none;
   }
 
   .timeline-item {
     display: flex;
     gap: 2rem;
     text-align: left;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    bottom: -3rem;
+    width: 2px;
+    background: #D4AF37;
+    z-index: 0;
+  }
+
+  /* RTL fixes for timeline */
+  :host-context([dir="rtl"]) .timeline-item {
+    text-align: right;
+  }
+
+  :host-context([dir="rtl"]) .timeline-item::before {
+    left: auto;
+    right: 30px;
+  }
+
+  .timeline-item:last-child::before {
+    display: none;
+  }
+
+  .timeline-marker {
+    flex-shrink: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-content {
+    flex: 1;
+    padding-top: 0.5rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .team-grid,
@@ -930,6 +990,41 @@
   .compact-feature {
     padding: 3rem 1.5rem;
     border-radius: 16px;
+  }
+
+  .timeline-items {
+    gap: 2.5rem;
+    max-width: 100%;
+  }
+
+  .timeline-item {
+    gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+
+  .timeline-marker {
+    margin: 0 auto 1rem;
+  }
+
+  .timeline-content {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .section-team-preview {
