@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher';
@@ -10,7 +10,7 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
   standalone: true,
   imports: [TranslateModule, LanguageSwitcherComponent]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnDestroy {
   isScrolled = false;
   menuOpen = false;
 
@@ -23,10 +23,25 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+    this.toggleBodyScroll();
   }
 
   closeMenu() {
     this.menuOpen = false;
+    this.toggleBodyScroll();
+  }
+
+  private toggleBodyScroll() {
+    if (this.menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  ngOnDestroy() {
+    // Restore body scroll when component is destroyed
+    document.body.style.overflow = '';
   }
 
   scrollToContact(event: Event) {

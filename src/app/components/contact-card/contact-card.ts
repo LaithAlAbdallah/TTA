@@ -23,6 +23,26 @@ export class ContactCard implements OnInit {
     mapLink: 'https://www.google.com/maps/search/?api=1&query=Mohammed+Salem+Bakhit+Al+Bakhit+Al+Falsi%2C+Hor+Al+Anz+East%2C+Owned+Property+No.+175-M17%2C+Dubai%2C+United+Arab+Emirates'
   };
 
+  getGoogleMapsUrl(): string {
+    const address = 'Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates';
+    const encodedAddress = encodeURIComponent(address);
+    
+    // Check if we're on iOS
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      // Use Google Maps app URL scheme for iOS
+      return `comgooglemaps://?q=${encodedAddress}`;
+    }
+    
+    // Check if we're on Android
+    if (/Android/.test(navigator.userAgent)) {
+      // Use geo: URL scheme for Android
+      return `geo:0,0?q=${encodedAddress}`;
+    }
+    
+    // Fallback to web version for desktop and other devices
+    return `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+  }
+
   ngOnInit() {
     // Add scroll reveal animation
     this.setupScrollReveal();

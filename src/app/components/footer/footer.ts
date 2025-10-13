@@ -44,6 +44,26 @@ export class FooterComponent {
     document.body.style.overflow = '';
   }
 
+  getGoogleMapsUrl(): string {
+    const address = 'Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates';
+    const encodedAddress = encodeURIComponent(address);
+    
+    // Check if we're on iOS
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      // Use Google Maps app URL scheme for iOS
+      return `comgooglemaps://?q=${encodedAddress}`;
+    }
+    
+    // Check if we're on Android
+    if (/Android/.test(navigator.userAgent)) {
+      // Use geo: URL scheme for Android
+      return `geo:0,0?q=${encodedAddress}`;
+    }
+    
+    // Fallback to web version for desktop and other devices
+    return `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+  }
+
   @HostListener('document:keydown', ['$event'])
   handleKeydown(event: KeyboardEvent) {
     if (!this.isModalOpen) return;
