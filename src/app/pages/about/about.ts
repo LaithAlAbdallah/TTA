@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
+import { SEOService } from '../../services/seo.service';
 import { VisionSection } from './components/vision-section';
 import { AboutRoleSection } from './components/about-role-section';
 import { MissionSection } from './components/mission-section';
@@ -69,7 +70,8 @@ export class About implements OnInit, AfterViewInit {
   constructor(
     private contentService: ContentService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private seoService: SEOService
   ) {}
 
   ngOnInit() {
@@ -78,6 +80,10 @@ export class About implements OnInit, AfterViewInit {
       ...member,
       isExpanded: false
     }));
+    
+    // Update SEO for about page
+    const seoData = this.seoService.getSEOForRoute('/about');
+    this.seoService.updateSEO(seoData);
   }
 
   toggleBio(member: TeamMember & { isExpanded: boolean }) {

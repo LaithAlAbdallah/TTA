@@ -1,7 +1,7 @@
-<div class="about-page">
-  <section class="about-hero">
+<main class="about-page" role="main">
+  <section class="about-hero" aria-label="About page hero">
     <div class="hero-content">
-      <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists" class="hero-logo">
+      <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists Logo | About Our Dubai Trading Company" class="hero-logo" loading="eager" width="300" height="150">
       <h1 class="hero-title">{{ 'HERO.ABOUT_PAGE.TITLE' | translate }}</h1>
       <p class="hero-subtitle">{{ 'HERO.ABOUT_PAGE.SUBTITLE' | translate }}</p>
     </div>
@@ -40,7 +40,7 @@
           <div class="team-members-grid">
             <div class="team-member-card-full" *ngFor="let member of teamMembers; let i = index" [id]="member.id">
               <div class="member-image-wrapper-full">
-                <img [src]="member.image" [alt]="'Photo of ' + member.name" class="team-image-full">
+                <img [src]="member.image" [alt]="member.name + ' - TTA Team Member and Principal'" class="team-image-full" loading="lazy" width="400" height="500">
               </div>
               <div class="member-details-full">
                 <h3 class="member-name-full">{{ member.name | translate }}</h3>
@@ -65,6 +65,6 @@
       </section>
     </main>
   </div>
-</div>
+</main>
 
 <app-floating-actions></app-floating-actions>
