@@ -259,8 +259,8 @@ font-size: 2.5rem;
 }
 
 .member-bio-short.expanded {
-  display: block;
-  -webkit-line-clamp: unset;
+  display: none;
+  margin: 0;
 }
 
 .member-bio-full {
