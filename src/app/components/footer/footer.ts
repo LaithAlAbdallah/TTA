@@ -22,6 +22,11 @@ export class FooterComponent {
     this.router.navigate(['/'], { fragment: 'contact' });
   }
 
+  navigateToWhoWeAre(event: Event) {
+    event.preventDefault();
+    this.router.navigate(['/about'], { fragment: 'who-we-are' });
+  }
+
   openContactModal() {
     this.isModalOpen = true;
     // Prevent body scroll when modal is open

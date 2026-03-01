@@ -2,7 +2,7 @@ import { Component, OnInit, AfterViewInit, OnDestroy, Inject } from '@angular/co
 import { DOCUMENT } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
 import { SEOService } from '../../services/seo.service';
 
@@ -45,6 +45,7 @@ export class Services implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     private seoService: SEOService,
     private route: ActivatedRoute,
+    private router: Router,
     @Inject(DOCUMENT) private doc: Document
   ) {}
 
@@ -70,7 +71,8 @@ export class Services implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        requestAnimationFrame(() => {
+        // Short delay so layout (especially on mobile) is complete before measuring/scroll
+        setTimeout(() => {
           const element = document.getElementById(fragment);
           if (element) {
             const header = document.querySelector('.header');
@@ -81,7 +83,7 @@ export class Services implements OnInit, AfterViewInit, OnDestroy {
               behavior: 'smooth'
             });
           }
-        });
+        }, 100);
       }
     });
   }
@@ -92,5 +94,10 @@ export class Services implements OnInit, AfterViewInit, OnDestroy {
 
   getServiceDescriptionKey(i: number): string {
     return `OUR_SERVICES.SERVICES.${i}.DESCRIPTION`;
+  }
+
+  scrollToContact(event: Event) {
+    event.preventDefault();
+    this.router.navigate(['/'], { fragment: 'contact' });
   }
 }

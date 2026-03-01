@@ -93,23 +93,19 @@ export class About implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        // Use requestAnimationFrame for smoother timing
-        requestAnimationFrame(() => {
+        // Short delay so layout (especially on mobile) is complete before measuring/scroll
+        setTimeout(() => {
           const element = document.getElementById(fragment);
           if (element) {
-            // Get the actual header height dynamically
             const header = document.querySelector('.header');
-            const headerHeight = header ? header.getBoundingClientRect().height : 80;
-            
-            // Calculate precise position - element top minus header height
+            const headerHeight = header ? (header as HTMLElement).getBoundingClientRect().height : 80;
             const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            
             window.scrollTo({
-              top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+              top: Math.max(0, elementPosition),
               behavior: 'smooth'
             });
           }
-        });
+        }, 100);
       }
     });
   }

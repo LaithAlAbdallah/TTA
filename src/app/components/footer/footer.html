@@ -13,7 +13,7 @@
           <a href="/" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.0' | translate }}</a>
           <a href="/about" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.1' | translate }}</a>
           <a href="/services" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.2' | translate }}</a>
-          <a href="/about#who-we-are" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.3' | translate }}</a>
+          <a href="/about" class="footer-link" (click)="navigateToWhoWeAre($event)">{{ 'FOOTER.QUICK_LINKS.LINKS.3' | translate }}</a>
           <a (click)="navigateToContact($event)" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.4' | translate }}</a>
         </nav>
       </div>
