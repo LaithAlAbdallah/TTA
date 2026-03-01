@@ -286,6 +286,51 @@ font-size: 2.5rem;
   margin-bottom: 0;
 }
 
+.member-bio-full ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.member-bio-full ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.member-bio-full ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: #D4AF37;
+  border-radius: 50%;
+}
+
+.member-bio-full ul li strong {
+  color: #0c2440;
+  font-weight: 600;
+}
+
+.member-bio-full ul li:last-child {
+  margin-bottom: 0;
+}
+
+:host-context([dir="rtl"]) .member-bio-full ul li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+:host-context([dir="rtl"]) .member-bio-full ul li::before {
+  left: auto;
+  right: 0;
+}
+
 .read-more-btn-full {
   background: none;
   border: none;

@@ -6,7 +6,7 @@
   <!-- Home Page - Highest Priority -->
   <url>
     <loc>https://tta-dubai.com/</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tta-dubai.com/"/>
@@ -23,7 +23,7 @@
   <!-- About Page -->
   <url>
     <loc>https://tta-dubai.com/about</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tta-dubai.com/about"/>
@@ -32,17 +32,29 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tta-dubai.com/about"/>
   </url>
   
+  <!-- Our Services Page -->
+  <url>
+    <loc>https://tta-dubai.com/services</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tta-dubai.com/services"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tta-dubai.com/ar/services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tta-dubai.com/ru/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tta-dubai.com/services"/>
+  </url>
+  
   <!-- About Page Sections (for better indexing) -->
   <url>
     <loc>https://tta-dubai.com/about#vision</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://tta-dubai.com/about#who-we-are</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

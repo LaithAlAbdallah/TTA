@@ -47,6 +47,8 @@ export class SEOService {
     this.meta.updateTag({ property: 'og:image', content: image });
     this.meta.updateTag({ property: 'og:url', content: url });
     this.meta.updateTag({ property: 'og:type', content: type });
+    this.meta.updateTag({ property: 'og:site_name', content: 'TTA - The Turnaround Artists' });
+    this.meta.updateTag({ property: 'og:locale', content: 'en_AE' });
 
     // Twitter Card tags
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
@@ -125,6 +127,12 @@ export class SEOService {
         title: 'About TTA - The Turnaround Artists | Trading & Distribution Company Dubai',
         description: 'Learn about TTA - The Turnaround Artists, a leading trading and distribution company connecting world-class manufacturers with diverse markets worldwide. Based in Dubai, UAE.',
         keywords: 'TTA about, The Turnaround Artists, trading company Dubai, distribution company UAE, GCC distribution, Middle East trading, brand distribution Dubai',
+        type: 'website'
+      },
+      '/services': {
+        title: 'Our Services - TTA | Trading & Distribution Solutions Dubai',
+        description: 'Trade marketing, market entry, business setup, brand strategy, operational optimization & market research. We partner with businesses to build strong market foundations and accelerate growth across the GCC.',
+        keywords: 'TTA services, distribution services Dubai, trading solutions UAE, route to market, go-to-market strategy, brand strategy Dubai, market entry advisory, regulatory compliance UAE, GCC distribution services',
         type: 'website'
       }
     };

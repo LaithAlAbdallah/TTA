@@ -47,7 +47,7 @@
                 <p class="member-title-full">{{ member.title | translate }}</p>
                 <div class="member-bio-container-full">
                   <p class="member-bio-short" [class.expanded]="member.isExpanded">{{ member.shortBio | translate }}</p>
-                  <div class="member-bio-full" [class.expanded]="member.isExpanded">{{ member.fullBio | translate }}</div>
+                  <div class="member-bio-full" [class.expanded]="member.isExpanded" [innerHTML]="member.fullBio | translate"></div>
                   <button 
                     class="read-more-btn-full" 
                     (click)="toggleBio(member)"

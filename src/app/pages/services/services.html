@@ -1,0 +1,89 @@
+<main class="services-page" role="main">
+  <section class="services-hero" aria-label="Our Services hero">
+    <div class="hero-content">
+      <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists Logo | Our Services" class="hero-logo" loading="eager" width="300" height="150">
+      <h1 class="hero-title">{{ 'HERO.SERVICES_PAGE.TITLE' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'HERO.SERVICES_PAGE.SUBTITLE' | translate }}</p>
+    </div>
+  </section>
+
+  <section class="services-cards-section" aria-label="Services list">
+    <div class="services-content-wrapper">
+      <div class="services-grid">
+        <article *ngFor="let sectionId of sectionIds; let i = index"
+                 [id]="sectionId"
+                 class="service-card"
+                 [style.animation-delay]="(i * 0.08) + 's'"
+                 [attr.aria-labelledby]="'service-title-' + i">
+          <div class="service-card-accent"></div>
+          <div class="service-card-icon">
+            <!-- Trade Marketing & Go-to-Market -->
+            <ng-container *ngIf="i === 0">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 32 16 24 24 28 32 18 40 22"/>
+              </svg>
+            </ng-container>
+            <!-- Market Entry & Expansion -->
+            <ng-container *ngIf="i === 1">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="24" cy="24" r="14"/>
+                <path d="M24 10v4M24 34v4M10 24h4M34 24h4M14.34 14.34l2.83 2.83M30.83 30.83l2.83 2.83M14.34 33.66l2.83-2.83M30.83 17.17l2.83-2.83"/>
+                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              </svg>
+            </ng-container>
+            <!-- Business Setup & Compliance -->
+            <ng-container *ngIf="i === 2">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 8h20v32H14z"/>
+                <path d="M14 16h20M14 24h14M14 32h10"/>
+                <path d="M20 8V6a2 2 0 0 1 4 0v2"/>
+              </svg>
+            </ng-container>
+            <!-- Brand Strategy & Positioning -->
+            <ng-container *ngIf="i === 3">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 28l12-16 12 16H12z"/>
+                <path d="M24 12v24"/>
+                <path d="M18 22h12"/>
+              </svg>
+            </ng-container>
+            <!-- Operational Strategy & Optimization -->
+            <ng-container *ngIf="i === 4">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="24" cy="24" r="8"/>
+                <path d="M24 16v-4M24 32v4M16 24h-4M32 24h4"/>
+                <circle cx="24" cy="14" r="3"/>
+                <circle cx="24" cy="34" r="3"/>
+                <circle cx="14" cy="24" r="3"/>
+                <circle cx="34" cy="24" r="3"/>
+              </svg>
+            </ng-container>
+            <!-- Market Research & Consumer Insights -->
+            <ng-container *ngIf="i === 5">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="22" cy="22" r="10"/>
+                <path d="M30 30l8 8"/>
+              </svg>
+            </ng-container>
+          </div>
+          <h3 class="service-card-title" [id]="'service-title-' + i">{{ getServiceTitleKey(i) | translate }}</h3>
+          <p class="service-card-description">{{ getServiceDescriptionKey(i) | translate }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta" id="contact" aria-label="Contact call to action">
+    <div class="section-content">
+      <div class="cta-section">
+        <div class="cta-content">
+          <h3>{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.TITLE' | translate }}</h3>
+          <p>{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.DESCRIPTION' | translate }}</p>
+          <a href="/#contact" class="cta-button">{{ 'ABOUT.PARTNERS.CALL_TO_ACTION.BUTTON' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-floating-actions></app-floating-actions>
