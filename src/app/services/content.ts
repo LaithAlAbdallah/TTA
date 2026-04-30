@@ -162,6 +162,14 @@ export class ContentService {
         image: 'assets/images/Ahmad-Awamleh.jpg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.3.SHORT_BIO',
         fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.3.FULL_BIO'
+      },
+      {
+        id: 'nenad-nikolovski',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.4.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.4.TITLE',
+        image: 'assets/images/Nenad.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.4.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.4.FULL_BIO'
       }
     ];
   }
