@@ -44,7 +44,7 @@ interface Partner {
   styles: [`
     .partners-section {
       background: white;
-      padding: 80px 24px 120px;
+      padding: 80px 24px 0px;
       scroll-margin-top: 100px;
     }
 

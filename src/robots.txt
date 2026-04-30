@@ -1,0 +1,11 @@
+# robots.txt for TTA - The Turnaround Artists
+# This file tells search engines which pages to crawl
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any exist in future)
+# Disallow: /admin/
+
+# Sitemap location - tells search engines where to find your sitemap
+Sitemap: https://tta-dubai.com/sitemap.xml

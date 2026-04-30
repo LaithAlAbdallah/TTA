@@ -2,7 +2,7 @@
   <div class="footer-content">
     <div class="footer-grid">
       <div class="footer-section">
-        <img src="assets/images/Full-LOGO.png" alt="TTA Logo" class="footer-logo">
+        <img src="assets/images/Full-LOGO.png" alt="TTA - The Turnaround Artists | Dubai Trading and Distribution Company" class="footer-logo" loading="lazy" width="250" height="125">
         <p class="footer-tagline">{{ 'FOOTER.COMPANY_INFO.COMPANY_NAME' | translate }}</p>
         <p class="footer-description">{{ 'FOOTER.COMPANY_INFO.DESCRIPTION' | translate }}</p>
       </div>
@@ -12,8 +12,9 @@
         <nav class="footer-nav">
           <a href="/" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.0' | translate }}</a>
           <a href="/about" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.1' | translate }}</a>
-          <a href="/about#who-we-are" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.2' | translate }}</a>
-          <a (click)="navigateToContact($event)" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.3' | translate }}</a>
+          <a href="/services" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.2' | translate }}</a>
+          <a href="/about" class="footer-link" (click)="navigateToWhoWeAre($event)">{{ 'FOOTER.QUICK_LINKS.LINKS.3' | translate }}</a>
+          <a (click)="navigateToContact($event)" class="footer-link">{{ 'FOOTER.QUICK_LINKS.LINKS.4' | translate }}</a>
         </nav>
       </div>
 

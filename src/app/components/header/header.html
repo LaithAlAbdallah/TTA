@@ -1,7 +1,7 @@
 <header class="header" [class.scrolled]="isScrolled">
   <div class="header-container">
     <a href="/" class="logo-link" [attr.aria-label]="'HEADER.ARIA_LABELS.TTA_HOME' | translate">
-      <img src="assets/images/TTA-Mark.png" alt="TTA Logo" class="logo">
+      <img src="assets/images/TTA-Mark.png" alt="TTA - The Turnaround Artists Logo" class="logo" loading="eager" width="50" height="50">
     </a>
 
     <button
@@ -19,6 +19,7 @@
     <nav class="nav" [class.open]="menuOpen">
       <a href="/" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAVIGATION.HOME' | translate }}</a>
       <a href="/about" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAVIGATION.ABOUT_US' | translate }}</a>
+      <a href="/services" class="nav-link" (click)="closeMenu()">{{ 'HEADER.NAVIGATION.OUR_SERVICES' | translate }}</a>
       <a href="#" class="nav-link" (click)="scrollToWhoWeAre($event)">{{ 'HEADER.NAVIGATION.WHO_WE_ARE' | translate }}</a>
       <a href="#contact" class="nav-link" (click)="scrollToContact($event)">{{ 'HEADER.NAVIGATION.CONTACT_US' | translate }}</a>
       <app-language-switcher></app-language-switcher>

@@ -2,6 +2,7 @@
   publish = "dist/demo/browser"
   command = "npm run build:prod"
 
+# SPA routing: serve index.html for all paths so Angular handles /, /about, /services
 [[redirects]]
   from = "/*"
   to = "/index.html"

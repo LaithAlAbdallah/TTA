@@ -9,6 +9,7 @@
     "NAVIGATION": {
       "HOME": "Home",
       "ABOUT_US": "About Us",
+      "OUR_SERVICES": "Our Services",
       "WHO_WE_ARE": "Who We Are",
       "CONTACT_US": "Contact Us"
     },
@@ -31,6 +32,10 @@
     "ABOUT_PAGE": {
       "TITLE": "About TTA",
       "SUBTITLE": "Trading and distribution company connecting world-class manufacturers with diverse markets worldwide"
+    },
+    "SERVICES_PAGE": {
+      "TITLE": "Our Services",
+      "SUBTITLE": "We partner with businesses to build strong market foundations, accelerate growth, and operate with clarity and confidence."
     }
   },
   "ABOUT": {
@@ -261,21 +266,43 @@
       },
       {
         "NAME": "Ruslan Humbatov",
-        "TITLE": "Commercial Executive",
-        "SHORT_BIO": "Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region.",
-        "FULL_BIO": "Dynamic and results-driven Commercial Executive with over 15 years of leadership experience in the FMCG industry across the CIS region. Recipient of the Global P&G CEO Award for outstanding performance. Skilled in distributor network management, market expansion, and strategic planning, with a proven record of driving sustainable growth and operational excellence. A certified P&G Trainer, I have established Data & Analytics Centers and led impactful capability-building programs that empowered teams and strengthened organizational performance. With a strong commercial mindset, cross-cultural expertise, and a passion for developing people, I excel in building high-performing teams and fostering long-term business success in dynamic markets."
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "Dynamic and results-driven Executive Leader with over 16 years of progressive leadership experience in the FMCG industry across the Türkiye, CIS region coupled global projects.",
+        "FULL_BIO": "Dynamic and results-driven Executive Leader with over 16 years of progressive leadership experience in the FMCG industry across the Türkiye, CIS region coupled global projects. Proven track record in Distributor network management, Market entry and expansion, Strategic planning and execution, Capability building: Established Data & Analytics Centers and conducted high-impact training programs as a P&G Certified Trainer, contributing to the development of talent within and beyond the organization, Leadership and influence: Combining strong commercial acumen with hands-on operational expertise, I bring a passion for delivering value, developing people, and building high-performing teams in complex and evolving markets"
       },
       {
         "NAME": "Ahmad Al Awamleh",
         "TITLE": "Business Development Manager",
         "SHORT_BIO": "Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions.",
         "FULL_BIO": "Engineer and business strategist with over 12 years of experience driving brand expansion, operational excellence, and revenue growth across multiple regions. Known for a data-driven approach and strong leadership in optimizing quality, compliance, and performance, with successful partnerships with global names such as Red Bull and Floward, contributing to increased market share and customer satisfaction. Skilled in building scalable systems, improving efficiency, and developing strategies that align innovation with commercial success. Passionate about continuous improvement and sustainable growth, with a focus on delivering measurable results that enhance brand reputation, strengthen operations, and ensure long-term profitability."
+      },
+      {
+        "NAME": "Nenad Nikolovski",
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "Executive leader with 25+ years of international experience in sales, general management, and business transformation across FMCG, distribution, and manufacturing sectors.",
+        "FULL_BIO": "Executive leader with 25+ years of international experience in sales, general management, and business transformation across FMCG, distribution, and manufacturing sectors. Proven track record of delivering sustainable growth, leading complex turnarounds, and building high-performing organizations across South East Europe and broader international markets. Inspiring trust, passionate about people and business development."
       }
     ],
     "BUTTONS": {
       "READ_LESS": "Read Less",
       "READ_MORE": "Read More"
     }
+  },
+  "OUR_SERVICES": {
+    "TITLE": "Our Services",
+    "INTRO": "We partner with businesses to build strong market foundations, accelerate growth, and operate with clarity and confidence.",
+    "CTA": {
+      "TITLE": "Ready to build your market foundation?",
+      "BUTTON": "Get in touch"
+    },
+    "SERVICES": [
+      { "TITLE": "Trade Marketing & Go-to-Market Strategy", "DESCRIPTION": "We develop go-to-market strategies that enhance brand presence, strengthen channel execution, and drive sustainable sales growth." },
+      { "TITLE": "Market Entry & Expansion Advisory", "DESCRIPTION": "We guide businesses through new market entry and expansion with structured strategies that reduce risk and unlock scalable growth." },
+      { "TITLE": "Business Setup & Regulatory Compliance", "DESCRIPTION": "We provide end-to-end support for business registration, licensing, and regulatory compliance, ensuring a smooth and compliant market launch." },
+      { "TITLE": "Brand Strategy & Positioning", "DESCRIPTION": "We craft clear brand strategies and positioning frameworks that connect with your target audience and stand out in competitive markets." },
+      { "TITLE": "Operational Strategy & Optimization", "DESCRIPTION": "We optimize business operations to improve efficiency, enhance performance, and support scalable, long-term growth." },
+      { "TITLE": "Market Research & Consumer Insights", "DESCRIPTION": "We deliver data-driven market research and consumer insights to support informed decision-making and strategic clarity." }
+    ]
   },
   "CONTACT": {
     "GET_IN_TOUCH": {
@@ -325,6 +352,7 @@
       "LINKS": [
         "Home",
         "About Us",
+        "Our Services",
         "Who We Are",
         "Contact"
       ]
