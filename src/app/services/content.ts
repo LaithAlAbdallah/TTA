@@ -170,6 +170,14 @@ export class ContentService {
         image: 'assets/images/Nenad.jpeg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.4.SHORT_BIO',
         fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.4.FULL_BIO'
+      },
+      {
+        id: 'mohsin-ali',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.5.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.5.TITLE',
+        image: 'assets/images/Mohsin-Ali.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.5.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.5.FULL_BIO'
       }
     ];
   }
