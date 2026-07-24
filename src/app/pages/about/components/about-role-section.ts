@@ -13,6 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
           <div class="text-content">
             <h2 class="section-title">{{ 'ABOUT.ABOUT_ROLE.TITLE' | translate }}</h2>
             <p class="first-paragraph">{{ 'ABOUT.ABOUT_ROLE.DESCRIPTION' | translate }}</p>
+            <p>{{ 'ABOUT.ABOUT_ROLE.DESCRIPTION_P2' | translate }}</p>
+            <p>{{ 'ABOUT.ABOUT_ROLE.DESCRIPTION_P3' | translate }}</p>
             <p>{{ 'ABOUT.ABOUT_ROLE.STATISTICS' | translate }}</p>
           </div>
           <div class="visual-content">

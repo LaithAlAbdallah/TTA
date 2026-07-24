@@ -1,0 +1,43 @@
+---
+description: Prepare production build for Netlify (Angular static SPA)
+alwaysApply: true
+---
+
+# Prepare Build — Netlify (Angular SPA)
+
+When the user asks to **prepare a build**, **prepare for Netlify**, **prepare for production**, or similar:
+
+## Deployment model
+
+- **This repo is Angular** (`demo` project). Netlify serves the static SPA from `dist/demo/browser`.
+- Config lives in `netlify.toml`: build command `npm run build:prod`, publish dir `dist/demo/browser`, SPA redirect `/* → /index.html`, Node 18.
+- Vercel is also supported (`vercel.json` + `npm run deploy:vercel`); this rule focuses on Netlify.
+
+## Required workflow (do not skip steps)
+
+1. **Do not break existing features** — fix only what the build needs; no unrelated refactors.
+2. **Confirm Netlify config** — `netlify.toml` must publish `dist/demo/browser` and run `npm run build:prod`. Keep the SPA `[[redirects]]` so Angular routes work.
+3. **Clean stale output** if a prior build failed — delete `dist/` (and optionally `.angular/cache`) before rebuilding.
+4. **Verify code health:**
+   - `npx tsc -p tsconfig.app.json --noEmit` — fix TypeScript errors if any.
+   - Prefer fixing compile/build errors over silencing them.
+5. **Run production build:** `npm run build:prod`
+6. **Confirm success:**
+   - Exit code 0
+   - `dist/demo/browser/` exists with `index.html`, hashed JS/CSS bundles, and assets
+   - SPA fallback files present when expected (`_redirects` from `src/` if configured)
+7. **Tell the user clearly:**
+   - Build succeeded
+   - **What to upload / publish:** contents of `dist/demo/browser/` (or use `npm run deploy:netlify` / Netlify Git deploy)
+   - Remind: this is a static SPA — routing depends on Netlify redirects / `_redirects`
+
+## Manual / CLI deploy
+
+- Drag-and-drop or CLI: publish **`dist/demo/browser`**, not the repo root.
+- CLI: `npm run deploy:netlify` (runs `netlify deploy --prod --dir=dist/demo/browser`).
+
+## What NOT to do
+
+- Do not force-push, amend commits, or deploy unless explicitly asked.
+- Do not change `outputPath` / publish dir without updating `netlify.toml` and deploy scripts together.
+- Do not remove the SPA redirect — deep links (`/about`, `/services`, etc.) will 404 without it.

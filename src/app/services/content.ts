@@ -178,6 +178,54 @@ export class ContentService {
         image: 'assets/images/Mohsin-Ali.jpeg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.5.SHORT_BIO',
         fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.5.FULL_BIO'
+      },
+      {
+        id: 'andrey-grigoriev',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.6.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.6.TITLE',
+        image: 'assets/images/Andrey-Grigoriev.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.6.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.6.FULL_BIO'
+      },
+      {
+        id: 'thanasis-tsepisis',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.7.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.7.TITLE',
+        image: 'assets/images/Thanasis-Tsepisis.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.7.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.7.FULL_BIO'
+      },
+      {
+        id: 'niko-kontoyannis',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.8.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.8.TITLE',
+        image: 'assets/images/Niko-Kontoyannis.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.8.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.8.FULL_BIO'
+      },
+      {
+        id: 'aadil-katyal',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.9.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.9.TITLE',
+        image: 'assets/images/Aadil-Katyal.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.9.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.9.FULL_BIO'
+      },
+      {
+        id: 'william-ordonez',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.10.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.10.TITLE',
+        image: 'assets/images/William-Ordonez.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.10.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.10.FULL_BIO'
+      },
+      {
+        id: 'muhammad-amin',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.11.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.11.TITLE',
+        image: 'assets/images/Muhammad-Amin.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.FULL_BIO'
       }
     ];
   }

@@ -24,14 +24,15 @@
   },
   "HERO": {
     "HOME_PAGE": {
-      "TITLE": "Leading Bridge Between Global Manufacturers and Markets Worldwide",
-      "SUBTITLE": "Enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all",
-      "LEARN_ABOUT_US_BUTTON": "Learn About Us",
-      "CONTACT_US_BUTTON": "Contact Us"
+      "TITLE": "We don't trade opportunistically. We don't just find distributors. We build brands sustainably.",
+      "SUBTITLE": "TTA partners with world-class brands to architect their global growth — across 100+ countries, through strategic distribution, senior-led brand-building, and hands-on market execution.",
+      "LEARN_ABOUT_US_BUTTON": "See How We Work →",
+      "CONTACT_US_BUTTON": "Contact Us",
+      "MEET_TEAM_BUTTON": "Meet the Artists Team →"
     },
     "ABOUT_PAGE": {
       "TITLE": "About TTA",
-      "SUBTITLE": "Trading and distribution company connecting world-class manufacturers with diverse markets worldwide"
+      "SUBTITLE": "A global strategic brand builder headquartered in Dubai — designing, building, and scaling international distribution for world-class brands."
     },
     "SERVICES_PAGE": {
       "TITLE": "Our Services",
@@ -46,62 +47,66 @@
         "About Us & Our Role",
         "Our Mission",
         "Our Core Pillars",
-        "Our Strategic Reach",
-        "Our Business Model: Built on Teamwork",
+        "A Global Network Built Over Decades",
+        "How We Work",
         "Trusted Partnerships Across Industries",
-        "Our Principals",
+        "Our Principal Partners",
         "Our Partners",
+        "Case Study: Mega Prime",
+        "Why TTA Is Different",
         "Who We Are"
       ]
     },
     "VISION": {
       "TITLE": "Our Vision",
-      "DESCRIPTION": "We aim to be the leading bridge between global manufacturers and markets worldwide—enabling seamless trade, smart distribution, and lasting partnerships that drive growth for all.",
-      "DETAILED_DESCRIPTION": "Our focus is helping outstanding regional companies scale globally. We represent some of the finest start-ups and mid-sized businesses ready to expand. With hands-on operational experience—from building route-to-market strategies to restructuring—we deliver proven results. We are a lean, agile team, bringing unmatched value to every partnership.",
+      "DESCRIPTION": "To be the world's most trusted strategic brand builder — the partner that transforms ambitious brands into global category leaders.",
+      "DETAILED_DESCRIPTION": "Our focus is ambitious brands ready to own their category globally. We work with outstanding start-ups, mid-market challengers, and established players seeking new market entry — combining hands-on operational expertise with a proven global network.\n\nFrom route-to-market strategy to full market restructuring, we deliver results others can't — because we've done it ourselves.",
       "WHY_IT_MATTERS": "Why it matters",
       "BENEFITS": [
-        "Seamless connection between manufacturers and global markets",
-        "Proven expertise in scaling regional companies internationally",
-        "Lean, agile approach delivering maximum value"
+        "Strategic brand building that turns ambitious brands into category leaders",
+        "Proven expertise scaling brands across 100+ countries",
+        "Senior-led, hands-on approach delivering measurable results"
       ]
     },
     "ABOUT_ROLE": {
       "TITLE": "About Us & Our Role",
-      "DESCRIPTION": "TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide. With a strong international presence, deep market knowledge, and an extensive partner network, we deliver value, visibility, and scale for brands.",
-      "STATISTICS": "We manage top global brands in over 100 countries, supported by 80+ years of expertise in international expansion.",
+      "DESCRIPTION": "TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We work with world-class brands to design, build, and scale their international distribution across the world.",
+      "STATISTICS": "We work with world-class brands across 100+ countries, supported by 80+ years of collective expertise in international expansion.",
       "DIAGRAM_LABELS": {
         "MANUFACTURERS": "Manufacturers",
         "TTA": "TTA",
         "MARKETS": "Markets"
-      }
+      },
+      "DESCRIPTION_P2": "Our senior team brings 80+ years of collective expertise spanning P&G, Coca-Cola, Redbull, and leading FMCG multinationals. We don't just place products in markets — we build the infrastructure, strategy, and partnerships that create sustainable global businesses.",
+      "DESCRIPTION_P3": "We are not a traditional distributor, and we are not a hands-off agency. We are a strategic brand broker — the partner that connects the world's best brands with the world's fastest-growing markets, and stays accountable for the result."
     },
     "MISSION": {
       "TITLE": "Our Mission",
-      "DESCRIPTION": "We connect brands and consumers through market-driven strategies, collaboration, and a win-win mindset—creating long-term value across the supply chain.",
+      "DESCRIPTION": "We architect global growth for outstanding brands — combining deep market intelligence, a 100+ country network, and 80+ years of collective expertise to deliver results that matter.",
       "GOALS": [
-        "Identify the right distributors for your brand",
-        "Design cost-efficient go-to-market strategies",
-        "Benefit manufacturers and customers alike"
+        "Architect global growth strategies for outstanding brands",
+        "Combine deep market intelligence with a proven 100+ country network",
+        "Deliver senior-led results with skin in the game"
       ]
     },
     "CORE_PILLARS": {
       "TITLE": "Our Core Pillars",
-      "DESCRIPTION": "Market Knowledge, Continuous Growth, and Win-Win Partnerships form the foundation of our success.",
+      "DESCRIPTION": "Global Intelligence, Local Mastery; Built for Scale, Designed to Last; and Aligned Incentives, Shared Success form the foundation of how we work.",
       "PILLARS": [
         {
-          "TITLE": "Market Knowledge",
-          "SHORT_DESCRIPTION": "Global insights with local expertise to match products with channels.",
-          "DETAILED_DESCRIPTION": "Combining global insights with local expertise to match the right products with the right channels, supported by targeted marketing strategies."
+          "TITLE": "Global Intelligence, Local Mastery",
+          "SHORT_DESCRIPTION": "Every country's market intelligence with deep local expertise — no guesswork.",
+          "DETAILED_DESCRIPTION": "We combine every country's market intelligence with deep local expertise — knowing exactly which channels, partners, and strategies will accelerate your brand in each territory. No guesswork. Just proven playbooks adapted for your market."
         },
         {
-          "TITLE": "Continuous Growth",
-          "SHORT_DESCRIPTION": "Adapting to markets and building mutually beneficial relationships.",
-          "DETAILED_DESCRIPTION": "Adapting to changing markets and building strong, mutually beneficial relationships for sustainable success."
+          "TITLE": "Built for Scale, Designed to Last",
+          "SHORT_DESCRIPTION": "A model built to adapt — so your brand grows across cycles and conditions.",
+          "DETAILED_DESCRIPTION": "Markets evolve. Consumer behaviour shifts. Regulations change. TTA's model is built to adapt — continuously optimising your distribution infrastructure so your brand grows consistently across economic cycles and market conditions."
         },
         {
-          "TITLE": "Win-Win Partnerships",
-          "SHORT_DESCRIPTION": "Ensuring profitability and long-term trust across the value chain.",
-          "DETAILED_DESCRIPTION": "Aligning with supplier goals to ensure profitability and long-term trust across the value chain."
+          "TITLE": "Aligned Incentives. Shared Success.",
+          "SHORT_DESCRIPTION": "We only win when you win — aligned incentives and long-term trust.",
+          "DETAILED_DESCRIPTION": "We only win when you win. TTA structures every partnership around aligned commercial incentives — ensuring profitability, transparency, and long-term trust at every level of the value chain. Your growth is our mandate."
         }
       ],
       "BUTTONS": {
@@ -110,13 +115,13 @@
       }
     },
     "STRATEGIC_REACH": {
-      "TITLE": "Our Strategic Reach",
-      "DESCRIPTION": "TTA serves as a vital link between international manufacturers and global markets. We cover key economies and are expanding into high-potential regions. Our expertise helps brands navigate diverse markets and achieve sustainable growth.",
+      "TITLE": "A Global Network Built Over Decades",
+      "DESCRIPTION": "TTA operates across 180+ countries — spanning GCC & Middle East, Africa, Asia Pacific, Europe, and the Americas. Our network of trusted distributors, regional partners, and in-market experts gives your brand immediate access to markets that would otherwise take years to enter alone.\n\nWe are your fastest route to global scale.",
       "GLOBAL_PRESENCE": "Global Presence"
     },
     "BUSINESS_MODEL": {
-      "TITLE": "Our Business Model: Built on Teamwork",
-      "DESCRIPTION": "Teamwork is the foundation of our success. TTA operates through a global network of partners, distributors, and channels—including B2B, online platforms, modern trade, and traditional retail. Our scalable solutions ensure consistent supply, cost efficiency, and outstanding service.",
+      "TITLE": "How We Work",
+      "DESCRIPTION": "TTA operates as a full-service strategic distribution partner — not just a route-to-market facilitator. We design the architecture, select the partners, manage the relationships, and optimize performance across B2B, e-commerce, modern trade, and traditional retail channels.\n\nScalable. Efficient. Senior-led from day one.",
       "PROCESSES": [
         {
           "TITLE": "Sourcing",
@@ -139,7 +144,7 @@
           "DESCRIPTION": "Ensure consistent supply, cost efficiency, and outstanding service"
         }
       ],
-      "TAGLINE": "At TTA, we don't just distribute products—we create markets."
+      "TAGLINE": "Scalable. Efficient. Senior-led from day one."
     },
     "TRUSTED_PARTNERSHIPS": {
       "TITLE": "Trusted Partnerships Across Industries",
@@ -171,8 +176,8 @@
       }
     },
     "PRINCIPALS": {
-      "TITLE": "Our Principals",
-      "DESCRIPTION": "TTA's strength lies in trusted partnerships with world-class distributors and strategic principals. We know what to look for in top-tier distributors and how to design cost-effective routes-to-market that benefit all parties.",
+      "TITLE": "Our Principal Partners",
+      "DESCRIPTION": "TTA works alongside some of the world's most respected brands and manufacturers. Our partnerships are built on trust, transparency, and a track record of results — across categories including FMCG, health & wellness, beauty, food & beverage, and consumer goods.\n\nWe are selective. We are seniors. And we deliver.",
       "INTRO": "Some of the key global principals we work with include:",
       "PRINCIPALS": [
         {
@@ -242,6 +247,23 @@
         "DESCRIPTION": "Join our network of trusted partners and expand your market reach globally.",
         "BUTTON": "Get in Touch"
       }
+    },
+    "CASE_STUDY_MEGA_PRIME": {
+      "TITLE": "Case Study: Mega Prime",
+      "CHALLENGE_LABEL": "Challenge",
+      "CHALLENGE": "Mega Prime was primarily positioned as a regional brand in the Philippines, with limited international visibility.",
+      "ACTION_LABEL": "Action",
+      "ACTION": "TTA supported Mega Prime's preparation for international markets, guided the process toward MWA recognition, and repositioned the brand around universal values of quality, nutrition, and wellness — moving it beyond a single regional identity.",
+      "RESULT_LABEL": "Result",
+      "RESULT": "Mega Prime now sits within a strategically diversified brand portfolio, positioned across distinct categories to meet varying consumer preferences across markets."
+    },
+    "WHY_DIFFERENT": {
+      "TITLE": "Why TTA Is Different",
+      "SUBTITLE": "The Missing Category in Global Brand Distribution",
+      "INTRO": "Most brands face a choice: hire an expensive in-house international team, or use a traditional distributor who treats your product as one of hundreds.",
+      "NEITHER": "TTA is neither.",
+      "BROKER": "We are a strategic brand broker — the senior, accountable partner who thinks like your CMO, executes like your sales director, and delivers like a business owner with skin in the game.",
+      "CLOSING": "We own the outcome. Not just the order."
     }
   },
   "WHO_WE_ARE": {
@@ -287,6 +309,42 @@
         "TITLE": "Canadian Commercial Lead",
         "SHORT_BIO": "Results-driven CPG commercial leader with 20+ years at Reckitt, Kraft, and Colgate, building and launching brands across North America, Asia, GCC and African markets.",
         "FULL_BIO": "Mohsin Ali is the Canadian Commercial lead at TTA, with over two decades of brand building, new market launches, and commercial P&L ownership across Reckitt, Kraft, Colgate, and growth stage startups and scaleups. He has held local, regional, and global roles across strategy, commercial, brand, and innovation, launching 100+ products across new markets. His expertise covers the full commercial cycle from market entry strategy and pricing to brand building, trade activation and in-store execution. Beyond his corporate career, Mohsin founded two startups and partnered with multiple early stage and high growth startups, accelerating market entry, traction and revenue growth. With a deep understanding of how to build brands from zero in new markets, Mohsin brings the experience and drive needed to open and grow TTA's Canada territory."
+      },
+      {
+        "NAME": "Andrey Grigoriev",
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "Senior commercial professional with 25 years of delivering profitable growth and developing capabilities across major multinationals and mid-sized private companies.",
+        "FULL_BIO": "Senior commercial professional with 25 years of delivering profitable growth and developing capabilities in major multinationals and mid-sized private companies. Extensive leadership experience in international sales, distribution, commercial strategy, revenue growth management across diverse categories and multiple global markets. An adept of customer- and shopper-centricity, Andrey's passionate about occasion-based thinking, shopper psychology, and international expansion. He is an expert in route-to-market design and execution, as well as building challenger brands' activity system to secure distribution, drive trial - and ultimately deliver growth ahead of the market."
+      },
+      {
+        "NAME": "Thanasis Tsepisis",
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "A dynamic top executive at Board of Directors level, with substantial international experience leading and growing businesses with full P&L responsibility across B2C and B2B markets.",
+        "FULL_BIO": "A dynamic top executive, at Board of Directors level, with substantial and varied international experience gained globally. General Management in Consumer, Industrial, Agriculture, Hardware, Retail, Hospitality markets (B2C & B2B segments). Has successfully led and grown businesses with full P/L responsibility and has also turned around underperforming entities. Particular skills in Sales, Marketing, Distribution, Business Development, Brand Management, Logistics, Project Management, Supply Chain, Operations, HR, Finance. Has provided dynamic leadership to companies in SE Asia, India, China, Africa, Middle East. Multinational experience and mind-set. Consistently driving increases in profitability. Managed & grew Global brands."
+      },
+      {
+        "NAME": "Niko Kontoyannis",
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "Commercial and Sales executive with 20+ years of experience across the FMCG and Luxury industries in EMEA.",
+        "FULL_BIO": "Executive Leader. Commercial and Sales executive with 20+ years of experience across the FMCG and Luxury industries in EMEA."
+      },
+      {
+        "NAME": "Aadil Katyal",
+        "TITLE": "Executive Leader",
+        "SHORT_BIO": "An executive leader with over a decade at Procter & Gamble, building deep expertise across distribution, logistics, manufacturing, and market development in the India Subcontinent.",
+        "FULL_BIO": "An executive leader with over a decade at Procter & Gamble, he built deep expertise across distribution, logistics, manufacturing, and market development in one of the world's most diverse, fragmented, and competitive FMCG landscapes across India Subcontinent. He has navigated trade environments ranging from modern retail to deep traditional trade, e-commerce to the rapidly evolving quick commerce channel - developing the commercial instincts that bring rigour to brands seeking meaningful market entry and sustainable scale. Pairing sharp commercial acumen with on-ground operational depth, Aadil translates global brand ambition into distributor networks, GTM strategy, and on-ground execution that delivers lasting results."
+      },
+      {
+        "NAME": "William Ordonez",
+        "TITLE": "Commercial & Business Development Lead – LATAM",
+        "SHORT_BIO": "Strategic commercial leader with 17+ years of experience in sales, driving regional expansion, business transformation, and commercial execution across LATAM.",
+        "FULL_BIO": "Strategic commercial leader with 17+ year of experience in sales, driving regional expansion, business transformation, and commercial execution across LATAM. Over his corporate career, he has specialized in restructuring business models, optimizing portfolios, and building regional alliances that deliver sustainable growth. Passionate about continuous improvement, he drives commercial growth from end to end—linking distribution strategy, trade marketing, and in-store execution to deliver profitable growth."
+      },
+      {
+        "NAME": "Muhammad Amin",
+        "TITLE": "Market Lead – Pakistan & Ethiopia",
+        "SHORT_BIO": "Market Lead for Pakistan and Ethiopia at TTA, with expertise in route-to-market strategy, structured retail distribution, and multinational brand management including Unilever portfolios.",
+        "FULL_BIO": "Muhammad Amin serves as the Market Lead for Pakistan and Ethiopia at TTA, bringing a wealth of expertise in route-to-market strategy, structured retail distribution, and multinational brand management. Having successfully managed high-profile portfolios for global giants like Unilever, Amin has a proven track record of driving channel growth across complex markets. His experience spans optimizing full-portfolio distributions, leading dedicated account strategies for major retailers and collaborating with global trade networks. Adept at navigating both structured tier-supermarkets and localized trade landscapes, Amin is uniquely qualified to streamline supply chains, maximize market penetration, build brands and effectively scale TTA's footprint across Pakistan and Ethiopia."
       }
     ],
     "BUTTONS": {
@@ -302,12 +360,30 @@
       "BUTTON": "Get in touch"
     },
     "SERVICES": [
-      { "TITLE": "Trade Marketing & Go-to-Market Strategy", "DESCRIPTION": "We develop go-to-market strategies that enhance brand presence, strengthen channel execution, and drive sustainable sales growth." },
-      { "TITLE": "Market Entry & Expansion Advisory", "DESCRIPTION": "We guide businesses through new market entry and expansion with structured strategies that reduce risk and unlock scalable growth." },
-      { "TITLE": "Business Setup & Regulatory Compliance", "DESCRIPTION": "We provide end-to-end support for business registration, licensing, and regulatory compliance, ensuring a smooth and compliant market launch." },
-      { "TITLE": "Brand Strategy & Positioning", "DESCRIPTION": "We craft clear brand strategies and positioning frameworks that connect with your target audience and stand out in competitive markets." },
-      { "TITLE": "Operational Strategy & Optimization", "DESCRIPTION": "We optimize business operations to improve efficiency, enhance performance, and support scalable, long-term growth." },
-      { "TITLE": "Market Research & Consumer Insights", "DESCRIPTION": "We deliver data-driven market research and consumer insights to support informed decision-making and strategic clarity." }
+      {
+        "TITLE": "Trade Marketing & Go-to-Market Strategy",
+        "DESCRIPTION": "We develop go-to-market strategies that enhance brand presence, strengthen channel execution, and drive sustainable sales growth."
+      },
+      {
+        "TITLE": "Market Entry & Expansion Advisory",
+        "DESCRIPTION": "We guide businesses through new market entry and expansion with structured strategies that reduce risk and unlock scalable growth."
+      },
+      {
+        "TITLE": "Business Setup & Regulatory Compliance",
+        "DESCRIPTION": "We provide end-to-end support for business registration, licensing, and regulatory compliance, ensuring a smooth and compliant market launch."
+      },
+      {
+        "TITLE": "Brand Strategy & Positioning",
+        "DESCRIPTION": "We craft clear brand strategies and positioning frameworks that connect with your target audience and stand out in competitive markets."
+      },
+      {
+        "TITLE": "Operational Strategy & Optimization",
+        "DESCRIPTION": "We optimize business operations to improve efficiency, enhance performance, and support scalable, long-term growth."
+      },
+      {
+        "TITLE": "Market Research & Consumer Insights",
+        "DESCRIPTION": "We deliver data-driven market research and consumer insights to support informed decision-making and strategic clarity."
+      }
     ]
   },
   "CONTACT": {
@@ -351,7 +427,7 @@
   "FOOTER": {
     "COMPANY_INFO": {
       "COMPANY_NAME": "The Turnaround Artists",
-      "DESCRIPTION": "Trading and distribution company connecting world-class manufacturers with diverse markets worldwide."
+      "DESCRIPTION": "A global strategic brand builder headquartered in Dubai — connecting world-class brands with the world's fastest-growing markets."
     },
     "QUICK_LINKS": {
       "TITLE": "Quick Links",
@@ -396,16 +472,16 @@
       "CORE_PILLARS": {
         "PILLARS": [
           {
-            "TITLE": "Market Knowledge",
-            "DESCRIPTION": "Global insights with local expertise"
+            "TITLE": "Global Intelligence, Local Mastery",
+            "DESCRIPTION": "Market intelligence with deep local expertise"
           },
           {
-            "TITLE": "Continuous Growth",
-            "DESCRIPTION": "Adapting to changing markets"
+            "TITLE": "Built for Scale, Designed to Last",
+            "DESCRIPTION": "Distribution that adapts as markets evolve"
           },
           {
-            "TITLE": "Win-Win Partnerships",
-            "DESCRIPTION": "Ensuring profitability and trust"
+            "TITLE": "Aligned Incentives. Shared Success.",
+            "DESCRIPTION": "We only win when you win"
           }
         ]
       },
@@ -451,16 +527,16 @@
       ]
     },
     "SEO_META": {
-      "PAGE_TITLE": "TTA - The Turnaround Artists | Strategic Distribution Excellence in Middle East",
-      "META_DESCRIPTION": "TTA connects world-class brands with thriving GCC and Middle East markets through trusted distribution partnerships and proven expertise. Dubai-based trading and distribution company.",
-      "META_KEYWORDS": "TTA, The Turnaround Artists, distribution, trading, Dubai, GCC, Middle East, strategic partnerships, brand distribution",
+      "PAGE_TITLE": "TTA - The Turnaround Artists | Strategic Brand Builder | Dubai",
+      "META_DESCRIPTION": "TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 100+ countries.",
+      "META_KEYWORDS": "TTA, The Turnaround Artists, strategic brand builder, brand broker, Dubai, global distribution, FMCG, market entry",
       "META_AUTHOR": "TTA - The Turnaround Artists",
-      "OG_TITLE": "TTA - The Turnaround Artists | Strategic Distribution Excellence",
-      "OG_DESCRIPTION": "Connecting world-class brands with thriving GCC and Middle East markets through trusted partnerships and proven expertise.",
+      "OG_TITLE": "TTA - The Turnaround Artists | Strategic Brand Builder",
+      "OG_DESCRIPTION": "A global strategic brand builder headquartered in Dubai — designing, building, and scaling international distribution for world-class brands.",
       "OG_TYPE": "website",
       "OG_URL": "https://tta-dubai.com",
       "TWITTER_TITLE": "TTA - The Turnaround Artists",
-      "TWITTER_DESCRIPTION": "Strategic distribution excellence across the Middle East."
+      "TWITTER_DESCRIPTION": "Strategic brand building and global distribution from Dubai."
     },
     "LOADING_SCREEN": {
       "LOADING_TITLE": "Loading TTA...",

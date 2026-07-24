@@ -104,6 +104,7 @@ import { TranslateModule } from '@ngx-translate/core';
       color: #4a5568;
       margin: 0;
       max-width: 70ch;
+      white-space: pre-line;
     }
 
     .vision-callout {

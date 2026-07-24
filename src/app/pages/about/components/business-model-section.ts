@@ -139,6 +139,7 @@ import { TranslateModule } from '@ngx-translate/core';
       text-align: center;
       margin: 0 auto 64px;
       max-width: 80ch;
+      white-space: pre-line;
     }
 
     .process-flow {

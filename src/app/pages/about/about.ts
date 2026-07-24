@@ -14,6 +14,8 @@ import { BusinessModelSection } from './components/business-model-section';
 import { TrustedPartnershipsSection } from './components/trusted-partnerships-section';
 import { PrincipalsSection } from './components/principals-section';
 import { PartnersSection } from './components/partners-section';
+import { CaseStudySection } from './components/case-study-section';
+import { WhyDifferentSection } from './components/why-different-section';
 
 @Component({
   selector: 'app-about',
@@ -29,7 +31,9 @@ import { PartnersSection } from './components/partners-section';
     BusinessModelSection,
     TrustedPartnershipsSection,
     PrincipalsSection,
-    PartnersSection
+    PartnersSection,
+    CaseStudySection,
+    WhyDifferentSection
   ],
   templateUrl: './about.html',
   styleUrl: './about.css',
@@ -51,7 +55,9 @@ export class About implements OnInit, AfterViewInit {
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.6',
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.7',
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.8',
-    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.9'
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.9',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.10',
+    'ABOUT.TABLE_OF_CONTENTS.SECTIONS.11'
   ];
   
   sectionIds = [
@@ -64,6 +70,8 @@ export class About implements OnInit, AfterViewInit {
     'trusted-partnerships',
     'principals',
     'partners',
+    'case-study',
+    'why-different',
     'who-we-are'
   ];
 

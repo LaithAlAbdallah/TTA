@@ -80,6 +80,7 @@ interface Principal {
       text-align: center;
       margin: 0 auto 48px;
       max-width: 70ch;
+      white-space: pre-line;
     }
 
     .principals-intro-card {

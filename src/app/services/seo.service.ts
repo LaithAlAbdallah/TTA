@@ -118,21 +118,21 @@ export class SEOService {
   getSEOForRoute(route: string): SEOData {
     const routeSEO: { [key: string]: SEOData } = {
       '/': {
-        title: 'TTA - The Turnaround Artists | Strategic Distribution Excellence in Middle East',
-        description: 'TTA connects world-class brands with thriving GCC and Middle East markets through trusted distribution partnerships and proven expertise. Dubai-based trading and distribution company.',
-        keywords: 'TTA, The Turnaround Artists, distribution, trading, Dubai, GCC, Middle East, strategic partnerships, brand distribution, TTA Dubai, TTA UAE',
+        title: 'TTA - The Turnaround Artists | Strategic Brand Builder | Dubai',
+        description: 'TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 100+ countries.',
+        keywords: 'TTA, The Turnaround Artists, strategic brand builder, brand broker, Dubai, global distribution, FMCG, market entry',
         type: 'website'
       },
       '/about': {
-        title: 'About TTA - The Turnaround Artists | Trading & Distribution Company Dubai',
-        description: 'Learn about TTA - The Turnaround Artists, a leading trading and distribution company connecting world-class manufacturers with diverse markets worldwide. Based in Dubai, UAE.',
-        keywords: 'TTA about, The Turnaround Artists, trading company Dubai, distribution company UAE, GCC distribution, Middle East trading, brand distribution Dubai',
+        title: 'About TTA - The Turnaround Artists | Strategic Brand Builder Dubai',
+        description: 'Learn about TTA — The Turnaround Artists, a global strategic brand builder headquartered in Dubai. We design, build, and scale international distribution for world-class brands.',
+        keywords: 'TTA about, The Turnaround Artists, strategic brand builder Dubai, brand broker, global distribution, market entry, FMCG',
         type: 'website'
       },
       '/services': {
-        title: 'Our Services - TTA | Trading & Distribution Solutions Dubai',
-        description: 'Trade marketing, market entry, business setup, brand strategy, operational optimization & market research. We partner with businesses to build strong market foundations and accelerate growth across the GCC.',
-        keywords: 'TTA services, distribution services Dubai, trading solutions UAE, route to market, go-to-market strategy, brand strategy Dubai, market entry advisory, regulatory compliance UAE, GCC distribution services',
+        title: 'Our Services - TTA | Strategic Brand Building & Distribution',
+        description: 'Trade marketing, market entry, business setup, brand strategy, operational optimization & market research. We partner with businesses to build strong market foundations and accelerate growth globally.',
+        keywords: 'TTA services, distribution services Dubai, brand strategy, route to market, go-to-market strategy, market entry advisory, global distribution',
         type: 'website'
       }
     };
