@@ -255,28 +255,10 @@ export class PartnersSection {
       logo: 'Mega-Prime.png'
     },
     {
-      name: 'Bauducco',
+      name: 'pH Plex',
       category: 'ABOUT.PARTNERS.PARTNERS.1.CATEGORY',
       description: 'ABOUT.PARTNERS.PARTNERS.1.DESCRIPTION',
-      logo: 'Bauducco.png'
-    },
-    {
-      name: 'pH Plex',
-      category: 'ABOUT.PARTNERS.PARTNERS.2.CATEGORY',
-      description: 'ABOUT.PARTNERS.PARTNERS.2.DESCRIPTION',
       logo: 'PHplex.png'
-    },
-    {
-      name: 'Kaly',
-      category: 'ABOUT.PARTNERS.PARTNERS.3.CATEGORY',
-      description: 'ABOUT.PARTNERS.PARTNERS.3.DESCRIPTION',
-      logo: 'Kaly.png'
-    },
-    {
-      name: 'Jucai',
-      category: 'ABOUT.PARTNERS.PARTNERS.4.CATEGORY',
-      description: 'ABOUT.PARTNERS.PARTNERS.4.DESCRIPTION',
-      logo: 'Jucai.png'
     }
   ];
 

@@ -119,7 +119,7 @@ export class SEOService {
     const routeSEO: { [key: string]: SEOData } = {
       '/': {
         title: 'TTA - The Turnaround Artists | Strategic Brand Builder | Dubai',
-        description: 'TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 100+ countries.',
+        description: 'TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 180+ countries.',
         keywords: 'TTA, The Turnaround Artists, strategic brand builder, brand broker, Dubai, global distribution, FMCG, market entry',
         type: 'website'
       },

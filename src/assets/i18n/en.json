@@ -25,7 +25,7 @@
   "HERO": {
     "HOME_PAGE": {
       "TITLE": "We don't trade opportunistically. We don't just find distributors. We build brands sustainably.",
-      "SUBTITLE": "TTA partners with world-class brands to architect their global growth — across 100+ countries, through strategic distribution, senior-led brand-building, and hands-on market execution.",
+      "SUBTITLE": "TTA partners with world-class brands to architect their global growth — across 180+ countries, through strategic distribution, senior-led brand-building, and hands-on market execution.",
       "LEARN_ABOUT_US_BUTTON": "See How We Work →",
       "CONTACT_US_BUTTON": "Contact Us",
       "MEET_TEAM_BUTTON": "Meet the Artists Team →"
@@ -64,14 +64,14 @@
       "WHY_IT_MATTERS": "Why it matters",
       "BENEFITS": [
         "Strategic brand building that turns ambitious brands into category leaders",
-        "Proven expertise scaling brands across 100+ countries",
+        "Proven expertise scaling brands across 180+ countries",
         "Senior-led, hands-on approach delivering measurable results"
       ]
     },
     "ABOUT_ROLE": {
       "TITLE": "About Us & Our Role",
       "DESCRIPTION": "TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We work with world-class brands to design, build, and scale their international distribution across the world.",
-      "STATISTICS": "We work with world-class brands across 100+ countries, supported by 80+ years of collective expertise in international expansion.",
+      "STATISTICS": "We work with world-class brands across 180+ countries, supported by 80+ years of collective expertise in international expansion.",
       "DIAGRAM_LABELS": {
         "MANUFACTURERS": "Manufacturers",
         "TTA": "TTA",
@@ -82,10 +82,10 @@
     },
     "MISSION": {
       "TITLE": "Our Mission",
-      "DESCRIPTION": "We architect global growth for outstanding brands — combining deep market intelligence, a 100+ country network, and 80+ years of collective expertise to deliver results that matter.",
+      "DESCRIPTION": "We architect global growth for outstanding brands — combining deep market intelligence, a 180+ country network, and 80+ years of collective expertise to deliver results that matter.",
       "GOALS": [
         "Architect global growth strategies for outstanding brands",
-        "Combine deep market intelligence with a proven 100+ country network",
+        "Combine deep market intelligence with a proven 180+ country network",
         "Deliver senior-led results with skin in the game"
       ]
     },
@@ -222,24 +222,9 @@
           "DESCRIPTION": "Premium canned sardines and tuna with strong consumer loyalty in multiple markets."
         },
         {
-          "NAME": "Bauducco",
-          "CATEGORY": "Snacks",
-          "DESCRIPTION": "Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes."
-        },
-        {
           "NAME": "pH Plex",
           "CATEGORY": "Haircare",
           "DESCRIPTION": "DIY-friendly haircare products repairing damage from coloring, bleaching, and styling."
-        },
-        {
-          "NAME": "Kaly",
-          "CATEGORY": "Food & Beverage",
-          "DESCRIPTION": "Premium syrup brand offering rich flavor and quality for beverages and culinary uses."
-        },
-        {
-          "NAME": "Jucai",
-          "CATEGORY": "Food & Beverage",
-          "DESCRIPTION": "High-quality Acai products meeting global standards."
         }
       ],
       "CALL_TO_ACTION": {
@@ -345,6 +330,12 @@
         "TITLE": "Market Lead – Pakistan & Ethiopia",
         "SHORT_BIO": "Market Lead for Pakistan and Ethiopia at TTA, with expertise in route-to-market strategy, structured retail distribution, and multinational brand management including Unilever portfolios.",
         "FULL_BIO": "Muhammad Amin serves as the Market Lead for Pakistan and Ethiopia at TTA, bringing a wealth of expertise in route-to-market strategy, structured retail distribution, and multinational brand management. Having successfully managed high-profile portfolios for global giants like Unilever, Amin has a proven track record of driving channel growth across complex markets. His experience spans optimizing full-portfolio distributions, leading dedicated account strategies for major retailers and collaborating with global trade networks. Adept at navigating both structured tier-supermarkets and localized trade landscapes, Amin is uniquely qualified to streamline supply chains, maximize market penetration, build brands and effectively scale TTA's footprint across Pakistan and Ethiopia."
+      },
+      {
+        "NAME": "Rajat Kapur",
+        "TITLE": "Senior Growth Strategist & Business Transformation Practice Lead",
+        "SHORT_BIO": "Accomplished C-suite executive and global business strategist with 26+ years of leadership across FMCG and consumer goods, formerly Chairman, Managing Director, and Regional President at Henkel.",
+        "FULL_BIO": "Rajat Kapur is an accomplished C-suite executive and global business strategist with over 26+ years of proven leadership across the Fast-Moving Consumer Goods (FMCG) and consumer goods sectors. Formerly Chairman, Managing Director, and Regional President at Henkel, Rajat has spearheaded high-impact organizational turnarounds, led multi-market expansions, and scaled P&Ls exceeding €260M across volatile and hyper-growth markets. Throughout his career at top-tier blue-chip multinationals—including Henkel, Colgate-Palmolive, Wipro and Dabur—Rajat has built deep end-to-end expertise spanning cross-border Mergers & Acquisitions (M&A), Go-To-Market (GTM) transformation, brand management, digital ecosystem expansion, and large-scale corporate governance. His geographic footprint spans India, Asia-Pacific, Europe, and Sub-Saharan Africa, where he has successfully navigated complex regulatory environments, led joint ventures, and established global e-commerce partnerships with industry leaders like Amazon, Walmart, and Alibaba. As a consultant, Rajat leverages AI-driven analytics, operational rigor, and strategic vision to help business leaders accelerate top-line revenue, execute seamless cross-border M&A initiatives, and build resilient, high-performing organizations."
       }
     ],
     "BUTTONS": {
@@ -392,10 +383,16 @@
       "TITLE": "Get In Touch",
       "DESCRIPTION": "Ready to partner with us? Let's start the conversation.",
       "CALL_US": "Call Us",
+      "EMAIL_US": "Email Us",
       "LOCATIONS": [
         "Dubai, United Arab Emirates",
         "Amman, Jordan",
         "Baku, Azerbaijan"
+      ],
+      "EMAILS": [
+        "Ahmad@turnaround-artists.com",
+        "Nedal@turnaround-artists.com",
+        "Ruslan@turnaround-artists.com"
       ],
       "DUBAI_OFFICE": "Dubai Office",
       "VIEW_ON_MAPS": "View on Maps",
@@ -529,7 +526,7 @@
     },
     "SEO_META": {
       "PAGE_TITLE": "TTA - The Turnaround Artists | Strategic Brand Builder | Dubai",
-      "META_DESCRIPTION": "TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 100+ countries.",
+      "META_DESCRIPTION": "TTA — The Turnaround Artists — is a global strategic brand builder headquartered in Dubai. We architect international distribution and brand growth across 180+ countries.",
       "META_KEYWORDS": "TTA, The Turnaround Artists, strategic brand builder, brand broker, Dubai, global distribution, FMCG, market entry",
       "META_AUTHOR": "TTA - The Turnaround Artists",
       "OG_TITLE": "TTA - The Turnaround Artists | Strategic Brand Builder",
@@ -548,10 +545,7 @@
       "FOOTER_LOGO": "TTA Logo",
       "PARTNER_LOGOS": [
         "Mega Prime",
-        "Bauducco",
-        "pH Plex",
-        "Kaly",
-        "Jucai"
+        "pH Plex"
       ],
       "TEAM_PHOTOS": "Photo of"
     },
@@ -567,7 +561,10 @@
         "Call Baku office",
         "Open location in Google Maps",
         "Contact Us",
-        "Back to Top"
+        "Back to Top",
+        "Email Dubai office",
+        "Email Amman office",
+        "Email Baku office"
       ],
       "TEAM_BIO_BUTTONS": [
         "Read less about",

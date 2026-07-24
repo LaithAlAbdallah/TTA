@@ -58,7 +58,7 @@ import { TranslateModule } from '@ngx-translate/core';
                   </svg>
                 </div>
                 <div class="stat-content">
-                  <div class="stat-value">100+</div>
+                  <div class="stat-value">180+</div>
                   <div class="stat-label">Countries Served</div>
                 </div>
               </div>

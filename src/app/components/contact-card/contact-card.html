@@ -13,7 +13,7 @@
       <p class="contact-subtitle">{{ 'CONTACT.GET_IN_TOUCH.DESCRIPTION' | translate }}</p>
     </div>
 
-    <!-- Two equal blocks -->
+    <!-- Three equal blocks -->
     <div class="contact-blocks">
       <!-- Phone Numbers Block (Left) -->
       <div class="contact-block phone-block">
@@ -35,6 +35,33 @@
             </a>
             <a href="tel:+994502657442" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.7' | translate">
               <span class="contact-number phone-number-ltr">+994 50 265 7442</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.2' | translate }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Us Block (Center) -->
+      <div class="contact-block email-block">
+        <div class="block-content">
+          <div class="block-header">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="block-icon">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <h3 class="block-title">{{ 'CONTACT.GET_IN_TOUCH.EMAIL_US' | translate }}</h3>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:Ahmad@turnaround-artists.com" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.11' | translate">
+              <span class="contact-number email-ltr">{{ 'CONTACT.GET_IN_TOUCH.EMAILS.0' | translate }}</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.0' | translate }}</span>
+            </a>
+            <a href="mailto:Nedal@turnaround-artists.com" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.12' | translate">
+              <span class="contact-number email-ltr">{{ 'CONTACT.GET_IN_TOUCH.EMAILS.1' | translate }}</span>
+              <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.1' | translate }}</span>
+            </a>
+            <a href="mailto:Ruslan@turnaround-artists.com" class="contact-link" [attr.aria-label]="'COMMON.ARIA_LABELS.NAVIGATION.13' | translate">
+              <span class="contact-number email-ltr">{{ 'CONTACT.GET_IN_TOUCH.EMAILS.2' | translate }}</span>
               <span class="contact-location">{{ 'CONTACT.GET_IN_TOUCH.LOCATIONS.2' | translate }}</span>
             </a>
           </div>

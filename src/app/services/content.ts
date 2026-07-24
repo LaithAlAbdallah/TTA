@@ -40,7 +40,7 @@ export class ContentService {
         excerpt: 'TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide.',
         fullContent: `<h2>About Us & Our Role</h2>
           <p>TTA is a trading and distribution company connecting world-class manufacturers with diverse markets worldwide. With a strong international presence, deep market knowledge, and an extensive partner network, we deliver value, visibility, and scale for brands.</p>
-          <p>We manage top global brands in over 100 countries, supported by 80+ years of expertise in international expansion.</p>`
+          <p>We manage top global brands in over 180 countries, supported by 80+ years of expertise in international expansion.</p>`
       },
       {
         id: 'mission',
@@ -115,10 +115,7 @@ export class ContentService {
           <p>TTA manages and promotes a portfolio of consumer-facing brands, ensuring market visibility and growth across regions:</p>
           <ul>
             <li><strong>Mega Prime:</strong> Premium canned sardines and tuna with strong consumer loyalty in multiple markets.</li>
-            <li><strong>Bauducco:</strong> Snack products catering to diverse tastes and age groups, including wafers, cookies, and mini cakes.</li>
             <li><strong>pH Plex:</strong> DIY-friendly haircare products repairing damage from coloring, bleaching, and styling.</li>
-            <li><strong>Kaly:</strong> Premium syrup brand offering rich flavor and quality for beverages and culinary uses.</li>
-            <li><strong>Jucai:</strong> High-quality Acai products meeting global standards.</li>
           </ul>`
       },
       {
@@ -233,6 +230,15 @@ export class ContentService {
         fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.FULL_BIO',
         imageFit: 'cover',
         imagePosition: 'center 5%'
+      },
+      {
+        id: 'rajat-kapur',
+        name: 'WHO_WE_ARE.TEAM_MEMBERS.12.NAME',
+        title: 'WHO_WE_ARE.TEAM_MEMBERS.12.TITLE',
+        image: 'assets/images/Rajat-Kapur.jpeg',
+        shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.12.SHORT_BIO',
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.12.FULL_BIO',
+        imageFit: 'cover'
       }
     ];
   }

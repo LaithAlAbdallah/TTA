@@ -73,10 +73,10 @@
   margin-bottom: 1rem;
 }
 
-/* Two equal blocks container */
+/* Three equal blocks container */
 .contact-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   flex: 1;
 }
@@ -113,8 +113,9 @@
   justify-content: center;
 }
 
-/* Phone block specific styling */
-.phone-block .contact-details {
+/* Phone / email block specific styling */
+.phone-block .contact-details,
+.email-block .contact-details {
   gap: 0.75rem;
 }
 
@@ -195,6 +196,12 @@
   max-width: 250px;
 }
 
+.email-block .contact-link {
+  max-width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .contact-link:hover {
   background: rgba(212, 175, 55, 0.2);
   border-color: #D4AF37;
@@ -237,6 +244,27 @@
   direction: ltr !important;
   unicode-bidi: bidi-override;
   text-align: left !important;
+}
+
+/* Email addresses stay LTR and single-line across widths */
+.email-ltr,
+.email-block .contact-number {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: clamp(0.7rem, 2.6vw, 1.05rem);
+}
+
+[dir="rtl"] .email-ltr,
+[dir="rtl"] .email-block .contact-number {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  text-align: left !important;
+  white-space: nowrap;
+  font-size: clamp(0.7rem, 2.6vw, 1.05rem);
 }
 
 /* General numeric value direction fix for RTL languages */
@@ -303,6 +331,7 @@
   }
   
   .contact-blocks {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
@@ -375,9 +404,19 @@
   .map-link {
     padding: 0.875rem 1.25rem;
   }
+
+  .email-block .contact-link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
   
   .contact-number {
     font-size: 1rem;
+  }
+
+  .email-ltr,
+  .email-block .contact-number {
+    font-size: clamp(0.7rem, 2.6vw, 1.05rem);
   }
   
   .contact-location {

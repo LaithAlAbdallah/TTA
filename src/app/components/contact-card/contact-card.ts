@@ -18,6 +18,12 @@ export class ContactCard implements OnInit {
     { number: '+994 50 265 7442', location: 'Baku, Azerbaijan', link: 'tel:+994502657442' }
   ];
 
+  contactEmails = [
+    { email: 'Ahmad@turnaround-artists.com', location: 'Dubai, United Arab Emirates', link: 'mailto:Ahmad@turnaround-artists.com' },
+    { email: 'Nedal@turnaround-artists.com', location: 'Amman, Jordan', link: 'mailto:Nedal@turnaround-artists.com' },
+    { email: 'Ruslan@turnaround-artists.com', location: 'Baku, Azerbaijan', link: 'mailto:Ruslan@turnaround-artists.com' }
+  ];
+
   address = {
     text: 'Mohammed Salem Bakhit Al Bakhit Al Falsi, Hor Al Anz East, Owned Property No. 175-M17, Dubai, United Arab Emirates',
     mapLink: 'https://www.google.com/maps/search/?api=1&query=Mohammed+Salem+Bakhit+Al+Bakhit+Al+Falsi%2C+Hor+Al+Anz+East%2C+Owned+Property+No.+175-M17%2C+Dubai%2C+United+Arab+Emirates'
