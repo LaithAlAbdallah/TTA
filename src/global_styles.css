@@ -236,14 +236,6 @@ button {
   transform: scaleX(-1) translateX(-4px) !important;
 }
 
-[dir="rtl"] .read-more-btn-full .arrow {
-  transform: scaleX(-1) !important;
-}
-
-[dir="rtl"] .read-more-btn-full .arrow.rotated {
-  transform: scaleX(-1) rotate(180deg) !important;
-}
-
 /* RTL fixes for alternating layout */
 [dir="rtl"] .alternating-layout .content-wrapper.reverse {
   direction: ltr !important;

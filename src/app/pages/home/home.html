@@ -355,17 +355,12 @@
         <h2 class="section-title-center">{{ 'WHO_WE_ARE.TITLE' | translate }}</h2>
         <p class="section-excerpt-center">{{ 'WHO_WE_ARE.TEAM_PREVIEW.DESCRIPTION' | translate }}</p>
 
-        <div class="team-grid-four">
-          <a [href]="'/about#' + member.id" class="team-member-card" *ngFor="let member of teamMembers; let i = index">
-            <div class="member-image-wrapper">
-              <img [src]="member.image" [alt]="member.name + ' - TTA Team Member'" class="member-image" loading="lazy" width="300" height="400" [style.object-position]="member.imagePosition || 'center top'" [style.object-fit]="member.imageFit || 'cover'">
-            </div>
-            <div class="member-info">
-              <h3 class="member-name">{{ member.name | translate }}</h3>
-              <p class="member-title">{{ member.title | translate }}</p>
-              <p class="member-bio">{{ member.shortBio | translate }}</p>
-            </div>
-          </a>
+        <div class="team-wall-grid">
+          <app-member-card
+            *ngFor="let member of teamMembers"
+            [member]="member"
+            [href]="'/about#' + member.id"
+          ></app-member-card>
         </div>
 
         <a href="/about" class="read-more centered large" (click)="navigateToWhoWeAre($event)">{{ 'WHO_WE_ARE.TEAM_PREVIEW.MEET_TEAM_BUTTON' | translate }} <span class="arrow">→</span></a>

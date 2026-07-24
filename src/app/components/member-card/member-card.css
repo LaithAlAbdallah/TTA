@@ -1,0 +1,159 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.member-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c2440;
+  box-shadow: 0 8px 28px rgba(12, 36, 64, 0.12);
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover,
+.member-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(12, 36, 64, 0.2);
+  outline: none;
+}
+
+.member-card:focus-visible {
+  box-shadow: 0 16px 40px rgba(12, 36, 64, 0.2), 0 0 0 3px #D4AF37;
+}
+
+.member-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.member-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-card-image,
+.member-card:focus-visible .member-card-image {
+  transform: scale(1.05);
+}
+
+.member-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(12, 36, 64, 0.92) 0%,
+    rgba(12, 36, 64, 0.55) 38%,
+    rgba(12, 36, 64, 0.08) 70%,
+    transparent 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.member-card-accent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: #D4AF37;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+:host-context([dir="rtl"]) .member-card-accent {
+  transform-origin: right center;
+}
+
+.member-card:hover .member-card-accent,
+.member-card:focus-visible .member-card-accent {
+  transform: scaleX(1);
+}
+
+.member-card-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 1.25rem 1.1rem 1.35rem;
+  color: #ffffff;
+}
+
+.member-card-name {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.35rem;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+.member-card-title {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #D4AF37;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .member-card-info {
+    padding: 1rem 0.9rem 1.15rem;
+  }
+
+  .member-card-name {
+    font-size: 1.05rem;
+  }
+
+  .member-card-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .member-card,
+  .member-card-image,
+  .member-card-accent,
+  .member-card-overlay {
+    transition: none;
+  }
+
+  .member-card:hover,
+  .member-card:focus-visible {
+    transform: none;
+  }
+
+  .member-card:hover .member-card-image,
+  .member-card:focus-visible .member-card-image {
+    transform: none;
+  }
+}
