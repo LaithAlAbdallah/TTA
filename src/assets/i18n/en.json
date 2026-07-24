@@ -349,7 +349,8 @@
     ],
     "BUTTONS": {
       "READ_LESS": "Read Less",
-      "READ_MORE": "Read More"
+      "READ_MORE": "Read More",
+      "CLOSE_PROFILE": "Close profile"
     }
   },
   "OUR_SERVICES": {

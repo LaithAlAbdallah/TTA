@@ -349,7 +349,8 @@
     ],
     "BUTTONS": {
       "READ_LESS": "Свернуть",
-      "READ_MORE": "Читать далее"
+      "READ_MORE": "Читать далее",
+      "CLOSE_PROFILE": "Закрыть профиль"
     }
   },
   "OUR_SERVICES": {

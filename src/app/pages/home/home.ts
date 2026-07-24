@@ -5,11 +5,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
 import { ContactCard } from '../../components/contact-card/contact-card';
+import { MemberCard } from '../../components/member-card/member-card';
 import { SEOService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, TranslateModule, FloatingActions, ContactCard],
+  imports: [CommonModule, TranslateModule, FloatingActions, ContactCard, MemberCard],
   templateUrl: './home.html',
   styleUrl: './home.css',
   standalone: true

@@ -349,7 +349,8 @@
     ],
     "BUTTONS": {
       "READ_LESS": "عرض أقل",
-      "READ_MORE": "اقرأ المزيد"
+      "READ_MORE": "اقرأ المزيد",
+      "CLOSE_PROFILE": "إغلاق الملف"
     }
   },
   "OUR_SERVICES": {

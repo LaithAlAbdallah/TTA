@@ -1,0 +1,40 @@
+<ng-template #cardInner>
+  <div class="member-card-media">
+    <img
+      [src]="member.image"
+      [alt]="(member.name | translate) + ' - TTA Team Member'"
+      class="member-card-image"
+      loading="lazy"
+      width="300"
+      height="400"
+      [style.object-position]="member.imagePosition || 'center top'"
+      [style.object-fit]="member.imageFit || 'cover'"
+    >
+    <div class="member-card-overlay" aria-hidden="true"></div>
+    <div class="member-card-accent" aria-hidden="true"></div>
+  </div>
+  <div class="member-card-info">
+    <h3 class="member-card-name">{{ member.name | translate }}</h3>
+    <p class="member-card-title">{{ member.title | translate }}</p>
+  </div>
+</ng-template>
+
+<a
+  *ngIf="href; else buttonCard"
+  [href]="href"
+  class="member-card"
+  [attr.id]="anchorId || null"
+>
+  <ng-container *ngTemplateOutlet="cardInner"></ng-container>
+</a>
+
+<ng-template #buttonCard>
+  <button
+    type="button"
+    class="member-card"
+    [attr.id]="anchorId || null"
+    (click)="onCardClick()"
+  >
+    <ng-container *ngTemplateOutlet="cardInner"></ng-container>
+  </button>
+</ng-template>

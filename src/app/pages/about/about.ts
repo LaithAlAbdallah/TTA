@@ -1,9 +1,10 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContentService, ContentSection, TeamMember } from '../../services/content';
 import { FloatingActions } from '../../components/floating-actions/floating-actions';
+import { MemberCard } from '../../components/member-card/member-card';
 import { SEOService } from '../../services/seo.service';
 import { VisionSection } from './components/vision-section';
 import { AboutRoleSection } from './components/about-role-section';
@@ -23,6 +24,7 @@ import { WhyDifferentSection } from './components/why-different-section';
     CommonModule,
     TranslateModule,
     FloatingActions,
+    MemberCard,
     VisionSection,
     AboutRoleSection,
     MissionSection,
@@ -39,12 +41,12 @@ import { WhyDifferentSection } from './components/why-different-section';
   styleUrl: './about.css',
   standalone: true
 })
-export class About implements OnInit, AfterViewInit {
+export class About implements OnInit, AfterViewInit, OnDestroy {
   sections: ContentSection[] = [];
-  teamMembers: (TeamMember & { isExpanded: boolean })[] = [];
+  teamMembers: TeamMember[] = [];
+  selectedMember: TeamMember | null = null;
   sidebarOpen = false;
-  
-  // Table of contents data
+
   tableOfContentsSections = [
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.0',
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.1',
@@ -59,7 +61,7 @@ export class About implements OnInit, AfterViewInit {
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.10',
     'ABOUT.TABLE_OF_CONTENTS.SECTIONS.11'
   ];
-  
+
   sectionIds = [
     'vision',
     'about-us-and-role',
@@ -84,24 +86,15 @@ export class About implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.sections = this.contentService.getHomePageSections();
-    this.teamMembers = this.contentService.getTeamMembers().map(member => ({
-      ...member,
-      isExpanded: false
-    }));
-    
-    // Update SEO for about page
+    this.teamMembers = this.contentService.getTeamMembers();
+
     const seoData = this.seoService.getSEOForRoute('/about');
     this.seoService.updateSEO(seoData);
-  }
-
-  toggleBio(member: TeamMember & { isExpanded: boolean }) {
-    member.isExpanded = !member.isExpanded;
   }
 
   ngAfterViewInit() {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        // Short delay so layout (especially on mobile) is complete before measuring/scroll
         setTimeout(() => {
           const element = document.getElementById(fragment);
           if (element) {
@@ -113,9 +106,35 @@ export class About implements OnInit, AfterViewInit {
               behavior: 'smooth'
             });
           }
+
+          const matched = this.teamMembers.find(m => m.id === fragment);
+          if (matched) {
+            this.openMember(matched);
+          }
         }, 100);
       }
     });
+  }
+
+  openMember(member: TeamMember) {
+    this.selectedMember = member;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeMember() {
+    this.selectedMember = null;
+    document.body.style.overflow = '';
+  }
+
+  ngOnDestroy() {
+    document.body.style.overflow = '';
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape() {
+    if (this.selectedMember) {
+      this.closeMember();
+    }
   }
 
   toggleSidebar() {
@@ -127,15 +146,12 @@ export class About implements OnInit, AfterViewInit {
     this.sidebarOpen = false;
     const element = document.getElementById(sectionId);
     if (element) {
-      // Get the actual header height dynamically
       const header = document.querySelector('.header');
       const headerHeight = header ? header.getBoundingClientRect().height : 80;
-      
-      // Calculate precise position - element top minus header height
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-      
+
       window.scrollTo({
-        top: Math.max(0, elementPosition), // Ensure we don't scroll to negative position
+        top: Math.max(0, elementPosition),
         behavior: 'smooth'
       });
     }
