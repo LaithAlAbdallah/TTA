@@ -7,6 +7,8 @@ export interface TeamMember {
   image: string;
   shortBio: string;
   fullBio: string;
+  imagePosition?: string;
+  imageFit?: string;
 }
 
 export interface ContentSection {
@@ -201,7 +203,9 @@ export class ContentService {
         title: 'WHO_WE_ARE.TEAM_MEMBERS.8.TITLE',
         image: 'assets/images/Niko-Kontoyannis.jpeg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.8.SHORT_BIO',
-        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.8.FULL_BIO'
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.8.FULL_BIO',
+        imagePosition: '50% 26%',
+        imageFit: 'cover'
       },
       {
         id: 'aadil-katyal',
@@ -209,7 +213,8 @@ export class ContentService {
         title: 'WHO_WE_ARE.TEAM_MEMBERS.9.TITLE',
         image: 'assets/images/Aadil-Katyal.jpeg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.9.SHORT_BIO',
-        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.9.FULL_BIO'
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.9.FULL_BIO',
+        imagePosition: 'center 40%'
       },
       {
         id: 'william-ordonez',
@@ -225,7 +230,9 @@ export class ContentService {
         title: 'WHO_WE_ARE.TEAM_MEMBERS.11.TITLE',
         image: 'assets/images/Muhammad-Amin.jpeg',
         shortBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.SHORT_BIO',
-        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.FULL_BIO'
+        fullBio: 'WHO_WE_ARE.TEAM_MEMBERS.11.FULL_BIO',
+        imageFit: 'cover',
+        imagePosition: 'center 5%'
       }
     ];
   }

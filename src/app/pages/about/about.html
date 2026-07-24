@@ -42,7 +42,7 @@
           <div class="team-members-grid">
             <div class="team-member-card-full" *ngFor="let member of teamMembers; let i = index" [id]="member.id">
               <div class="member-image-wrapper-full">
-                <img [src]="member.image" [alt]="member.name + ' - TTA Team Member and Principal'" class="team-image-full" loading="lazy" width="400" height="500">
+                <img [src]="member.image" [alt]="member.name + ' - TTA Team Member and Principal'" class="team-image-full" loading="lazy" width="400" height="500" [style.object-position]="member.imagePosition || 'center top'" [style.object-fit]="member.imageFit || 'cover'">
               </div>
               <div class="member-details-full">
                 <h3 class="member-name-full">{{ member.name | translate }}</h3>
